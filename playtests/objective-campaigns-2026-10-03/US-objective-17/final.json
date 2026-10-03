@@ -1,0 +1,2876 @@
+{
+  "schema_version": 3,
+  "rules_version": "1",
+  "nations": {
+    "EU": {
+      "id": "EU",
+      "government": "Democratic/pluralistic",
+      "currency": 123.95125088650242,
+      "gdp": 22.107886414327474,
+      "tax_rate": 0.4,
+      "domestic_debt": 13.040000000000001,
+      "military": 86.35708017257083,
+      "buildings": {
+        "renewable": 5,
+        "thermal": 2,
+        "datacenter": 5,
+        "drone": 2,
+        "cyber": 1,
+        "mine": 4,
+        "factory": 1,
+        "research": 3
+      },
+      "military_capacity": 395.27593636874724,
+      "civic_support": 3.0,
+      "content": 80.91382113264532,
+      "innovation": 39.866342944154944,
+      "energy": 277.3324761681694,
+      "minerals": 143.70612097801694,
+      "compute": 30.0,
+      "productivity": 15.0,
+      "relations": {
+        "US": 4.749999999999994,
+        "China": 1.0,
+        "Russia": 1.0
+      },
+      "tariffs": {
+        "US": 0.0,
+        "China": 0.25,
+        "Russia": 0.25
+      },
+      "deployments": {
+        "Eastern Europe": 28.97,
+        "Pacific & South China Sea": 0,
+        "Arctic": 0,
+        "South America": 0.0
+      },
+      "progress": {
+        "infrastructure": 0.5,
+        "mine": 0.2,
+        "datacenter": 0.3333333333333333,
+        "research": 0.5,
+        "renewable": 0.5
+      },
+      "share_bonus": [
+        "US"
+      ],
+      "transition_target": null,
+      "transition_remaining": 0,
+      "last_ledger": {
+        "opening_currency": 117.57391252417212,
+        "planned_spending": -1.0648686350487822,
+        "principal_received": 0.0,
+        "aid_received": 0.0,
+        "taxes": 8.728646215822932,
+        "trade_income": 0.3273242330933599,
+        "tariff_income": 0.011799866020898709,
+        "dominance_income": 0.0,
+        "luxury_exports": 0.5237551021501802,
+        "interest_received": 0.15515325602140942,
+        "domestic_interest": -0.907060247158262,
+        "foreign_interest": -0.15741142857142854,
+        "building_upkeep": -0.9,
+        "military_upkeep": -0.34,
+        "new_borrowing": 0,
+        "operating_balance": 7.44220699737909,
+        "closing_currency": 123.95125088650242
+      },
+      "last_production": {
+        "energy": 52.56568247559913,
+        "energy_used": 14.0,
+        "minerals": 20,
+        "minerals_used": 0.2,
+        "compute": 50,
+        "compute_used": 20.0,
+        "productivity": 15.0,
+        "innovation": 4.734977992956679,
+        "military": 35.539409485359485,
+        "reserve_recovery": 3.9527593636874725,
+        "energy_supply": 1,
+        "compute_supply": 1,
+        "thermal_supply": 1,
+        "mobilized": 68.0,
+        "gdp_growth": 0.013118683822983082
+      }
+    },
+    "US": {
+      "id": "US",
+      "government": "Democratic/oligarchic",
+      "currency": 100.07402315251166,
+      "gdp": 30.3855450777922,
+      "tax_rate": 0.4,
+      "domestic_debt": 30.400000000000002,
+      "military": 2325.1982285841386,
+      "buildings": {
+        "renewable": 3,
+        "thermal": 9,
+        "datacenter": 6,
+        "drone": 26,
+        "cyber": 3,
+        "mine": 3,
+        "factory": 6,
+        "research": 3
+      },
+      "military_capacity": 2325.1982285841386,
+      "civic_support": 0.0,
+      "content": 76.34264362380553,
+      "innovation": 48.04580578898459,
+      "energy": 16.942206299173236,
+      "minerals": 83.28671977292133,
+      "compute": 36.0,
+      "productivity": 42.0,
+      "relations": {
+        "EU": 4.749999999999994,
+        "China": 1.0,
+        "Russia": 1.0700000000000007
+      },
+      "tariffs": {
+        "EU": 0.0,
+        "China": 0.0,
+        "Russia": 0.0
+      },
+      "deployments": {
+        "Eastern Europe": 0,
+        "Pacific & South China Sea": 768.9824596075243,
+        "Arctic": 1153.4736894112864,
+        "South America": 0.0
+      },
+      "progress": {},
+      "share_bonus": [],
+      "transition_target": null,
+      "transition_remaining": 0,
+      "last_ledger": {
+        "opening_currency": 99.42187265091134,
+        "planned_spending": -2.0119020140928683,
+        "principal_received": 0.0,
+        "aid_received": 0.0,
+        "taxes": 11.99978719311811,
+        "trade_income": 0.3273242330933599,
+        "tariff_income": 0.0,
+        "dominance_income": 3.5999361579354328,
+        "luxury_exports": 0.0,
+        "interest_received": 0.11211187969924809,
+        "domestic_interest": -2.2227584064487402,
+        "foreign_interest": -0.3400677966101694,
+        "building_upkeep": -1.2000000000000002,
+        "military_upkeep": -9.612280745094054,
+        "new_borrowing": 0,
+        "operating_balance": 2.6640525156931862,
+        "closing_currency": 100.07402315251166
+      },
+      "last_production": {
+        "energy": 73.21469788606842,
+        "energy_used": 87.0,
+        "minerals": 15,
+        "minerals_used": 0.9,
+        "compute": 60,
+        "compute_used": 24.0,
+        "productivity": 42.0,
+        "innovation": 3.996812835423181,
+        "military": 402.74207956532814,
+        "reserve_recovery": 0,
+        "energy_supply": 1,
+        "compute_supply": 1,
+        "thermal_supply": 1,
+        "mobilized": 1922.4561490188107,
+        "gdp_growth": 0.012869464725785892
+      }
+    },
+    "China": {
+      "id": "China",
+      "government": "Authoritarian/one-party",
+      "currency": 39.23767050998095,
+      "gdp": 20.525600289577397,
+      "tax_rate": 0.22,
+      "domestic_debt": 14.58,
+      "military": 558.2896973385717,
+      "buildings": {
+        "renewable": 5,
+        "thermal": 5,
+        "datacenter": 8,
+        "drone": 6,
+        "cyber": 2,
+        "mine": 5,
+        "factory": 1,
+        "research": 4
+      },
+      "military_capacity": 866.4412650975344,
+      "civic_support": 3.0,
+      "content": 87.57903942774459,
+      "innovation": 51.90159919812488,
+      "energy": 317.96970175168394,
+      "minerals": 209.24971912891905,
+      "compute": 50.0,
+      "productivity": 21.6,
+      "relations": {
+        "EU": 1.0,
+        "US": 1.0,
+        "Russia": 5.0
+      },
+      "tariffs": {
+        "EU": 0.25,
+        "US": 0.25,
+        "Russia": 0.0
+      },
+      "deployments": {
+        "Eastern Europe": 0,
+        "Pacific & South China Sea": 190.15175403924758,
+        "Arctic": 142.5081221614718,
+        "South America": 0.0
+      },
+      "progress": {
+        "mine": 0.5,
+        "civil_investment": 0.5,
+        "factory": 0.5,
+        "research": 0.16000000000000014,
+        "renewable": 0.16000000000000014,
+        "infrastructure": 0.08000000000000007,
+        "drone": 0.6600000000000001
+      },
+      "share_bonus": [
+        "Russia"
+      ],
+      "transition_target": null,
+      "transition_remaining": 0,
+      "last_ledger": {
+        "opening_currency": 38.677625671980636,
+        "planned_spending": -0.0,
+        "principal_received": 0.0,
+        "aid_received": 0.0,
+        "taxes": 4.42584082287398,
+        "trade_income": 0.03387875919647882,
+        "tariff_income": 0.03260086849509136,
+        "dominance_income": 0.0,
+        "luxury_exports": 0.0,
+        "interest_received": 0.2528954351981648,
+        "domestic_interest": -0.9186473635528741,
+        "foreign_interest": -0.0765236842105263,
+        "building_upkeep": -1.0,
+        "military_upkeep": -2.19,
+        "new_borrowing": 0,
+        "operating_balance": 0.5600448380003142,
+        "closing_currency": 39.23767050998095
+      },
+      "last_production": {
+        "energy": 72.93696160167995,
+        "energy_used": 30.0,
+        "minerals": 25,
+        "minerals_used": 0.5,
+        "compute": 80,
+        "compute_used": 30.0,
+        "productivity": 21.6,
+        "innovation": 6.027675994764989,
+        "military": 106.69913856268792,
+        "reserve_recovery": 8.664412650975343,
+        "energy_supply": 1,
+        "compute_supply": 1,
+        "thermal_supply": 1,
+        "mobilized": 438.0,
+        "gdp_growth": 0.020287950793210142
+      }
+    },
+    "Russia": {
+      "id": "Russia",
+      "government": "Authoritarian/dictator",
+      "currency": 0.0,
+      "gdp": 2.2896916678643437,
+      "tax_rate": 0.31000000000000005,
+      "domestic_debt": 4.551135974494829,
+      "military": 366.97452584320166,
+      "buildings": {
+        "renewable": 1,
+        "thermal": 3,
+        "datacenter": 3,
+        "drone": 2,
+        "cyber": 1,
+        "mine": 4,
+        "factory": 0,
+        "research": 1
+      },
+      "military_capacity": 477.2885315937466,
+      "civic_support": 0.0,
+      "content": 77.38392768124402,
+      "innovation": 16.13196597652624,
+      "energy": 183.9154126374986,
+      "minerals": 238.05102462086325,
+      "compute": 20.0,
+      "productivity": 9.6,
+      "relations": {
+        "EU": 1.0,
+        "US": 1.0700000000000007,
+        "China": 5.0
+      },
+      "tariffs": {
+        "EU": 0.25,
+        "US": 0.25,
+        "China": 0.0
+      },
+      "deployments": {
+        "Eastern Europe": 179.0,
+        "Pacific & South China Sea": 0,
+        "Arctic": 81.22224579151242,
+        "South America": 0.0
+      },
+      "progress": {
+        "datacenter": 0.72,
+        "civil_investment": 0.96,
+        "factory": 0.96,
+        "drone": 0.96
+      },
+      "share_bonus": [
+        "China"
+      ],
+      "transition_target": null,
+      "transition_remaining": 0,
+      "last_ledger": {
+        "opening_currency": 0.0,
+        "planned_spending": -0.0,
+        "principal_received": 0.0,
+        "aid_received": 0.0,
+        "taxes": 0.7001610233938957,
+        "trade_income": 0.03387875919647882,
+        "tariff_income": 0.03260086849509136,
+        "dominance_income": 0.10502415350908435,
+        "luxury_exports": 0.0,
+        "interest_received": 0.05581286478909136,
+        "domestic_interest": -0.2555710054374876,
+        "foreign_interest": -0.0019705263157894734,
+        "building_upkeep": -0.2,
+        "military_upkeep": -1.445,
+        "new_borrowing": 0.9750638623696355,
+        "operating_balance": -0.9750638623696355,
+        "closing_currency": 0.0
+      },
+      "last_production": {
+        "energy": 25.789308252489494,
+        "energy_used": 10.0,
+        "minerals": 24.0,
+        "minerals_used": 0.30000000000000004,
+        "compute": 30,
+        "compute_used": 10.0,
+        "productivity": 9.6,
+        "innovation": 1.2210638724471186,
+        "military": 29.473270631223738,
+        "reserve_recovery": 4.772885315937466,
+        "energy_supply": 1,
+        "compute_supply": 1,
+        "thermal_supply": 1,
+        "mobilized": 289.0,
+        "gdp_growth": 0.013773108359140576
+      }
+    }
+  },
+  "contracts": [
+    {
+      "id": "EU:US",
+      "borrower": "EU",
+      "lender": "US",
+      "principal": 1.909428571428571,
+      "rate": 0.04,
+      "matures_round": 12
+    },
+    {
+      "id": "EU:China",
+      "borrower": "EU",
+      "lender": "China",
+      "principal": 1.1177142857142854,
+      "rate": 0.06,
+      "matures_round": 12
+    },
+    {
+      "id": "EU:Russia",
+      "borrower": "EU",
+      "lender": "Russia",
+      "principal": 0.23285714285714285,
+      "rate": 0.06,
+      "matures_round": 12
+    },
+    {
+      "id": "US:EU",
+      "borrower": "US",
+      "lender": "EU",
+      "principal": 3.864406779661016,
+      "rate": 0.03,
+      "matures_round": 12
+    },
+    {
+      "id": "US:China",
+      "borrower": "US",
+      "lender": "China",
+      "principal": 3.091525423728813,
+      "rate": 0.06,
+      "matures_round": 12
+    },
+    {
+      "id": "US:Russia",
+      "borrower": "US",
+      "lender": "Russia",
+      "principal": 0.6440677966101693,
+      "rate": 0.06,
+      "matures_round": 12
+    },
+    {
+      "id": "China:EU",
+      "borrower": "China",
+      "lender": "EU",
+      "principal": 0.6394736842105262,
+      "rate": 0.06,
+      "matures_round": 12
+    },
+    {
+      "id": "China:US",
+      "borrower": "China",
+      "lender": "US",
+      "principal": 0.8739473684210524,
+      "rate": 0.04,
+      "matures_round": 12
+    },
+    {
+      "id": "China:Russia",
+      "borrower": "China",
+      "lender": "Russia",
+      "principal": 0.10657894736842104,
+      "rate": 0.03,
+      "matures_round": 12
+    },
+    {
+      "id": "Russia:EU",
+      "borrower": "Russia",
+      "lender": "EU",
+      "principal": 0.01421052631578947,
+      "rate": 0.06,
+      "matures_round": 12
+    },
+    {
+      "id": "Russia:US",
+      "borrower": "Russia",
+      "lender": "US",
+      "principal": 0.019421052631578943,
+      "rate": 0.04,
+      "matures_round": 12
+    },
+    {
+      "id": "Russia:China",
+      "borrower": "Russia",
+      "lender": "China",
+      "principal": 0.011368421052631576,
+      "rate": 0.03,
+      "matures_round": 12
+    }
+  ],
+  "fronts": {
+    "Eastern Europe": {
+      "name": "Eastern Europe",
+      "influence": {
+        "EU": 35.0,
+        "US": 0.0,
+        "China": 0.0,
+        "Russia": 45.0
+      },
+      "status": "Contested"
+    },
+    "Pacific & South China Sea": {
+      "name": "Pacific & South China Sea",
+      "influence": {
+        "EU": 0.0,
+        "US": 40.0,
+        "China": 45.0,
+        "Russia": 0.0
+      },
+      "status": "Contested"
+    },
+    "Arctic": {
+      "name": "Arctic",
+      "influence": {
+        "EU": 10.0,
+        "US": 25.0,
+        "China": 15.0,
+        "Russia": 30.0
+      },
+      "status": "Contested"
+    },
+    "South America": {
+      "name": "South America",
+      "influence": {
+        "EU": 0.0,
+        "US": 60.0,
+        "China": 10.0,
+        "Russia": 10.0
+      },
+      "status": "Uncommitted"
+    }
+  },
+  "orders": {
+    "EU": {
+      "tax_rate": 0.4,
+      "government": "Democratic/pluralistic",
+      "investments": {},
+      "deployments": {
+        "Eastern Europe": 28.97,
+        "Pacific & South China Sea": 0,
+        "Arctic": 0,
+        "South America": 0.0
+      },
+      "tariffs": {
+        "US": 0.0,
+        "China": 0.25,
+        "Russia": 0.25
+      },
+      "trade_offers": [
+        "US"
+      ],
+      "alliance_offers": [
+        "US"
+      ],
+      "share_bonus": [
+        "US"
+      ],
+      "improve_relations": [],
+      "foreign_aid": [],
+      "contract_rates": {},
+      "foreign_repayments": {},
+      "domestic_repayment": 0.0
+    },
+    "US": {
+      "tax_rate": 0.4,
+      "government": "Democratic/oligarchic",
+      "investments": {},
+      "deployments": {
+        "Eastern Europe": 0,
+        "Pacific & South China Sea": 768.9824596075243,
+        "Arctic": 1153.4736894112864,
+        "South America": 0.0
+      },
+      "tariffs": {
+        "EU": 0.0,
+        "China": 0.0,
+        "Russia": 0.0
+      },
+      "trade_offers": [
+        "EU",
+        "China",
+        "Russia"
+      ],
+      "alliance_offers": [],
+      "share_bonus": [],
+      "improve_relations": [],
+      "foreign_aid": [],
+      "contract_rates": {},
+      "foreign_repayments": {},
+      "domestic_repayment": 0.0
+    },
+    "China": {
+      "tax_rate": 0.22,
+      "government": "Authoritarian/one-party",
+      "investments": {},
+      "deployments": {
+        "Eastern Europe": 0,
+        "Pacific & South China Sea": 190.15175403924758,
+        "Arctic": 142.5081221614718,
+        "South America": 0.0
+      },
+      "tariffs": {
+        "EU": 0.25,
+        "US": 0.25,
+        "Russia": 0.0
+      },
+      "trade_offers": [
+        "Russia"
+      ],
+      "alliance_offers": [
+        "Russia"
+      ],
+      "share_bonus": [
+        "Russia"
+      ],
+      "improve_relations": [],
+      "foreign_aid": [],
+      "contract_rates": {},
+      "foreign_repayments": {},
+      "domestic_repayment": 0.0
+    },
+    "Russia": {
+      "tax_rate": 0.31000000000000005,
+      "government": "Authoritarian/dictator",
+      "investments": {},
+      "deployments": {
+        "Eastern Europe": 179.0,
+        "Pacific & South China Sea": 0,
+        "Arctic": 81.22224579151242,
+        "South America": 0.0
+      },
+      "tariffs": {
+        "EU": 0.25,
+        "US": 0.25,
+        "China": 0.0
+      },
+      "trade_offers": [
+        "China"
+      ],
+      "alliance_offers": [
+        "China"
+      ],
+      "share_bonus": [
+        "China"
+      ],
+      "improve_relations": [],
+      "foreign_aid": [],
+      "contract_rates": {},
+      "foreign_repayments": {},
+      "domestic_repayment": 0.0
+    }
+  },
+  "rules": {
+    "start_year": 2026,
+    "starting_capital": {
+      "EU": 60.0,
+      "US": 50.0,
+      "China": 40.0,
+      "Russia": 10.0
+    },
+    "starting_buildings": {
+      "EU": {
+        "renewable": 3,
+        "thermal": 2,
+        "datacenter": 4,
+        "drone": 1,
+        "cyber": 1,
+        "mine": 2,
+        "factory": 0,
+        "research": 2
+      },
+      "US": {
+        "renewable": 3,
+        "thermal": 4,
+        "datacenter": 6,
+        "drone": 3,
+        "cyber": 3,
+        "mine": 3,
+        "factory": 0,
+        "research": 3
+      },
+      "China": {
+        "renewable": 3,
+        "thermal": 5,
+        "datacenter": 4,
+        "drone": 3,
+        "cyber": 2,
+        "mine": 4,
+        "factory": 0,
+        "research": 2
+      },
+      "Russia": {
+        "renewable": 1,
+        "thermal": 3,
+        "datacenter": 1,
+        "drone": 2,
+        "cyber": 1,
+        "mine": 4,
+        "factory": 0,
+        "research": 1
+      }
+    },
+    "starting_energy": {
+      "EU": 10.0,
+      "US": 20.0,
+      "China": 15.0,
+      "Russia": 30.0
+    },
+    "starting_minerals": {
+      "EU": 5.0,
+      "US": 5.0,
+      "China": 20.0,
+      "Russia": 10.0
+    },
+    "starting_content": {
+      "EU": 60.0,
+      "US": 75.0,
+      "China": 80.0,
+      "Russia": 74.0
+    },
+    "starting_innovation": {
+      "EU": 5.0,
+      "US": 8.0,
+      "China": 6.0,
+      "Russia": 2.0
+    },
+    "starting_productivity": {
+      "EU": 10.0,
+      "US": 12.0,
+      "China": 15.0,
+      "Russia": 8.0
+    },
+    "starting_deployments": {
+      "EU": {
+        "Eastern Europe": 60.0,
+        "Pacific & South China Sea": 0.0,
+        "Arctic": 20.0,
+        "South America": 0.0
+      },
+      "US": {
+        "Eastern Europe": 0.0,
+        "Pacific & South China Sea": 140.0,
+        "Arctic": 60.0,
+        "South America": 60.0
+      },
+      "China": {
+        "Eastern Europe": 0.0,
+        "Pacific & South China Sea": 110.0,
+        "Arctic": 30.0,
+        "South America": 10.0
+      },
+      "Russia": {
+        "Eastern Europe": 80.0,
+        "Pacific & South China Sea": 0.0,
+        "Arctic": 50.0,
+        "South America": 10.0
+      }
+    },
+    "starting_influence": {
+      "Eastern Europe": {
+        "EU": 35.0,
+        "US": 0.0,
+        "China": 0.0,
+        "Russia": 45.0
+      },
+      "Pacific & South China Sea": {
+        "EU": 0.0,
+        "US": 40.0,
+        "China": 45.0,
+        "Russia": 0.0
+      },
+      "Arctic": {
+        "EU": 10.0,
+        "US": 25.0,
+        "China": 15.0,
+        "Russia": 30.0
+      },
+      "South America": {
+        "EU": 0.0,
+        "US": 60.0,
+        "China": 10.0,
+        "Russia": 10.0
+      }
+    },
+    "factory_output": 5.0,
+    "combat_attrition": 0.1,
+    "combat_base_decay": 0.01,
+    "reserve_recovery": 0.01,
+    "influence_gain": 10.0,
+    "hostility_drift": 0.02,
+    "government_transition_years": 3,
+    "transition_unrest": 5.0,
+    "contract_years": 3,
+    "foreign_interest": 0.04,
+    "domestic_base_interest": 0.05,
+    "domestic_discontent_interest": 0.1,
+    "military_upkeep": 0.005,
+    "trade_volume": 0.015,
+    "luxury_export_rate": 0.01,
+    "diplomacy_cost": 0.1,
+    "diplomacy_gain": 0.2,
+    "foreign_aid_amount": 1.0,
+    "foreign_aid_relation_gain": 0.25,
+    "trade_relation_gain": 0.08,
+    "tariff_relation_penalty": 0.3,
+    "conflict_relation_penalty": 0.15,
+    "war_discontent": 1.5,
+    "victory_mode": "objectives",
+    "objective_hold_years": 3,
+    "victory_target": 0.0,
+    "ai_seed": 17
+  },
+  "round": 11,
+  "mode": "solo",
+  "player": "US",
+  "trades": [
+    "EU|US",
+    "China|Russia"
+  ],
+  "alliances": [
+    "China|Russia"
+  ],
+  "submitted": [],
+  "history": [
+    {
+      "year": 2026,
+      "round": 1,
+      "nations": {
+        "EU": {
+          "gdp": 20.0,
+          "currency": 60.0,
+          "debt": 16.3,
+          "content": 60.0,
+          "innovation": 5.0,
+          "military": 120.0,
+          "influence": 45.0,
+          "energy": 10.0,
+          "minerals": 5.0
+        },
+        "US": {
+          "gdp": 27.2,
+          "currency": 50.0,
+          "debt": 38.0,
+          "content": 75.0,
+          "innovation": 8.0,
+          "military": 400.0,
+          "influence": 125.0,
+          "energy": 20.0,
+          "minerals": 5.0
+        },
+        "China": {
+          "gdp": 17.1,
+          "currency": 40.0,
+          "debt": 16.2,
+          "content": 80.0,
+          "innovation": 6.0,
+          "military": 200.0,
+          "influence": 70.0,
+          "energy": 15.0,
+          "minerals": 20.0
+        },
+        "Russia": {
+          "gdp": 2.0,
+          "currency": 10.0,
+          "debt": 0.45,
+          "content": 74.0,
+          "innovation": 2.0,
+          "military": 200.0,
+          "influence": 85.0,
+          "energy": 30.0,
+          "minerals": 10.0
+        }
+      }
+    },
+    {
+      "year": 2027,
+      "round": 2,
+      "nations": {
+        "EU": {
+          "gdp": 20.075324000000002,
+          "currency": 66.6197783271075,
+          "debt": 16.3,
+          "content": 76.515862,
+          "innovation": 7.662000000000001,
+          "military": 107.24,
+          "influence": 45.0,
+          "energy": 33.0,
+          "minerals": 9.825000000000001
+        },
+        "US": {
+          "gdp": 27.436469999999996,
+          "currency": 56.13011187969925,
+          "debt": 38.0,
+          "content": 76.8006875,
+          "innovation": 11.9375,
+          "military": 449.8,
+          "influence": 125.0,
+          "energy": 39.4,
+          "minerals": 19.6
+        },
+        "China": {
+          "gdp": 17.341212600000002,
+          "currency": 38.95714932521983,
+          "debt": 16.2,
+          "content": 82.26705999999999,
+          "innovation": 11.059999999999999,
+          "military": 232.148,
+          "influence": 70.0,
+          "energy": 40.46,
+          "minerals": 36.518
+        },
+        "Russia": {
+          "gdp": 2.0230356,
+          "currency": 7.553307030473429,
+          "debt": 0.45,
+          "content": 78.952978,
+          "innovation": 3.178,
+          "military": 219.396,
+          "influence": 85.0,
+          "energy": 46.239999999999995,
+          "minerals": 31.703999999999997
+        }
+      }
+    },
+    {
+      "year": 2028,
+      "round": 3,
+      "nations": {
+        "EU": {
+          "gdp": 20.2565464990339,
+          "currency": 73.0281360707737,
+          "debt": 16.3,
+          "content": 75.9076396559004,
+          "innovation": 10.723683860400001,
+          "military": 92.61772399999998,
+          "influence": 45.0,
+          "energy": 57.064800000000005,
+          "minerals": 18.670972000000003
+        },
+        "US": {
+          "gdp": 27.70077589789894,
+          "currency": 63.0738485999985,
+          "debt": 38.0,
+          "content": 77.07504594978126,
+          "innovation": 15.93172165625,
+          "military": 501.9625,
+          "influence": 125.0,
+          "energy": 59.98124999999999,
+          "minerals": 34.2
+        },
+        "China": {
+          "gdp": 17.60266789242305,
+          "currency": 40.83917154955841,
+          "debt": 16.2,
+          "content": 82.49275858732,
+          "innovation": 13.96987532,
+          "military": 278.23084344370864,
+          "influence": 70.0,
+          "energy": 63.77799999999999,
+          "minerals": 50.084360000000004
+        },
+        "Russia": {
+          "gdp": 2.049782555703644,
+          "currency": 5.077299669377484,
+          "debt": 0.45,
+          "content": 79.142517316391,
+          "innovation": 5.353053291,
+          "military": 241.11290055629138,
+          "influence": 85.0,
+          "energy": 61.73536,
+          "minerals": 53.410356
+        }
+      }
+    },
+    {
+      "year": 2029,
+      "round": 4,
+      "nations": {
+        "EU": {
+          "gdp": 20.441880869897403,
+          "currency": 80.02611076023874,
+          "debt": 16.3,
+          "content": 76.24655844171505,
+          "innovation": 13.770648740072792,
+          "military": 78.76923213980078,
+          "influence": 45.0,
+          "energy": 82.35427354416001,
+          "minerals": 32.4816956838604
+        },
+        "US": {
+          "gdp": 27.98099618082547,
+          "currency": 67.60773079384089,
+          "debt": 38.0,
+          "content": 77.3393195338198,
+          "innovation": 19.934585603668108,
+          "military": 556.52153299375,
+          "influence": 125.0,
+          "energy": 81.760766496875,
+          "minerals": 48.800000000000004
+        },
+        "China": {
+          "gdp": 17.874387940325413,
+          "currency": 41.78061703246685,
+          "debt": 16.2,
+          "content": 81.67683459266298,
+          "innovation": 16.88471600892104,
+          "military": 326.1722080532913,
+          "influence": 70.0,
+          "energy": 87.96896259599998,
+          "minerals": 68.66817925192001
+        },
+        "Russia": {
+          "gdp": 2.077445900257379,
+          "currency": 2.6330043024375307,
+          "debt": 0.45,
+          "content": 79.31194817970525,
+          "innovation": 7.529907205505715,
+          "military": 263.01633703780175,
+          "influence": 85.0,
+          "energy": 76.49172639492,
+          "minerals": 75.121062106582
+        }
+      }
+    },
+    {
+      "year": 2030,
+      "round": 5,
+      "nations": {
+        "EU": {
+          "gdp": 20.6372347076762,
+          "currency": 87.25936810595418,
+          "debt": 16.3,
+          "content": 76.58914703621573,
+          "innovation": 16.825815454362296,
+          "military": 79.07851007576363,
+          "influence": 45.0,
+          "energy": 105.86253304018913,
+          "minerals": 44.32300763008062
+        },
+        "US": {
+          "gdp": 28.277493261021046,
+          "currency": 74.86671578121971,
+          "debt": 38.0,
+          "content": 77.59793301058566,
+          "innovation": 23.945774168983434,
+          "military": 637.4692014766845,
+          "influence": 125.0,
+          "energy": 98.74114217797543,
+          "minerals": 54.57941127043303
+        },
+        "China": {
+          "gdp": 18.15503747713677,
+          "currency": 40.623756507202756,
+          "debt": 16.2,
+          "content": 82.07517274714391,
+          "innovation": 21.98160636995963,
+          "military": 377.0099128792846,
+          "influence": 70.0,
+          "energy": 111.6943773986763,
+          "minerals": 90.21883339994676
+        },
+        "Russia": {
+          "gdp": 2.105843383963864,
+          "currency": 1.876136876086177,
+          "debt": 0.45,
+          "content": 79.38253128657362,
+          "innovation": 8.758370713212916,
+          "military": 285.61150183985706,
+          "influence": 85.0,
+          "energy": 91.39531525958068,
+          "minerals": 98.821062106582
+        }
+      }
+    },
+    {
+      "year": 2031,
+      "round": 6,
+      "nations": {
+        "EU": {
+          "gdp": 20.84289860721513,
+          "currency": 93.8592713714012,
+          "debt": 16.3,
+          "content": 75.89958399518517,
+          "innovation": 19.889272812638715,
+          "military": 76.82481547237643,
+          "influence": 45.0,
+          "energy": 130.59285922193405,
+          "minerals": 61.173485076443704
+        },
+        "US": {
+          "gdp": 28.59069168873397,
+          "currency": 81.84602766228463,
+          "debt": 38.0,
+          "content": 77.78610296998521,
+          "innovation": 27.965109058816882,
+          "military": 783.598707896363,
+          "influence": 125.0,
+          "energy": 101.92487442867048,
+          "minerals": 57.466760560460834
+        },
+        "China": {
+          "gdp": 18.46399768712478,
+          "currency": 41.60150274846832,
+          "debt": 16.2,
+          "content": 85.2625047954515,
+          "innovation": 24.953260170396796,
+          "military": 427.0508566160234,
+          "influence": 70.0,
+          "energy": 136.2888593096642,
+          "minerals": 114.71883339994676
+        },
+        "Russia": {
+          "gdp": 2.134932472316109,
+          "currency": 0.23891754779217467,
+          "debt": 0.45,
+          "content": 79.4528855746637,
+          "innovation": 9.987504760435364,
+          "military": 308.16213258154875,
+          "influence": 85.0,
+          "energy": 106.44631974516624,
+          "minerals": 122.52106210658201
+        }
+      }
+    },
+    {
+      "year": 2032,
+      "round": 7,
+      "nations": {
+        "EU": {
+          "gdp": 21.055172680239963,
+          "currency": 98.09384501565577,
+          "debt": 16.3,
+          "content": 76.33344906926311,
+          "innovation": 24.146042745322198,
+          "military": 78.15645589491007,
+          "influence": 45.0,
+          "energy": 156.03256834698954,
+          "minerals": 78.03315289488161
+        },
+        "US": {
+          "gdp": 28.920481543999266,
+          "currency": 88.24095122587998,
+          "debt": 38.0,
+          "content": 77.79866929912929,
+          "innovation": 31.990371302371415,
+          "military": 986.1393932963517,
+          "influence": 125.0,
+          "energy": 94.31440714631555,
+          "minerals": 57.48623719634308
+        },
+        "China": {
+          "gdp": 18.78474788424269,
+          "currency": 40.90254965307059,
+          "debt": 16.2,
+          "content": 85.44362007725192,
+          "innovation": 27.92903527589673,
+          "military": 472.23621440646025,
+          "influence": 70.0,
+          "energy": 161.77483736078324,
+          "minerals": 139.21883339994676
+        },
+        "Russia": {
+          "gdp": 2.164730998084044,
+          "currency": 0.0,
+          "debt": 0.9248021680121802,
+          "content": 79.52330668123685,
+          "innovation": 11.21730717339467,
+          "military": 329.04671974224493,
+          "influence": 85.0,
+          "energy": 121.64482031641847,
+          "minerals": 143.2510246208633
+        }
+      }
+    },
+    {
+      "year": 2033,
+      "round": 8,
+      "nations": {
+        "EU": {
+          "gdp": 21.29788883504322,
+          "currency": 105.26377537297247,
+          "debt": 16.3,
+          "content": 79.65686748070043,
+          "innovation": 27.275912212798367,
+          "military": 81.8945654254847,
+          "influence": 45.0,
+          "energy": 182.69098544511843,
+          "minerals": 97.83315289488161
+        },
+        "US": {
+          "gdp": 29.265826906035784,
+          "currency": 93.78503662050409,
+          "debt": 38.0,
+          "content": 77.65843861391194,
+          "innovation": 36.01602938529399,
+          "military": 1248.3191730313317,
+          "influence": 125.0,
+          "energy": 75.91151853702695,
+          "minerals": 60.47012165197153
+        },
+        "China": {
+          "gdp": 19.123285511312258,
+          "currency": 39.66871546769037,
+          "debt": 16.2,
+          "content": 85.93807487072064,
+          "innovation": 33.88855455929581,
+          "military": 508.11330618368635,
+          "influence": 70.0,
+          "energy": 186.15354794355227,
+          "minerals": 157.88640761160218
+        },
+        "Russia": {
+          "gdp": 2.195257536434452,
+          "currency": 0.0,
+          "debt": 1.736801816412946,
+          "content": 79.59679555731722,
+          "innovation": 12.44777858686642,
+          "military": 347.0639210943162,
+          "influence": 85.0,
+          "energy": 136.99089717722583,
+          "minerals": 166.95102462086328
+        }
+      }
+    },
+    {
+      "year": 2034,
+      "round": 9,
+      "nations": {
+        "EU": {
+          "gdp": 21.552152000173084,
+          "currency": 111.60222843109969,
+          "debt": 16.3,
+          "content": 79.96574505143107,
+          "innovation": 30.41360840583132,
+          "military": 83.6034635329406,
+          "influence": 45.0,
+          "energy": 210.60135033023778,
+          "minerals": 117.6331528948816
+        },
+        "US": {
+          "gdp": 29.625833411076687,
+          "currency": 98.76868315784297,
+          "debt": 38.0,
+          "content": 77.356277839022,
+          "innovation": 40.03727020163222,
+          "military": 1573.3592464945668,
+          "influence": 125.0,
+          "energy": 46.71632735261515,
+          "minerals": 63.502314004595064
+        },
+        "China": {
+          "gdp": 19.482199087259215,
+          "currency": 38.91411384140037,
+          "debt": 16.2,
+          "content": 86.45666703982651,
+          "innovation": 39.86982985360752,
+          "military": 538.5535000561629,
+          "influence": 70.0,
+          "energy": 229.09782522320018,
+          "minerals": 167.89473592999164
+        },
+        "Russia": {
+          "gdp": 2.2265332245311495,
+          "currency": 0.0,
+          "debt": 2.6659480375479876,
+          "content": 79.6793641492827,
+          "innovation": 13.678948144660934,
+          "military": 355.72114766601266,
+          "influence": 85.0,
+          "energy": 152.4846306076498,
+          "minerals": 190.65102462086327
+        }
+      }
+    },
+    {
+      "year": 2035,
+      "round": 10,
+      "nations": {
+        "EU": {
+          "gdp": 21.821615539557328,
+          "currency": 117.57391252417212,
+          "debt": 16.3,
+          "content": 80.44016509522531,
+          "innovation": 35.131364951198265,
+          "military": 85.89491132352387,
+          "influence": 45.0,
+          "energy": 238.7667936925703,
+          "minerals": 133.55480732850492
+        },
+        "US": {
+          "gdp": 29.999467982795274,
+          "currency": 99.42187265091134,
+          "debt": 38.0,
+          "content": 76.88294715629145,
+          "innovation": 44.04899295356141,
+          "military": 1922.4561490188107,
+          "influence": 125.0,
+          "energy": 30.727508413104815,
+          "minerals": 74.92242581519996
+        },
+        "China": {
+          "gdp": 20.117458285790818,
+          "currency": 38.677625671980636,
+          "debt": 16.2,
+          "content": 86.99263624465884,
+          "innovation": 45.87392320335989,
+          "military": 548.2662699241891,
+          "influence": 70.0,
+          "energy": 275.032740150004,
+          "minerals": 190.47447558969887
+        },
+        "Russia": {
+          "gdp": 2.2585839464319215,
+          "currency": 0.0,
+          "debt": 3.6210721121251934,
+          "content": 78.53303920495985,
+          "innovation": 14.91090210407912,
+          "military": 361.50612410452806,
+          "influence": 85.0,
+          "energy": 168.1261043850091,
+          "minerals": 214.35102462086326
+        }
+      }
+    },
+    {
+      "year": 2036,
+      "round": 11,
+      "nations": {
+        "EU": {
+          "gdp": 22.107886414327474,
+          "currency": 123.95125088650242,
+          "debt": 16.3,
+          "content": 80.91382113264532,
+          "innovation": 39.866342944154944,
+          "military": 86.35708017257083,
+          "influence": 45.0,
+          "energy": 277.3324761681694,
+          "minerals": 143.70612097801694
+        },
+        "US": {
+          "gdp": 30.3855450777922,
+          "currency": 100.07402315251166,
+          "debt": 38.0,
+          "content": 76.34264362380553,
+          "innovation": 48.04580578898459,
+          "military": 2325.1982285841386,
+          "influence": 125.0,
+          "energy": 16.942206299173236,
+          "minerals": 83.28671977292133
+        },
+        "China": {
+          "gdp": 20.525600289577397,
+          "currency": 39.23767050998095,
+          "debt": 16.2,
+          "content": 87.57903942774459,
+          "innovation": 51.90159919812488,
+          "military": 558.2896973385717,
+          "influence": 70.0,
+          "energy": 317.96970175168394,
+          "minerals": 209.24971912891905
+        },
+        "Russia": {
+          "gdp": 2.2896916678643437,
+          "currency": 0.0,
+          "debt": 4.596135974494829,
+          "content": 77.38392768124402,
+          "innovation": 16.13196597652624,
+          "military": 366.97452584320166,
+          "influence": 85.0,
+          "energy": 183.9154126374986,
+          "minerals": 238.05102462086325
+        }
+      }
+    }
+  ],
+  "reports": [
+    {
+      "round": 1,
+      "year": 2026,
+      "messages": [
+        "EU and US signed a trade agreement.",
+        "EU and China signed a trade agreement.",
+        "US and Russia signed a trade agreement.",
+        "China and Russia signed a trade agreement.",
+        "China and Russia signed a military alliance.",
+        "EU completed renewable facility.",
+        "US completed factory.",
+        "China completed data center.",
+        "China completed data center.",
+        "EU: Orders used 10.0 productivity and 0.598 T from reserves for construction, outreach, aid and principal repayments. Mutual treaties took effect before construction costs were calculated.",
+        "US: Orders used 12.0 productivity and 2.084 T from reserves for construction, outreach, aid and principal repayments. Mutual treaties took effect before construction costs were calculated.",
+        "China: Orders used 15.0 productivity and 3.082 T from reserves for construction, outreach, aid and principal repayments. Mutual treaties took effect before construction costs were calculated.",
+        "Russia: Orders used 8.0 productivity and 2.096 T from reserves for construction, outreach, aid and principal repayments. Mutual treaties took effect before construction costs were calculated.",
+        "EU: Treasury +6.620 T \u2192 66.620 T. Largest cash flows: taxes +8.000 T, domestic interest -1.174 T, building upkeep -0.600 T. New borrowing 0.000 T. Facility operation: energy 100%, compute 100%, fuel 100%.",
+        "US: Treasury +6.130 T \u2192 56.130 T. Largest cash flows: taxes +10.880 T, domestic interest -2.280 T, dominance income +2.176 T. New borrowing 0.000 T. Facility operation: energy 100%, compute 100%, fuel 100%.",
+        "China: Treasury -1.043 T \u2192 38.957 T. Largest cash flows: taxes +3.762 T, planned spending -3.082 T, domestic interest -1.021 T. New borrowing 0.000 T. Facility operation: energy 100%, compute 100%, fuel 100%.",
+        "Russia: Treasury -2.447 T \u2192 7.553 T. Largest cash flows: planned spending -2.096 T, military upkeep -0.800 T, taxes +0.520 T. New borrowing 0.000 T. Facility operation: energy 100%, compute 100%, fuel 100%.",
+        "EU: Annual relationship changes: US +0.260 \u2192 4.260, China +0.060 \u2192 3.060, Russia -0.170 \u2192 1.830. Active trade, tariffs, outreach and aid offset or add to annual deterioration. Debt renewal changes occurred with orders; conflict penalties follow in combat.",
+        "US: Annual relationship changes: EU +0.260 \u2192 4.260, China +0.125 \u2192 2.125, Russia +0.060 \u2192 3.060. Active trade, tariffs, outreach and aid offset or add to annual deterioration. Debt renewal changes occurred with orders; conflict penalties follow in combat.",
+        "China: Annual relationship changes: EU +0.060 \u2192 3.060, US +0.125 \u2192 2.125, Russia +0.460 \u2192 4.460. Active trade, tariffs, outreach and aid offset or add to annual deterioration. Debt renewal changes occurred with orders; conflict penalties follow in combat.",
+        "Russia: Annual relationship changes: EU -0.170 \u2192 1.830, US +0.060 \u2192 3.060, China +0.460 \u2192 4.460. Active trade, tariffs, outreach and aid offset or add to annual deterioration. Debt renewal changes occurred with orders; conflict penalties follow in combat.",
+        "Eastern Europe: contested; military losses EU \u22123.5.",
+        "Pacific & South China Sea: contested; military losses China \u22124.6.",
+        "Arctic: contested; military losses EU \u221225.3, China \u22127.3, Russia \u22126.2.",
+        "EU: Combat losses 28.76 power. Eastern Europe: lost 3.46 power, influence +0.00 \u2192 35.00/100; Arctic: lost 25.30 power, influence +0.00 \u2192 10.00/100. Losses use opposing coalition strengths; only a sole surviving coalition gains influence. Production and reserve recovery were applied in the economy phase.",
+        "US: Combat losses 0.00 power. Pacific & South China Sea: lost 0.00 power, influence +0.00 \u2192 40.00/100; Arctic: lost 0.00 power, influence +0.00 \u2192 25.00/100. Losses use opposing coalition strengths; only a sole surviving coalition gains influence. Production and reserve recovery were applied in the economy phase.",
+        "China: Combat losses 11.95 power. Pacific & South China Sea: lost 4.62 power, influence +0.00 \u2192 45.00/100; Arctic: lost 7.33 power, influence +0.00 \u2192 15.00/100. Losses use opposing coalition strengths; only a sole surviving coalition gains influence. Production and reserve recovery were applied in the economy phase.",
+        "Russia: Combat losses 6.20 power. Eastern Europe: lost 0.00 power, influence +0.00 \u2192 45.00/100; Arctic: lost 6.20 power, influence +0.00 \u2192 30.00/100. Losses use opposing coalition strengths; only a sole surviving coalition gains influence. Production and reserve recovery were applied in the economy phase.",
+        "EU: Citizen content 60.0 \u2192 76.5; GDP 20.000 \u2192 20.075 T (annual growth +0.38%). Content reflects taxes, deployments, mines, conflict, government, shortages, innovation and public services. Growth uses pre-update content, innovation, taxes, conflict and energy supply.",
+        "US: Citizen content 75.0 \u2192 76.8; GDP 27.200 \u2192 27.436 T (annual growth +0.87%). Content reflects taxes, deployments, mines, conflict, government, shortages, innovation and public services. Growth uses pre-update content, innovation, taxes, conflict and energy supply.",
+        "China: Citizen content 80.0 \u2192 82.3; GDP 17.100 \u2192 17.341 T (annual growth +1.41%). Content reflects taxes, deployments, mines, conflict, government, shortages, innovation and public services. Growth uses pre-update content, innovation, taxes, conflict and energy supply.",
+        "Russia: Citizen content 74.0 \u2192 79.0; GDP 2.000 \u2192 2.023 T (annual growth +1.15%). Content reflects taxes, deployments, mines, conflict, government, shortages, innovation and public services. Growth uses pre-update content, innovation, taxes, conflict and energy supply.",
+        "EU: Objective hold 0 \u2192 0/3 consecutive years. Checked after combat and society: Unmet \u2014 EU security coalition holds \u226560% of Eastern Europe: 40.0%; Unmet \u2014 Russian current influence in Eastern Europe \u226410/100: 45.0/100; Unmet \u2014 No other faction has >40% military share in the Arctic: Largest foreign share: 67.4%. A missing condition resets the hold.",
+        "US: Objective hold 0 \u2192 0/3 consecutive years. Checked after combat and society: Met \u2014 No foreign military presence in South America: 0.0 foreign power; Unmet \u2014 US military share in the Arctic \u226580%: 67.4%; Met \u2014 Chinese military share in the Pacific \u226450%: 39.2%. A missing condition resets the hold.",
+        "China: Objective hold 0 \u2192 0/3 consecutive years. Checked after combat and society: Unmet \u2014 Chinese military share in the Pacific >80%: 39.2%; Unmet \u2014 Chinese military share in the Arctic \u226580%: 17.0%. A missing condition resets the hold.",
+        "Russia: Objective hold 0 \u2192 0/3 consecutive years. Checked after combat and society: Unmet \u2014 Russian military share in Eastern Europe \u226599%: 60.0%; Unmet \u2014 Russian military share in the Arctic \u226550%: 14.4%. A missing condition resets the hold."
+      ],
+      "ledgers": {
+        "EU": {
+          "opening_currency": 60.0,
+          "planned_spending": -0.5975000000000037,
+          "principal_received": 0.0,
+          "aid_received": 0.0,
+          "taxes": 8.0,
+          "trade_income": 0.5565,
+          "tariff_income": 0.0010546875,
+          "dominance_income": 0.4,
+          "luxury_exports": 0.4630000000000001,
+          "interest_received": 0.18072363960749327,
+          "domestic_interest": -1.1736000000000002,
+          "foreign_interest": -0.13039999999999996,
+          "building_upkeep": -0.6000000000000001,
+          "military_upkeep": -0.48,
+          "new_borrowing": 0,
+          "operating_balance": 7.217278327107493,
+          "closing_currency": 66.6197783271075
+        },
+        "US": {
+          "opening_currency": 50.0,
+          "planned_spending": -2.083999999999996,
+          "principal_received": 0.0,
+          "aid_received": 0.0,
+          "taxes": 10.88,
+          "trade_income": 0.32999999999999996,
+          "tariff_income": 0.0,
+          "dominance_income": 2.176,
+          "luxury_exports": 0.0,
+          "interest_received": 0.11211187969924809,
+          "domestic_interest": -2.2800000000000007,
+          "foreign_interest": -0.30399999999999994,
+          "building_upkeep": -0.7000000000000001,
+          "military_upkeep": -2.0,
+          "new_borrowing": 0,
+          "operating_balance": 8.214111879699248,
+          "closing_currency": 56.13011187969925
+        },
+        "China": {
+          "opening_currency": 40.0,
+          "planned_spending": -3.0820000000000007,
+          "principal_received": 0.0,
+          "aid_received": 0.0,
+          "taxes": 3.7620000000000005,
+          "trade_income": 0.2865,
+          "tariff_income": 0.019125,
+          "dominance_income": 0.18810000000000004,
+          "luxury_exports": 0.0,
+          "interest_received": 0.1688243252198292,
+          "domestic_interest": -1.0206000000000002,
+          "foreign_interest": -0.06479999999999998,
+          "building_upkeep": -0.5,
+          "military_upkeep": -0.8,
+          "new_borrowing": 0,
+          "operating_balance": 2.0391493252198294,
+          "closing_currency": 38.95714932521983
+        },
+        "Russia": {
+          "opening_currency": 10.0,
+          "planned_spending": -2.096,
+          "principal_received": 0.0,
+          "aid_received": 0.0,
+          "taxes": 0.52,
+          "trade_income": 0.06,
+          "tariff_income": 0.010546874999999999,
+          "dominance_income": 0.052000000000000005,
+          "luxury_exports": 0.0,
+          "interest_received": 0.039340155473429325,
+          "domestic_interest": -0.030780000000000005,
+          "foreign_interest": -0.0017999999999999995,
+          "building_upkeep": -0.2,
+          "military_upkeep": -0.8,
+          "new_borrowing": 0,
+          "operating_balance": -0.3506929695265707,
+          "closing_currency": 7.553307030473429
+        }
+      },
+      "phase_ends": {
+        "orders": 13,
+        "economy": 17,
+        "relations": 21,
+        "combat": 28,
+        "society": 32,
+        "objectives": 36
+      },
+      "highlights": {
+        "EU": [
+          24,
+          28,
+          17
+        ],
+        "US": [
+          18,
+          33,
+          14
+        ],
+        "China": [
+          19,
+          26,
+          34
+        ],
+        "Russia": [
+          20,
+          16,
+          12
+        ]
+      }
+    },
+    {
+      "round": 2,
+      "year": 2027,
+      "messages": [
+        "EU completed mineral mine.",
+        "US completed factory.",
+        "China completed drone facility.",
+        "Russia completed data center.",
+        "EU: Orders used 12.0 productivity and 1.092 T from reserves for construction, outreach, aid and principal repayments. Mutual treaties took effect before construction costs were calculated.",
+        "US: Orders used 17.0 productivity and 1.088 T from reserves for construction, outreach, aid and principal repayments. Mutual treaties took effect before construction costs were calculated.",
+        "China: Orders used 15.0 productivity and 0.100 T from reserves for construction, outreach, aid and principal repayments. Mutual treaties took effect before construction costs were calculated.",
+        "Russia: Orders used 9.6 productivity and 2.094 T from reserves for construction, outreach, aid and principal repayments. Mutual treaties took effect before construction costs were calculated.",
+        "EU: Treasury +6.408 T \u2192 73.028 T. Largest cash flows: taxes +8.030 T, planned spending -1.092 T, domestic interest -0.958 T. New borrowing 0.000 T. Facility operation: energy 100%, compute 100%, fuel 100%.",
+        "US: Treasury +6.944 T \u2192 63.074 T. Largest cash flows: taxes +10.975 T, military upkeep -2.249 T, domestic interest -2.225 T. New borrowing 0.000 T. Facility operation: energy 100%, compute 100%, fuel 100%.",
+        "China: Treasury +1.882 T \u2192 40.839 T. Largest cash flows: taxes +3.815 T, domestic interest -0.988 T, military upkeep -0.925 T. New borrowing 0.000 T. Facility operation: energy 100%, compute 100%, fuel 100%.",
+        "Russia: Treasury -2.476 T \u2192 5.077 T. Largest cash flows: planned spending -2.094 T, military upkeep -0.875 T, taxes +0.526 T. New borrowing 0.000 T. Facility operation: energy 100%, compute 100%, fuel 100%.",
+        "EU: Annual relationship changes: US +0.260 \u2192 4.370, China +0.000 \u2192 2.910, Russia -0.170 \u2192 1.360. Active trade, tariffs, outreach and aid offset or add to annual deterioration. Debt renewal changes occurred with orders; conflict penalties follow in combat.",
+        "US: Annual relationship changes: EU +0.260 \u2192 4.370, China +0.125 \u2192 1.950, Russia +0.030 \u2192 2.940. Active trade, tariffs, outreach and aid offset or add to annual deterioration. Debt renewal changes occurred with orders; conflict penalties follow in combat.",
+        "China: Annual relationship changes: EU +0.000 \u2192 2.910, US +0.125 \u2192 1.950, Russia +0.460 \u2192 4.920. Active trade, tariffs, outreach and aid offset or add to annual deterioration. Debt renewal changes occurred with orders; conflict penalties follow in combat.",
+        "Russia: Annual relationship changes: EU -0.170 \u2192 1.360, US +0.030 \u2192 2.940, China +0.460 \u2192 4.920. Active trade, tariffs, outreach and aid offset or add to annual deterioration. Debt renewal changes occurred with orders; conflict penalties follow in combat.",
+        "Eastern Europe: contested; military losses EU \u22125.7.",
+        "Pacific & South China Sea: contested; military losses China \u22124.5.",
+        "Arctic: contested; military losses EU \u221227.0, China \u22129.1, Russia \u22127.0.",
+        "EU: Combat losses 32.68 power. Eastern Europe: lost 5.68 power, influence +0.00 \u2192 35.00/100; Arctic: lost 27.00 power, influence +0.00 \u2192 10.00/100. Losses use opposing coalition strengths; only a sole surviving coalition gains influence. Production and reserve recovery were applied in the economy phase.",
+        "US: Combat losses 0.00 power. Pacific & South China Sea: lost 0.00 power, influence +0.00 \u2192 40.00/100; Arctic: lost 0.00 power, influence +0.00 \u2192 25.00/100. Losses use opposing coalition strengths; only a sole surviving coalition gains influence. Production and reserve recovery were applied in the economy phase.",
+        "China: Combat losses 13.56 power. Pacific & South China Sea: lost 4.49 power, influence +0.00 \u2192 45.00/100; Arctic: lost 9.07 power, influence +0.00 \u2192 15.00/100. Losses use opposing coalition strengths; only a sole surviving coalition gains influence. Production and reserve recovery were applied in the economy phase.",
+        "Russia: Combat losses 7.04 power. Eastern Europe: lost 0.00 power, influence +0.00 \u2192 45.00/100; Arctic: lost 7.04 power, influence +0.00 \u2192 30.00/100. Losses use opposing coalition strengths; only a sole surviving coalition gains influence. Production and reserve recovery were applied in the economy phase.",
+        "EU: Citizen content 76.5 \u2192 75.9; GDP 20.075 \u2192 20.257 T (annual growth +0.90%). Content reflects taxes, deployments, mines, conflict, government, shortages, innovation and public services. Growth uses pre-update content, innovation, taxes, conflict and energy supply.",
+        "US: Citizen content 76.8 \u2192 77.1; GDP 27.436 \u2192 27.701 T (annual growth +0.96%). Content reflects taxes, deployments, mines, conflict, government, shortages, innovation and public services. Growth uses pre-update content, innovation, taxes, conflict and energy supply.",
+        "China: Citizen content 82.3 \u2192 82.5; GDP 17.341 \u2192 17.603 T (annual growth +1.51%). Content reflects taxes, deployments, mines, conflict, government, shortages, innovation and public services. Growth uses pre-update content, innovation, taxes, conflict and energy supply.",
+        "Russia: Citizen content 79.0 \u2192 79.1; GDP 2.023 \u2192 2.050 T (annual growth +1.32%). Content reflects taxes, deployments, mines, conflict, government, shortages, innovation and public services. Growth uses pre-update content, innovation, taxes, conflict and energy supply.",
+        "EU: Objective hold 0 \u2192 0/3 consecutive years. Checked after combat and society: Unmet \u2014 EU security coalition holds \u226560% of Eastern Europe: 32.4%; Unmet \u2014 Russian current influence in Eastern Europe \u226410/100: 45.0/100; Unmet \u2014 No other faction has >40% military share in the Arctic: Largest foreign share: 70.0%. A missing condition resets the hold.",
+        "US: Objective hold 0 \u2192 0/3 consecutive years. Checked after combat and society: Met \u2014 No foreign military presence in South America: 0.0 foreign power; Unmet \u2014 US military share in the Arctic \u226580%: 70.0%; Met \u2014 Chinese military share in the Pacific \u226450%: 41.4%. A missing condition resets the hold.",
+        "China: Objective hold 0 \u2192 0/3 consecutive years. Checked after combat and society: Unmet \u2014 Chinese military share in the Pacific >80%: 41.4%; Unmet \u2014 Chinese military share in the Arctic \u226580%: 16.9%. A missing condition resets the hold.",
+        "Russia: Objective hold 0 \u2192 0/3 consecutive years. Checked after combat and society: Unmet \u2014 Russian military share in Eastern Europe \u226599%: 67.6%; Unmet \u2014 Russian military share in the Arctic \u226550%: 13.1%. A missing condition resets the hold."
+      ],
+      "ledgers": {
+        "EU": {
+          "opening_currency": 66.6197783271075,
+          "planned_spending": -1.0923379999999838,
+          "principal_received": 0.0,
+          "aid_received": 0.0,
+          "taxes": 8.0301296,
+          "trade_income": 0.51182559309,
+          "tariff_income": 0.0221364084886875,
+          "dominance_income": 0.40150648000000005,
+          "luxury_exports": 0.468007182,
+          "interest_received": 0.18072363960749327,
+          "domestic_interest": -0.9582331595200001,
+          "foreign_interest": -0.13039999999999996,
+          "building_upkeep": -0.6000000000000001,
+          "military_upkeep": -0.425,
+          "new_borrowing": 0,
+          "operating_balance": 7.500695743666181,
+          "closing_currency": 73.0281360707737
+        },
+        "US": {
+          "opening_currency": 56.13011187969925,
+          "planned_spending": -1.0880624999999995,
+          "principal_received": 0.0,
+          "aid_received": 0.0,
+          "taxes": 10.974587999999999,
+          "trade_income": 0.3284408406,
+          "tariff_income": 0.0,
+          "dominance_income": 2.1949175999999997,
+          "luxury_exports": 0.0,
+          "interest_received": 0.11211187969924809,
+          "domestic_interest": -2.2252591,
+          "foreign_interest": -0.30399999999999994,
+          "building_upkeep": -0.8,
+          "military_upkeep": -2.249,
+          "new_borrowing": 0,
+          "operating_balance": 8.031799220299247,
+          "closing_currency": 63.0738485999985
+        },
+        "China": {
+          "opening_currency": 38.95714932521983,
+          "planned_spending": -0.10000000000000142,
+          "principal_received": 0.0,
+          "aid_received": 0.0,
+          "taxes": 3.8150667720000007,
+          "trade_income": 0.24104126709,
+          "tariff_income": 0.043682786628750005,
+          "dominance_income": 0.19075333860000004,
+          "luxury_exports": 0.0,
+          "interest_received": 0.1688243252198292,
+          "domestic_interest": -0.9875462652000003,
+          "foreign_interest": -0.06479999999999998,
+          "building_upkeep": -0.5,
+          "military_upkeep": -0.925,
+          "new_borrowing": 0,
+          "operating_balance": 1.9820222243385797,
+          "closing_currency": 40.83917154955841
+        },
+        "Russia": {
+          "opening_currency": 7.553307030473429,
+          "planned_spending": -2.0936439999999994,
+          "principal_received": 0.0,
+          "aid_received": 0.0,
+          "taxes": 0.525989256,
+          "trade_income": 0.0576565146,
+          "tariff_income": 0.047625831140625,
+          "dominance_income": 0.052598925600000006,
+          "luxury_exports": 0.0,
+          "interest_received": 0.039340155473429325,
+          "domestic_interest": -0.02877404391,
+          "foreign_interest": -0.0017999999999999995,
+          "building_upkeep": -0.2,
+          "military_upkeep": -0.875,
+          "new_borrowing": 0,
+          "operating_balance": -0.38236336109594565,
+          "closing_currency": 5.077299669377484
+        }
+      },
+      "phase_ends": {
+        "orders": 8,
+        "economy": 12,
+        "relations": 16,
+        "combat": 23,
+        "society": 27,
+        "objectives": 31
+      },
+      "highlights": {
+        "EU": [
+          19,
+          12,
+          27
+        ],
+        "US": [
+          13,
+          28,
+          9
+        ],
+        "China": [
+          14,
+          21,
+          29
+        ],
+        "Russia": [
+          15,
+          11,
+          7
+        ]
+      }
+    },
+    {
+      "round": 3,
+      "year": 2028,
+      "messages": [
+        "US completed factory.",
+        "US completed factory.",
+        "US completed factory.",
+        "China completed mineral mine.",
+        "Russia completed data center.",
+        "EU \u2192 US: debt contract renewed at 4.0% for 3 years.",
+        "EU \u2192 China: debt contract renewed at 4.0% for 3 years.",
+        "EU \u2192 Russia: debt contract renewed at 6.0% for 3 years.",
+        "US \u2192 EU: debt contract renewed at 3.0% for 3 years.",
+        "US \u2192 China: debt contract renewed at 6.0% for 3 years.",
+        "US \u2192 Russia: debt contract renewed at 4.0% for 3 years.",
+        "China \u2192 EU: debt contract renewed at 4.0% for 3 years.",
+        "China \u2192 US: debt contract renewed at 4.0% for 3 years.",
+        "China \u2192 Russia: debt contract renewed at 3.0% for 3 years.",
+        "Russia \u2192 EU: debt contract renewed at 6.0% for 3 years.",
+        "Russia \u2192 US: debt contract renewed at 4.0% for 3 years.",
+        "Russia \u2192 China: debt contract renewed at 3.0% for 3 years.",
+        "EU: Orders used 10.0 productivity and 0.595 T from reserves for construction, outreach, aid and principal repayments. Mutual treaties took effect before construction costs were calculated.",
+        "US: Orders used 22.0 productivity and 3.052 T from reserves for construction, outreach, aid and principal repayments. Mutual treaties took effect before construction costs were calculated.",
+        "China: Orders used 15.0 productivity and 0.986 T from reserves for construction, outreach, aid and principal repayments. Mutual treaties took effect before construction costs were calculated.",
+        "Russia: Orders used 9.6 productivity and 1.989 T from reserves for construction, outreach, aid and principal repayments. Mutual treaties took effect before construction costs were calculated.",
+        "EU: Treasury +6.998 T \u2192 80.026 T. Largest cash flows: taxes +8.103 T, domestic interest -0.966 T, building upkeep -0.600 T. New borrowing 0.000 T. Facility operation: energy 100%, compute 100%, fuel 100%.",
+        "US: Treasury +4.534 T \u2192 67.608 T. Largest cash flows: taxes +11.080 T, planned spending -3.052 T, military upkeep -2.510 T. New borrowing 0.000 T. Facility operation: energy 100%, compute 100%, fuel 100%.",
+        "China: Treasury +0.941 T \u2192 41.781 T. Largest cash flows: taxes +3.873 T, military upkeep -1.110 T, planned spending -0.986 T. New borrowing 0.000 T. Facility operation: energy 100%, compute 100%, fuel 100%.",
+        "Russia: Treasury -2.444 T \u2192 2.633 T. Largest cash flows: planned spending -1.989 T, military upkeep -0.960 T, taxes +0.533 T. New borrowing 0.000 T. Facility operation: energy 100%, compute 100%, fuel 100%.",
+        "EU: Annual relationship changes: US +0.260 \u2192 4.530, China +0.000 \u2192 2.760, Russia +0.000 \u2192 1.000. Active trade, tariffs, outreach and aid offset or add to annual deterioration. Debt renewal changes occurred with orders; conflict penalties follow in combat.",
+        "US: Annual relationship changes: EU +0.260 \u2192 4.530, China +0.125 \u2192 1.675, Russia +0.030 \u2192 2.820. Active trade, tariffs, outreach and aid offset or add to annual deterioration. Debt renewal changes occurred with orders; conflict penalties follow in combat.",
+        "China: Annual relationship changes: EU +0.000 \u2192 2.760, US +0.125 \u2192 1.675, Russia +0.000 \u2192 5.000. Active trade, tariffs, outreach and aid offset or add to annual deterioration. Debt renewal changes occurred with orders; conflict penalties follow in combat.",
+        "Russia: Annual relationship changes: EU +0.000 \u2192 1.000, US +0.030 \u2192 2.820, China +0.000 \u2192 5.000. Active trade, tariffs, outreach and aid offset or add to annual deterioration. Debt renewal changes occurred with orders; conflict penalties follow in combat.",
+        "Eastern Europe: contested; military losses EU \u22127.7.",
+        "Pacific & South China Sea: contested; military losses China \u22123.6.",
+        "Arctic: contested; military losses EU \u221225.0, China \u221210.4, Russia \u22127.8.",
+        "EU: Combat losses 32.69 power. Eastern Europe: lost 7.69 power, influence +0.00 \u2192 35.00/100; Arctic: lost 25.00 power, influence +0.00 \u2192 10.00/100. Losses use opposing coalition strengths; only a sole surviving coalition gains influence. Production and reserve recovery were applied in the economy phase.",
+        "US: Combat losses 0.00 power. Pacific & South China Sea: lost 0.00 power, influence +0.00 \u2192 40.00/100; Arctic: lost 0.00 power, influence +0.00 \u2192 25.00/100. Losses use opposing coalition strengths; only a sole surviving coalition gains influence. Production and reserve recovery were applied in the economy phase.",
+        "China: Combat losses 14.03 power. Pacific & South China Sea: lost 3.63 power, influence +0.00 \u2192 45.00/100; Arctic: lost 10.40 power, influence +0.00 \u2192 15.00/100. Losses use opposing coalition strengths; only a sole surviving coalition gains influence. Production and reserve recovery were applied in the economy phase.",
+        "Russia: Combat losses 7.77 power. Eastern Europe: lost 0.00 power, influence +0.00 \u2192 45.00/100; Arctic: lost 7.77 power, influence +0.00 \u2192 30.00/100. Losses use opposing coalition strengths; only a sole surviving coalition gains influence. Production and reserve recovery were applied in the economy phase.",
+        "EU: Citizen content 75.9 \u2192 76.2; GDP 20.257 \u2192 20.442 T (annual growth +0.91%). Content reflects taxes, deployments, mines, conflict, government, shortages, innovation and public services. Growth uses pre-update content, innovation, taxes, conflict and energy supply.",
+        "US: Citizen content 77.1 \u2192 77.3; GDP 27.701 \u2192 27.981 T (annual growth +1.01%). Content reflects taxes, deployments, mines, conflict, government, shortages, innovation and public services. Growth uses pre-update content, innovation, taxes, conflict and energy supply.",
+        "China: Citizen content 82.5 \u2192 81.7; GDP 17.603 \u2192 17.874 T (annual growth +1.54%). Content reflects taxes, deployments, mines, conflict, government, shortages, innovation and public services. Growth uses pre-update content, innovation, taxes, conflict and energy supply.",
+        "Russia: Citizen content 79.1 \u2192 79.3; GDP 2.050 \u2192 2.077 T (annual growth +1.35%). Content reflects taxes, deployments, mines, conflict, government, shortages, innovation and public services. Growth uses pre-update content, innovation, taxes, conflict and energy supply.",
+        "EU: Objective hold 0 \u2192 0/3 consecutive years. Checked after combat and society: Unmet \u2014 EU security coalition holds \u226560% of Eastern Europe: 25.5%; Unmet \u2014 Russian current influence in Eastern Europe \u226410/100: 45.0/100; Unmet \u2014 No other faction has >40% military share in the Arctic: Largest foreign share: 70.4%. A missing condition resets the hold.",
+        "US: Objective hold 0 \u2192 0/3 consecutive years. Checked after combat and society: Met \u2014 No foreign military presence in South America: 0.0 foreign power; Unmet \u2014 US military share in the Arctic \u226580%: 70.4%; Met \u2014 Chinese military share in the Pacific \u226450%: 45.0%. A missing condition resets the hold.",
+        "China: Objective hold 0 \u2192 0/3 consecutive years. Checked after combat and society: Unmet \u2014 Chinese military share in the Pacific >80%: 45.0%; Unmet \u2014 Chinese military share in the Arctic \u226580%: 16.9%. A missing condition resets the hold.",
+        "Russia: Objective hold 0 \u2192 0/3 consecutive years. Checked after combat and society: Unmet \u2014 Russian military share in Eastern Europe \u226599%: 74.5%; Unmet \u2014 Russian military share in the Arctic \u226550%: 12.7%. A missing condition resets the hold."
+      ],
+      "ledgers": {
+        "EU": {
+          "opening_currency": 73.0281360707737,
+          "planned_spending": -0.5946381580697988,
+          "principal_received": 0.0,
+          "aid_received": 0.0,
+          "taxes": 8.10261859961356,
+          "trade_income": 0.5177206123784485,
+          "tariff_income": 0.02246818150890335,
+          "dominance_income": 0.405130929980678,
+          "luxury_exports": 0.4735322634602563,
+          "interest_received": 0.14236378233719887,
+          "domestic_interest": -0.966164378887059,
+          "foreign_interest": -0.13505714285714282,
+          "building_upkeep": -0.6000000000000001,
+          "military_upkeep": -0.37,
+          "new_borrowing": 0,
+          "operating_balance": 7.592612847534843,
+          "closing_currency": 80.02611076023874
+        },
+        "US": {
+          "opening_currency": 63.0738485999985,
+          "planned_spending": -3.0522048350312474,
+          "principal_received": 0.0,
+          "aid_received": 0.0,
+          "taxes": 11.080310359159576,
+          "trade_income": 0.33152026198750767,
+          "tariff_income": 0.0,
+          "dominance_income": 2.216062071831915,
+          "luxury_exports": 0.0,
+          "interest_received": 0.11211187969924809,
+          "domestic_interest": -2.21691860312665,
+          "foreign_interest": -0.327186440677966,
+          "building_upkeep": -1.1,
+          "military_upkeep": -2.5098125,
+          "new_borrowing": 0,
+          "operating_balance": 7.586087028873631,
+          "closing_currency": 67.60773079384089
+        },
+        "China": {
+          "opening_currency": 40.83917154955841,
+          "planned_spending": -0.9860301246799992,
+          "principal_received": 0.0,
+          "aid_received": 0.0,
+          "taxes": 3.8725869363330707,
+          "trade_income": 0.2446191532284947,
+          "tariff_income": 0.04408881204953638,
+          "dominance_income": 0.19362934681665356,
+          "luxury_exports": 0.0,
+          "interest_received": 0.23054114948387913,
+          "domestic_interest": -0.9842555797968746,
+          "foreign_interest": -0.06373421052631578,
+          "building_upkeep": -0.5,
+          "military_upkeep": -1.11,
+          "new_borrowing": 0,
+          "operating_balance": 1.927475607588444,
+          "closing_currency": 41.78061703246685
+        },
+        "Russia": {
+          "opening_currency": 5.077299669377484,
+          "planned_spending": -1.989293893418,
+          "principal_received": 0.0,
+          "aid_received": 0.0,
+          "taxes": 0.5329434644829475,
+          "trade_income": 0.05841880283755385,
+          "tariff_income": 0.04807821065501348,
+          "dominance_income": 0.053294346448294755,
+          "luxury_exports": 0.0,
+          "interest_received": 0.04293150885688797,
+          "domestic_interest": -0.028697280486861654,
+          "foreign_interest": -0.0019705263157894734,
+          "building_upkeep": -0.2,
+          "military_upkeep": -0.96,
+          "new_borrowing": 0,
+          "operating_balance": -0.4550014735219536,
+          "closing_currency": 2.6330043024375307
+        }
+      },
+      "phase_ends": {
+        "orders": 21,
+        "economy": 25,
+        "relations": 29,
+        "combat": 36,
+        "society": 40,
+        "objectives": 44
+      },
+      "highlights": {
+        "EU": [
+          32,
+          25,
+          40
+        ],
+        "US": [
+          26,
+          41,
+          22
+        ],
+        "China": [
+          34,
+          42,
+          27
+        ],
+        "Russia": [
+          24,
+          20,
+          43
+        ]
+      }
+    },
+    {
+      "round": 4,
+      "year": 2029,
+      "messages": [
+        "EU completed drone facility.",
+        "US completed drone facility.",
+        "US completed drone facility.",
+        "US completed factory.",
+        "China completed data center.",
+        "China completed data center.",
+        "EU: Orders used 10.0 productivity and 0.100 T from reserves for construction, outreach, aid and principal repayments. Mutual treaties took effect before construction costs were calculated.",
+        "US: Orders used 37.0 productivity and 0.100 T from reserves for construction, outreach, aid and principal repayments. Mutual treaties took effect before construction costs were calculated.",
+        "China: Orders used 15.0 productivity and 2.949 T from reserves for construction, outreach, aid and principal repayments. Mutual treaties took effect before construction costs were calculated.",
+        "Russia: Orders used 9.6 productivity and 0.248 T from reserves for construction, outreach, aid and principal repayments. Mutual treaties took effect before construction costs were calculated.",
+        "EU: Treasury +7.233 T \u2192 87.259 T. Largest cash flows: taxes +8.177 T, domestic interest -0.962 T, building upkeep -0.600 T. New borrowing 0.000 T. Facility operation: energy 100%, compute 100%, fuel 100%.",
+        "US: Treasury +7.259 T \u2192 74.867 T. Largest cash flows: taxes +11.192 T, military upkeep -2.783 T, dominance income +2.238 T. New borrowing 0.000 T. Facility operation: energy 100%, compute 100%, fuel 100%.",
+        "China: Treasury -1.157 T \u2192 40.624 T. Largest cash flows: taxes +3.932 T, planned spending -2.949 T, military upkeep -1.300 T. New borrowing 0.000 T. Facility operation: energy 100%, compute 100%, fuel 100%.",
+        "Russia: Treasury -0.757 T \u2192 1.876 T. Largest cash flows: military upkeep -1.050 T, taxes +0.540 T, planned spending -0.248 T. New borrowing 0.000 T. Facility operation: energy 100%, compute 100%, fuel 100%.",
+        "EU: Annual relationship changes: US +0.260 \u2192 4.640, China +0.000 \u2192 2.610, Russia +0.000 \u2192 1.000. Active trade, tariffs, outreach and aid offset or add to annual deterioration. Debt renewal changes occurred with orders; conflict penalties follow in combat.",
+        "US: Annual relationship changes: EU +0.260 \u2192 4.640, China +0.125 \u2192 1.500, Russia +0.030 \u2192 2.700. Active trade, tariffs, outreach and aid offset or add to annual deterioration. Debt renewal changes occurred with orders; conflict penalties follow in combat.",
+        "China: Annual relationship changes: EU +0.000 \u2192 2.610, US +0.125 \u2192 1.500, Russia +0.000 \u2192 5.000. Active trade, tariffs, outreach and aid offset or add to annual deterioration. Debt renewal changes occurred with orders; conflict penalties follow in combat.",
+        "Russia: Annual relationship changes: EU +0.000 \u2192 1.000, US +0.030 \u2192 2.700, China +0.000 \u2192 5.000. Active trade, tariffs, outreach and aid offset or add to annual deterioration. Debt renewal changes occurred with orders; conflict penalties follow in combat.",
+        "Eastern Europe: contested; military losses EU \u22128.8.",
+        "Pacific & South China Sea: contested; military losses China \u22124.0.",
+        "Arctic: contested; military losses EU \u221222.0, China \u221210.8, Russia \u22127.7.",
+        "EU: Combat losses 30.81 power. Eastern Europe: lost 8.81 power, influence +0.00 \u2192 35.00/100; Arctic: lost 22.00 power, influence +0.00 \u2192 10.00/100. Losses use opposing coalition strengths; only a sole surviving coalition gains influence. Production and reserve recovery were applied in the economy phase.",
+        "US: Combat losses 0.00 power. Pacific & South China Sea: lost 0.00 power, influence +0.00 \u2192 40.00/100; Arctic: lost 0.00 power, influence +0.00 \u2192 25.00/100. Losses use opposing coalition strengths; only a sole surviving coalition gains influence. Production and reserve recovery were applied in the economy phase.",
+        "China: Combat losses 14.82 power. Pacific & South China Sea: lost 4.01 power, influence +0.00 \u2192 45.00/100; Arctic: lost 10.81 power, influence +0.00 \u2192 15.00/100. Losses use opposing coalition strengths; only a sole surviving coalition gains influence. Production and reserve recovery were applied in the economy phase.",
+        "Russia: Combat losses 7.72 power. Eastern Europe: lost 0.00 power, influence +0.00 \u2192 45.00/100; Arctic: lost 7.72 power, influence +0.00 \u2192 30.00/100. Losses use opposing coalition strengths; only a sole surviving coalition gains influence. Production and reserve recovery were applied in the economy phase.",
+        "EU: Citizen content 76.2 \u2192 76.6; GDP 20.442 \u2192 20.637 T (annual growth +0.96%). Content reflects taxes, deployments, mines, conflict, government, shortages, innovation and public services. Growth uses pre-update content, innovation, taxes, conflict and energy supply.",
+        "US: Citizen content 77.3 \u2192 77.6; GDP 27.981 \u2192 28.277 T (annual growth +1.06%). Content reflects taxes, deployments, mines, conflict, government, shortages, innovation and public services. Growth uses pre-update content, innovation, taxes, conflict and energy supply.",
+        "China: Citizen content 81.7 \u2192 82.1; GDP 17.874 \u2192 18.155 T (annual growth +1.57%). Content reflects taxes, deployments, mines, conflict, government, shortages, innovation and public services. Growth uses pre-update content, innovation, taxes, conflict and energy supply.",
+        "Russia: Citizen content 79.3 \u2192 79.4; GDP 2.077 \u2192 2.106 T (annual growth +1.37%). Content reflects taxes, deployments, mines, conflict, government, shortages, innovation and public services. Growth uses pre-update content, innovation, taxes, conflict and energy supply.",
+        "EU: Objective hold 0 \u2192 0/3 consecutive years. Checked after combat and society: Unmet \u2014 EU security coalition holds \u226560% of Eastern Europe: 20.5%; Unmet \u2014 Russian current influence in Eastern Europe \u226410/100: 45.0/100; Unmet \u2014 No other faction has >40% military share in the Arctic: Largest foreign share: 67.7%. A missing condition resets the hold.",
+        "US: Objective hold 0 \u2192 0/3 consecutive years. Checked after combat and society: Met \u2014 No foreign military presence in South America: 0.0 foreign power; Unmet \u2014 US military share in the Arctic \u226580%: 67.7%; Met \u2014 Chinese military share in the Pacific \u226450%: 45.1%. A missing condition resets the hold.",
+        "China: Objective hold 0 \u2192 0/3 consecutive years. Checked after combat and society: Unmet \u2014 Chinese military share in the Pacific >80%: 45.1%; Unmet \u2014 Chinese military share in the Arctic \u226580%: 18.8%. A missing condition resets the hold.",
+        "Russia: Objective hold 0 \u2192 0/3 consecutive years. Checked after combat and society: Unmet \u2014 Russian military share in Eastern Europe \u226599%: 79.5%; Unmet \u2014 Russian military share in the Arctic \u226550%: 13.4%. A missing condition resets the hold."
+      ],
+      "ledgers": {
+        "EU": {
+          "opening_currency": 80.02611076023874,
+          "planned_spending": -0.09999999999999432,
+          "principal_received": 0.0,
+          "aid_received": 0.0,
+          "taxes": 8.176752347958962,
+          "trade_income": 0.5238020265234149,
+          "tariff_income": 0.02281290945895923,
+          "dominance_income": 0.0,
+          "luxury_exports": 0.4793283002140827,
+          "interest_received": 0.14236378233719887,
+          "domestic_interest": -0.9617448779200358,
+          "foreign_interest": -0.13505714285714282,
+          "building_upkeep": -0.6000000000000001,
+          "military_upkeep": -0.315,
+          "new_borrowing": 0,
+          "operating_balance": 7.333257345715438,
+          "closing_currency": 87.25936810595418
+        },
+        "US": {
+          "opening_currency": 67.60773079384089,
+          "planned_spending": -0.09999999999999432,
+          "principal_received": 0.0,
+          "aid_received": 0.0,
+          "taxes": 11.19239847233019,
+          "trade_income": 0.3346737327019357,
+          "tariff_income": 0.0,
+          "dominance_income": 2.238479694466038,
+          "luxury_exports": 0.0,
+          "interest_received": 0.11211187969924809,
+          "domestic_interest": -2.2088846861718783,
+          "foreign_interest": -0.327186440677966,
+          "building_upkeep": -1.2000000000000002,
+          "military_upkeep": -2.7826076649687503,
+          "new_borrowing": 0,
+          "operating_balance": 7.3589849873788165,
+          "closing_currency": 74.86671578121971
+        },
+        "China": {
+          "opening_currency": 41.78061703246685,
+          "planned_spending": -2.9493458519732343,
+          "principal_received": 0.0,
+          "aid_received": 0.0,
+          "taxes": 3.932365346871591,
+          "trade_income": 0.2483355019788145,
+          "tariff_income": 0.04451102319656826,
+          "dominance_income": 0.19661826734357957,
+          "luxury_exports": 0.0,
+          "interest_received": 0.23054114948387913,
+          "domestic_interest": -0.9961517516389737,
+          "foreign_interest": -0.06373421052631578,
+          "building_upkeep": -0.5,
+          "military_upkeep": -1.3,
+          "new_borrowing": 0,
+          "operating_balance": 1.7924853267091427,
+          "closing_currency": 40.623756507202756
+        },
+        "Russia": {
+          "opening_currency": 2.6330043024375307,
+          "planned_spending": -0.24811752319862368,
+          "principal_received": 0.0,
+          "aid_received": 0.0,
+          "taxes": 0.5401359340669185,
+          "trade_income": 0.059207208157335295,
+          "tariff_income": 0.04855424295909935,
+          "dominance_income": 0.08102039011003777,
+          "luxury_exports": 0.0,
+          "interest_received": 0.04293150885688797,
+          "domestic_interest": -0.028628660987219376,
+          "foreign_interest": -0.0019705263157894734,
+          "building_upkeep": -0.2,
+          "military_upkeep": -1.05,
+          "new_borrowing": 0,
+          "operating_balance": -0.50874990315273,
+          "closing_currency": 1.876136876086177
+        }
+      },
+      "phase_ends": {
+        "orders": 10,
+        "economy": 14,
+        "relations": 18,
+        "combat": 25,
+        "society": 29,
+        "objectives": 33
+      },
+      "highlights": {
+        "EU": [
+          21,
+          14,
+          29
+        ],
+        "US": [
+          15,
+          30,
+          11
+        ],
+        "China": [
+          23,
+          31,
+          16
+        ],
+        "Russia": [
+          13,
+          32,
+          24
+        ]
+      }
+    },
+    {
+      "round": 5,
+      "year": 2030,
+      "messages": [
+        "EU and China ended their trade agreement.",
+        "US and Russia ended their trade agreement.",
+        "EU completed mineral mine.",
+        "US completed drone facility.",
+        "US completed drone facility.",
+        "US completed drone facility.",
+        "US completed drone facility.",
+        "US completed drone facility.",
+        "China completed public services.",
+        "EU: Orders used 10.0 productivity and 0.592 T from reserves for construction, outreach, aid and principal repayments. Mutual treaties took effect before construction costs were calculated.",
+        "US: Orders used 42.0 productivity and 0.100 T from reserves for construction, outreach, aid and principal repayments. Mutual treaties took effect before construction costs were calculated.",
+        "China: Orders used 15.0 productivity and 0.489 T from reserves for construction, outreach, aid and principal repayments. Mutual treaties took effect before construction costs were calculated.",
+        "Russia: Orders used 9.6 productivity and 0.991 T from reserves for construction, outreach, aid and principal repayments. Mutual treaties took effect before construction costs were calculated.",
+        "EU: Treasury +6.600 T \u2192 93.859 T. Largest cash flows: taxes +8.255 T, domestic interest -0.957 T, building upkeep -0.600 T. New borrowing 0.000 T. Facility operation: energy 100%, compute 100%, fuel 100%.",
+        "US: Treasury +6.979 T \u2192 81.846 T. Largest cash flows: taxes +11.311 T, military upkeep -3.187 T, dominance income +2.262 T. New borrowing 0.000 T. Facility operation: energy 100%, compute 100%, fuel 100%.",
+        "China: Treasury +0.978 T \u2192 41.602 T. Largest cash flows: taxes +3.994 T, military upkeep -1.505 T, domestic interest -0.947 T. New borrowing 0.000 T. Facility operation: energy 100%, compute 100%, fuel 100%.",
+        "Russia: Treasury -1.637 T \u2192 0.239 T. Largest cash flows: military upkeep -1.140 T, planned spending -0.991 T, taxes +0.548 T. New borrowing 0.000 T. Facility operation: energy 100%, compute 100%, fuel 100%.",
+        "EU: Annual relationship changes: US +0.260 \u2192 4.750, China -0.080 \u2192 2.380, Russia +0.000 \u2192 1.000. Active trade, tariffs, outreach and aid offset or add to annual deterioration. Debt renewal changes occurred with orders; conflict penalties follow in combat.",
+        "US: Annual relationship changes: EU +0.260 \u2192 4.750, China +0.125 \u2192 1.325, Russia -0.050 \u2192 2.500. Active trade, tariffs, outreach and aid offset or add to annual deterioration. Debt renewal changes occurred with orders; conflict penalties follow in combat.",
+        "China: Annual relationship changes: EU -0.080 \u2192 2.380, US +0.125 \u2192 1.325, Russia +0.000 \u2192 5.000. Active trade, tariffs, outreach and aid offset or add to annual deterioration. Debt renewal changes occurred with orders; conflict penalties follow in combat.",
+        "Russia: Annual relationship changes: EU +0.000 \u2192 1.000, US -0.050 \u2192 2.500, China +0.000 \u2192 5.000. Active trade, tariffs, outreach and aid offset or add to annual deterioration. Debt renewal changes occurred with orders; conflict penalties follow in combat.",
+        "Eastern Europe: contested; military losses EU \u221210.6.",
+        "Pacific & South China Sea: contested; military losses China \u22124.5.",
+        "Arctic: contested; military losses EU \u221224.0, China \u221213.4, Russia \u22128.4.",
+        "EU: Combat losses 34.59 power. Eastern Europe: lost 10.59 power, influence +0.00 \u2192 35.00/100; Arctic: lost 24.00 power, influence +0.00 \u2192 10.00/100. Losses use opposing coalition strengths; only a sole surviving coalition gains influence. Production and reserve recovery were applied in the economy phase.",
+        "US: Combat losses 0.00 power. Pacific & South China Sea: lost 0.00 power, influence +0.00 \u2192 40.00/100; Arctic: lost 0.00 power, influence +0.00 \u2192 25.00/100. Losses use opposing coalition strengths; only a sole surviving coalition gains influence. Production and reserve recovery were applied in the economy phase.",
+        "China: Combat losses 17.99 power. Pacific & South China Sea: lost 4.54 power, influence +0.00 \u2192 45.00/100; Arctic: lost 13.44 power, influence +0.00 \u2192 15.00/100. Losses use opposing coalition strengths; only a sole surviving coalition gains influence. Production and reserve recovery were applied in the economy phase.",
+        "Russia: Combat losses 8.41 power. Eastern Europe: lost 0.00 power, influence +0.00 \u2192 45.00/100; Arctic: lost 8.41 power, influence +0.00 \u2192 30.00/100. Losses use opposing coalition strengths; only a sole surviving coalition gains influence. Production and reserve recovery were applied in the economy phase.",
+        "EU: Citizen content 76.6 \u2192 75.9; GDP 20.637 \u2192 20.843 T (annual growth +1.00%). Content reflects taxes, deployments, mines, conflict, government, shortages, innovation and public services. Growth uses pre-update content, innovation, taxes, conflict and energy supply.",
+        "US: Citizen content 77.6 \u2192 77.8; GDP 28.277 \u2192 28.591 T (annual growth +1.11%). Content reflects taxes, deployments, mines, conflict, government, shortages, innovation and public services. Growth uses pre-update content, innovation, taxes, conflict and energy supply.",
+        "China: Citizen content 82.1 \u2192 85.3; GDP 18.155 \u2192 18.464 T (annual growth +1.70%). Content reflects taxes, deployments, mines, conflict, government, shortages, innovation and public services. Growth uses pre-update content, innovation, taxes, conflict and energy supply.",
+        "Russia: Citizen content 79.4 \u2192 79.5; GDP 2.106 \u2192 2.135 T (annual growth +1.38%). Content reflects taxes, deployments, mines, conflict, government, shortages, innovation and public services. Growth uses pre-update content, innovation, taxes, conflict and energy supply.",
+        "EU: Objective hold 0 \u2192 0/3 consecutive years. Checked after combat and society: Unmet \u2014 EU security coalition holds \u226560% of Eastern Europe: 16.8%; Unmet \u2014 Russian current influence in Eastern Europe \u226410/100: 45.0/100; Unmet \u2014 No other faction has >40% military share in the Arctic: Largest foreign share: 68.6%. A missing condition resets the hold.",
+        "US: Objective hold 0 \u2192 0/3 consecutive years. Checked after combat and society: Met \u2014 No foreign military presence in South America: 0.0 foreign power; Unmet \u2014 US military share in the Arctic \u226580%: 68.6%; Met \u2014 Chinese military share in the Pacific \u226450%: 45.2%. A missing condition resets the hold.",
+        "China: Objective hold 0 \u2192 0/3 consecutive years. Checked after combat and society: Unmet \u2014 Chinese military share in the Pacific >80%: 45.2%; Unmet \u2014 Chinese military share in the Arctic \u226580%: 19.3%. A missing condition resets the hold.",
+        "Russia: Objective hold 0 \u2192 0/3 consecutive years. Checked after combat and society: Unmet \u2014 Russian military share in Eastern Europe \u226599%: 83.2%; Unmet \u2014 Russian military share in the Arctic \u226550%: 12.1%. A missing condition resets the hold."
+      ],
+      "ledgers": {
+        "EU": {
+          "opening_currency": 87.25936810595418,
+          "planned_spending": -0.5915870922728175,
+          "principal_received": 0.0,
+          "aid_received": 0.0,
+          "taxes": 8.25489388307048,
+          "trade_income": 0.309558520615143,
+          "tariff_income": 0.006625095980692487,
+          "dominance_income": 0.0,
+          "luxury_exports": 0.4853837412212168,
+          "interest_received": 0.14236378233719887,
+          "domestic_interest": -0.957277522647747,
+          "foreign_interest": -0.13505714285714282,
+          "building_upkeep": -0.6000000000000001,
+          "military_upkeep": -0.315,
+          "new_borrowing": 0,
+          "operating_balance": 7.191490357719841,
+          "closing_currency": 93.8592713714012
+        },
+        "US": {
+          "opening_currency": 74.86671578121971,
+          "planned_spending": -0.09999999999999432,
+          "principal_received": 0.0,
+          "aid_received": 0.0,
+          "taxes": 11.310997304408419,
+          "trade_income": 0.309558520615143,
+          "tariff_income": 0.0,
+          "dominance_income": 2.2621994608816838,
+          "luxury_exports": 0.0,
+          "interest_received": 0.11211187969924809,
+          "domestic_interest": -2.201022836478196,
+          "foreign_interest": -0.327186440677966,
+          "building_upkeep": -1.2000000000000002,
+          "military_upkeep": -3.1873460073834226,
+          "new_borrowing": 0,
+          "operating_balance": 7.079311881064909,
+          "closing_currency": 81.84602766228463
+        },
+        "China": {
+          "opening_currency": 40.623756507202756,
+          "planned_spending": -0.48900919681501875,
+          "principal_received": 0.0,
+          "aid_received": 0.0,
+          "taxes": 3.9941082449700893,
+          "trade_income": 0.03158765075945796,
+          "tariff_income": 0.026151172491612067,
+          "dominance_income": 0.19970541224850447,
+          "luxury_exports": 0.0,
+          "interest_received": 0.23054114948387913,
+          "domestic_interest": -0.9466039813466418,
+          "foreign_interest": -0.06373421052631578,
+          "building_upkeep": -0.5,
+          "military_upkeep": -1.5050000000000001,
+          "new_borrowing": 0,
+          "operating_balance": 1.4667554380805852,
+          "closing_currency": 41.60150274846832
+        },
+        "Russia": {
+          "opening_currency": 1.876136876086177,
+          "planned_spending": -0.991241629286787,
+          "principal_received": 0.0,
+          "aid_received": 0.0,
+          "taxes": 0.5475192798306047,
+          "trade_income": 0.03158765075945796,
+          "tariff_income": 0.020426570715970725,
+          "dominance_income": 0.0821278919745907,
+          "luxury_exports": 0.0,
+          "interest_received": 0.04293150885688797,
+          "domestic_interest": -0.028600074828937685,
+          "foreign_interest": -0.0019705263157894734,
+          "building_upkeep": -0.2,
+          "military_upkeep": -1.1400000000000001,
+          "new_borrowing": 0,
+          "operating_balance": -0.6459776990072152,
+          "closing_currency": 0.23891754779217467
+        }
+      },
+      "phase_ends": {
+        "orders": 13,
+        "economy": 17,
+        "relations": 21,
+        "combat": 28,
+        "society": 32,
+        "objectives": 36
+      },
+      "highlights": {
+        "EU": [
+          24,
+          17,
+          32
+        ],
+        "US": [
+          18,
+          33,
+          14
+        ],
+        "China": [
+          26,
+          34,
+          19
+        ],
+        "Russia": [
+          16,
+          12,
+          35
+        ]
+      }
+    },
+    {
+      "round": 6,
+      "year": 2031,
+      "messages": [
+        "EU completed data center.",
+        "US completed drone facility.",
+        "US completed drone facility.",
+        "US completed drone facility.",
+        "US completed drone facility.",
+        "China completed factory.",
+        "EU \u2192 US: debt contract renewed at 4.0% for 3 years.",
+        "EU \u2192 China: debt contract renewed at 6.0% for 3 years.",
+        "EU \u2192 Russia: debt contract renewed at 6.0% for 3 years.",
+        "US \u2192 EU: debt contract renewed at 3.0% for 3 years.",
+        "US \u2192 China: debt contract renewed at 6.0% for 3 years.",
+        "US \u2192 Russia: debt contract renewed at 6.0% for 3 years.",
+        "China \u2192 EU: debt contract renewed at 6.0% for 3 years.",
+        "China \u2192 US: debt contract renewed at 4.0% for 3 years.",
+        "China \u2192 Russia: debt contract renewed at 3.0% for 3 years.",
+        "Russia \u2192 EU: debt contract renewed at 6.0% for 3 years.",
+        "Russia \u2192 US: debt contract renewed at 4.0% for 3 years.",
+        "Russia \u2192 China: debt contract renewed at 3.0% for 3 years.",
+        "EU: Orders used 10.0 productivity and 3.040 T from reserves for construction, outreach, aid and principal repayments. Mutual treaties took effect before construction costs were calculated.",
+        "US: Orders used 42.0 productivity and 0.100 T from reserves for construction, outreach, aid and principal repayments. Mutual treaties took effect before construction costs were calculated.",
+        "China: Orders used 15.0 productivity and 1.950 T from reserves for construction, outreach, aid and principal repayments. Mutual treaties took effect before construction costs were calculated.",
+        "Russia: Orders used 9.6 productivity and 0.000 T from reserves for construction, outreach, aid and principal repayments. Mutual treaties took effect before construction costs were calculated.",
+        "Russia issued 0.475 T in domestic debt to cover its budget shortfall.",
+        "EU: Treasury +4.235 T \u2192 98.094 T. Largest cash flows: taxes +8.337 T, planned spending -3.040 T, domestic interest -0.966 T. New borrowing 0.000 T. Facility operation: energy 100%, compute 100%, fuel 100%.",
+        "US: Treasury +6.395 T \u2192 88.241 T. Largest cash flows: taxes +11.436 T, military upkeep -3.918 T, dominance income +2.287 T. New borrowing 0.000 T. Facility operation: energy 100%, compute 100%, fuel 100%.",
+        "China: Treasury -0.699 T \u2192 40.903 T. Largest cash flows: taxes +4.062 T, planned spending -1.950 T, military upkeep -1.705 T. New borrowing 0.000 T. Facility operation: energy 100%, compute 100%, fuel 100%.",
+        "Russia: Treasury -0.239 T \u2192 0.000 T. Largest cash flows: military upkeep -1.230 T, taxes +0.555 T, building upkeep -0.200 T. New borrowing 0.475 T. Facility operation: energy 100%, compute 100%, fuel 100%.",
+        "EU: Annual relationship changes: US +0.260 \u2192 4.860, China -0.080 \u2192 1.950, Russia +0.000 \u2192 1.000. Active trade, tariffs, outreach and aid offset or add to annual deterioration. Debt renewal changes occurred with orders; conflict penalties follow in combat.",
+        "US: Annual relationship changes: EU +0.260 \u2192 4.860, China +0.125 \u2192 1.150, Russia -0.050 \u2192 2.200. Active trade, tariffs, outreach and aid offset or add to annual deterioration. Debt renewal changes occurred with orders; conflict penalties follow in combat.",
+        "China: Annual relationship changes: EU -0.080 \u2192 1.950, US +0.125 \u2192 1.150, Russia +0.000 \u2192 5.000. Active trade, tariffs, outreach and aid offset or add to annual deterioration. Debt renewal changes occurred with orders; conflict penalties follow in combat.",
+        "Russia: Annual relationship changes: EU +0.000 \u2192 1.000, US -0.050 \u2192 2.200, China +0.000 \u2192 5.000. Active trade, tariffs, outreach and aid offset or add to annual deterioration. Debt renewal changes occurred with orders; conflict penalties follow in combat.",
+        "Eastern Europe: contested; military losses EU \u221211.6.",
+        "Pacific & South China Sea: contested; military losses China \u22127.1.",
+        "Arctic: contested; military losses EU \u221221.0, China \u221218.1, Russia \u221210.7.",
+        "EU: Combat losses 32.60 power. Eastern Europe: lost 11.60 power, influence +0.00 \u2192 35.00/100; Arctic: lost 21.00 power, influence +0.00 \u2192 10.00/100. Losses use opposing coalition strengths; only a sole surviving coalition gains influence. Production and reserve recovery were applied in the economy phase.",
+        "US: Combat losses 0.00 power. Pacific & South China Sea: lost 0.00 power, influence +0.00 \u2192 40.00/100; Arctic: lost 0.00 power, influence +0.00 \u2192 25.00/100. Losses use opposing coalition strengths; only a sole surviving coalition gains influence. Production and reserve recovery were applied in the economy phase.",
+        "China: Combat losses 25.27 power. Pacific & South China Sea: lost 7.13 power, influence +0.00 \u2192 45.00/100; Arctic: lost 18.15 power, influence +0.00 \u2192 15.00/100. Losses use opposing coalition strengths; only a sole surviving coalition gains influence. Production and reserve recovery were applied in the economy phase.",
+        "Russia: Combat losses 10.73 power. Eastern Europe: lost 0.00 power, influence +0.00 \u2192 45.00/100; Arctic: lost 10.73 power, influence +0.00 \u2192 30.00/100. Losses use opposing coalition strengths; only a sole surviving coalition gains influence. Production and reserve recovery were applied in the economy phase.",
+        "EU: Citizen content 75.9 \u2192 76.3; GDP 20.843 \u2192 21.055 T (annual growth +1.02%). Content reflects taxes, deployments, mines, conflict, government, shortages, innovation and public services. Growth uses pre-update content, innovation, taxes, conflict and energy supply.",
+        "US: Citizen content 77.8 \u2192 77.8; GDP 28.591 \u2192 28.920 T (annual growth +1.15%). Content reflects taxes, deployments, mines, conflict, government, shortages, innovation and public services. Growth uses pre-update content, innovation, taxes, conflict and energy supply.",
+        "China: Citizen content 85.3 \u2192 85.4; GDP 18.464 \u2192 18.785 T (annual growth +1.74%). Content reflects taxes, deployments, mines, conflict, government, shortages, innovation and public services. Growth uses pre-update content, innovation, taxes, conflict and energy supply.",
+        "Russia: Citizen content 79.5 \u2192 79.5; GDP 2.135 \u2192 2.165 T (annual growth +1.40%). Content reflects taxes, deployments, mines, conflict, government, shortages, innovation and public services. Growth uses pre-update content, innovation, taxes, conflict and energy supply.",
+        "EU: Objective hold 0 \u2192 0/3 consecutive years. Checked after combat and society: Unmet \u2014 EU security coalition holds \u226560% of Eastern Europe: 15.7%; Unmet \u2014 Russian current influence in Eastern Europe \u226410/100: 45.0/100; Unmet \u2014 No other faction has >40% military share in the Arctic: Largest foreign share: 71.0%. A missing condition resets the hold.",
+        "US: Objective hold 0 \u2192 0/3 consecutive years. Checked after combat and society: Met \u2014 No foreign military presence in South America: 0.0 foreign power; Unmet \u2014 US military share in the Arctic \u226580%: 71.0%; Met \u2014 Chinese military share in the Pacific \u226450%: 42.7%. A missing condition resets the hold.",
+        "China: Objective hold 0 \u2192 0/3 consecutive years. Checked after combat and society: Unmet \u2014 Chinese military share in the Pacific >80%: 42.7%; Unmet \u2014 Chinese military share in the Arctic \u226580%: 18.2%. A missing condition resets the hold.",
+        "Russia: Objective hold 0 \u2192 0/3 consecutive years. Checked after combat and society: Unmet \u2014 Russian military share in Eastern Europe \u226599%: 84.3%; Unmet \u2014 Russian military share in the Arctic \u226550%: 10.8%. A missing condition resets the hold."
+      ],
+      "ledgers": {
+        "EU": {
+          "opening_currency": 93.8592713714012,
+          "planned_spending": -3.0403321815620643,
+          "principal_received": 0.0,
+          "aid_received": 0.0,
+          "taxes": 8.337159442886053,
+          "trade_income": 0.31264347910822693,
+          "tariff_income": 0.006734282593412102,
+          "dominance_income": 0.0,
+          "luxury_exports": 0.4918962184817486,
+          "interest_received": 0.15515325602140942,
+          "domestic_interest": -0.9662694247027854,
+          "foreign_interest": -0.15741142857142854,
+          "building_upkeep": -0.6000000000000001,
+          "military_upkeep": -0.305,
+          "new_borrowing": 0,
+          "operating_balance": 7.274905825816636,
+          "closing_currency": 98.09384501565577
+        },
+        "US": {
+          "opening_currency": 81.84602766228463,
+          "planned_spending": -0.09999999999999432,
+          "principal_received": 0.0,
+          "aid_received": 0.0,
+          "taxes": 11.436276675493588,
+          "trade_income": 0.31264347910822693,
+          "tariff_income": 0.0,
+          "dominance_income": 2.2872553350987177,
+          "luxury_exports": 0.0,
+          "interest_received": 0.11211187969924809,
+          "domestic_interest": -2.19530246971245,
+          "foreign_interest": -0.3400677966101694,
+          "building_upkeep": -1.2000000000000002,
+          "military_upkeep": -3.917993539481815,
+          "new_borrowing": 0,
+          "operating_balance": 6.4949235635953455,
+          "closing_currency": 88.24095122587998
+        },
+        "China": {
+          "opening_currency": 41.60150274846832,
+          "planned_spending": -1.950093479659202,
+          "principal_received": 0.0,
+          "aid_received": 0.0,
+          "taxes": 4.062079491167452,
+          "trade_income": 0.032023987084741634,
+          "tariff_income": 0.026433860545582666,
+          "dominance_income": 0.20310397455837262,
+          "luxury_exports": 0.0,
+          "interest_received": 0.2528954351981648,
+          "domestic_interest": -0.9438726800823171,
+          "foreign_interest": -0.0765236842105263,
+          "building_upkeep": -0.6000000000000001,
+          "military_upkeep": -1.705,
+          "new_borrowing": 0,
+          "operating_balance": 1.2511403842614706,
+          "closing_currency": 40.90254965307059
+        },
+        "Russia": {
+          "opening_currency": 0.23891754779217467,
+          "planned_spending": -0.0,
+          "principal_received": 0.0,
+          "aid_received": 0.0,
+          "taxes": 0.5550824428021883,
+          "trade_income": 0.032023987084741634,
+          "tariff_income": 0.020640730757346317,
+          "dominance_income": 0.08326236642032825,
+          "luxury_exports": 0.0,
+          "interest_received": 0.05581286478909136,
+          "domestic_interest": -0.02857158134226121,
+          "foreign_interest": -0.0019705263157894734,
+          "building_upkeep": -0.2,
+          "military_upkeep": -1.23,
+          "new_borrowing": 0.4748021680121801,
+          "operating_balance": -0.7137197158043548,
+          "closing_currency": 0.0
+        }
+      },
+      "phase_ends": {
+        "orders": 22,
+        "economy": 27,
+        "relations": 31,
+        "combat": 38,
+        "society": 42,
+        "objectives": 46
+      },
+      "highlights": {
+        "EU": [
+          34,
+          27,
+          42
+        ],
+        "US": [
+          28,
+          43,
+          24
+        ],
+        "China": [
+          36,
+          44,
+          29
+        ],
+        "Russia": [
+          26,
+          37,
+          45
+        ]
+      }
+    },
+    {
+      "round": 7,
+      "year": 2032,
+      "messages": [
+        "EU completed public services.",
+        "US completed drone facility.",
+        "US completed drone facility.",
+        "US completed drone facility.",
+        "US completed drone facility.",
+        "China completed research lab.",
+        "China completed research lab.",
+        "EU: Orders used 10.0 productivity and 0.244 T from reserves for construction, outreach, aid and principal repayments. Mutual treaties took effect before construction costs were calculated.",
+        "US: Orders used 42.0 productivity and 0.100 T from reserves for construction, outreach, aid and principal repayments. Mutual treaties took effect before construction costs were calculated.",
+        "China: Orders used 21.6 productivity and 2.187 T from reserves for construction, outreach, aid and principal repayments. Mutual treaties took effect before construction costs were calculated.",
+        "Russia: Orders used 0.0 productivity and 0.000 T from reserves for construction, outreach, aid and principal repayments. Mutual treaties took effect before construction costs were calculated.",
+        "Russia issued 0.812 T in domestic debt to cover its budget shortfall.",
+        "EU: Treasury +7.170 T \u2192 105.264 T. Largest cash flows: taxes +8.422 T, domestic interest -0.921 T, building upkeep -0.600 T. New borrowing 0.000 T. Facility operation: energy 100%, compute 100%, fuel 100%.",
+        "US: Treasury +5.544 T \u2192 93.785 T. Largest cash flows: taxes +11.568 T, military upkeep -4.931 T, dominance income +2.314 T. New borrowing 0.000 T. Facility operation: energy 100%, compute 100%, fuel 100%.",
+        "China: Treasury -1.234 T \u2192 39.669 T. Largest cash flows: taxes +4.133 T, planned spending -2.187 T, military upkeep -1.885 T. New borrowing 0.000 T. Facility operation: energy 100%, compute 100%, fuel 100%.",
+        "Russia: Treasury +0.000 T \u2192 0.000 T. Largest cash flows: military upkeep -1.315 T, taxes +0.563 T, building upkeep -0.200 T. New borrowing 0.812 T. Facility operation: energy 100%, compute 100%, fuel 100%.",
+        "EU: Annual relationship changes: US +0.060 \u2192 4.770, China -0.170 \u2192 1.630, Russia +0.000 \u2192 1.000. Active trade, tariffs, outreach and aid offset or add to annual deterioration. Debt renewal changes occurred with orders; conflict penalties follow in combat.",
+        "US: Annual relationship changes: EU +0.060 \u2192 4.770, China +0.125 \u2192 1.125, Russia -0.095 \u2192 1.955. Active trade, tariffs, outreach and aid offset or add to annual deterioration. Debt renewal changes occurred with orders; conflict penalties follow in combat.",
+        "China: Annual relationship changes: EU -0.170 \u2192 1.630, US +0.125 \u2192 1.125, Russia +0.000 \u2192 5.000. Active trade, tariffs, outreach and aid offset or add to annual deterioration. Debt renewal changes occurred with orders; conflict penalties follow in combat.",
+        "Russia: Annual relationship changes: EU +0.000 \u2192 1.000, US -0.095 \u2192 1.955, China +0.000 \u2192 5.000. Active trade, tariffs, outreach and aid offset or add to annual deterioration. Debt renewal changes occurred with orders; conflict penalties follow in combat.",
+        "Eastern Europe: contested; military losses EU \u221212.4.",
+        "Pacific & South China Sea: contested; military losses China \u221211.7.",
+        "Arctic: contested; military losses EU \u221219.0, China \u221225.4, Russia \u221214.2.",
+        "EU: Combat losses 31.43 power. Eastern Europe: lost 12.43 power, influence +0.00 \u2192 35.00/100; Arctic: lost 19.00 power, influence +0.00 \u2192 10.00/100. Losses use opposing coalition strengths; only a sole surviving coalition gains influence. Production and reserve recovery were applied in the economy phase.",
+        "US: Combat losses 0.00 power. Pacific & South China Sea: lost 0.00 power, influence +0.00 \u2192 40.00/100; Arctic: lost 0.00 power, influence +0.00 \u2192 25.00/100. Losses use opposing coalition strengths; only a sole surviving coalition gains influence. Production and reserve recovery were applied in the economy phase.",
+        "China: Combat losses 37.04 power. Pacific & South China Sea: lost 11.67 power, influence +0.00 \u2192 45.00/100; Arctic: lost 25.36 power, influence +0.00 \u2192 15.00/100. Losses use opposing coalition strengths; only a sole surviving coalition gains influence. Production and reserve recovery were applied in the economy phase.",
+        "Russia: Combat losses 14.25 power. Eastern Europe: lost 0.00 power, influence +0.00 \u2192 45.00/100; Arctic: lost 14.25 power, influence +0.00 \u2192 30.00/100. Losses use opposing coalition strengths; only a sole surviving coalition gains influence. Production and reserve recovery were applied in the economy phase.",
+        "EU: Citizen content 76.3 \u2192 79.7; GDP 21.055 \u2192 21.298 T (annual growth +1.15%). Content reflects taxes, deployments, mines, conflict, government, shortages, innovation and public services. Growth uses pre-update content, innovation, taxes, conflict and energy supply.",
+        "US: Citizen content 77.8 \u2192 77.7; GDP 28.920 \u2192 29.266 T (annual growth +1.19%). Content reflects taxes, deployments, mines, conflict, government, shortages, innovation and public services. Growth uses pre-update content, innovation, taxes, conflict and energy supply.",
+        "China: Citizen content 85.4 \u2192 85.9; GDP 18.785 \u2192 19.123 T (annual growth +1.80%). Content reflects taxes, deployments, mines, conflict, government, shortages, innovation and public services. Growth uses pre-update content, innovation, taxes, conflict and energy supply.",
+        "Russia: Citizen content 79.5 \u2192 79.6; GDP 2.165 \u2192 2.195 T (annual growth +1.41%). Content reflects taxes, deployments, mines, conflict, government, shortages, innovation and public services. Growth uses pre-update content, innovation, taxes, conflict and energy supply.",
+        "EU: Objective hold 0 \u2192 0/3 consecutive years. Checked after combat and society: Unmet \u2014 EU security coalition holds \u226560% of Eastern Europe: 15.8%; Unmet \u2014 Russian current influence in Eastern Europe \u226410/100: 45.0/100; Unmet \u2014 No other faction has >40% military share in the Arctic: Largest foreign share: 74.3%. A missing condition resets the hold.",
+        "US: Objective hold 0 \u2192 0/3 consecutive years. Checked after combat and society: Met \u2014 No foreign military presence in South America: 0.0 foreign power; Unmet \u2014 US military share in the Arctic \u226580%: 74.3%; Met \u2014 Chinese military share in the Pacific \u226450%: 38.8%. A missing condition resets the hold.",
+        "China: Objective hold 0 \u2192 0/3 consecutive years. Checked after combat and society: Unmet \u2014 Chinese military share in the Pacific >80%: 38.8%; Unmet \u2014 Chinese military share in the Arctic \u226580%: 16.4%. A missing condition resets the hold.",
+        "Russia: Objective hold 0 \u2192 0/3 consecutive years. Checked after combat and society: Unmet \u2014 Russian military share in Eastern Europe \u226599%: 84.2%; Unmet \u2014 Russian military share in the Arctic \u226550%: 9.2%. A missing condition resets the hold."
+      ],
+      "ledgers": {
+        "EU": {
+          "opening_currency": 98.09384501565577,
+          "planned_spending": -0.2439634893136713,
+          "principal_received": 0.0,
+          "aid_received": 0.0,
+          "taxes": 8.422069072095985,
+          "trade_income": 0.3158275902035994,
+          "tariff_income": 0.01104757675435199,
+          "dominance_income": 0.0,
+          "luxury_exports": 0.49869960426326,
+          "interest_received": 0.15515325602140942,
+          "domestic_interest": -0.9214918241368092,
+          "foreign_interest": -0.15741142857142854,
+          "building_upkeep": -0.6000000000000001,
+          "military_upkeep": -0.31,
+          "new_borrowing": 0,
+          "operating_balance": 7.413893846630367,
+          "closing_currency": 105.26377537297247
+        },
+        "US": {
+          "opening_currency": 88.24095122587998,
+          "planned_spending": -0.09999999999999432,
+          "principal_received": 0.0,
+          "aid_received": 0.0,
+          "taxes": 11.568192617599706,
+          "trade_income": 0.3158275902035994,
+          "tariff_income": 0.0,
+          "dominance_income": 2.3136385235199413,
+          "luxury_exports": 0.0,
+          "interest_received": 0.11211187969924809,
+          "domestic_interest": -2.19492045330647,
+          "foreign_interest": -0.3400677966101694,
+          "building_upkeep": -1.2000000000000002,
+          "military_upkeep": -4.930696966481759,
+          "new_borrowing": 0,
+          "operating_balance": 5.6440853946240965,
+          "closing_currency": 93.78503662050409
+        },
+        "China": {
+          "opening_currency": 40.90254965307059,
+          "planned_spending": -2.187159670629228,
+          "principal_received": 0.0,
+          "aid_received": 0.0,
+          "taxes": 4.132644534533392,
+          "trade_income": 0.03247096497126066,
+          "tariff_income": 0.03143802730371978,
+          "dominance_income": 0.2066322267266696,
+          "luxury_exports": 0.0,
+          "interest_received": 0.2528954351981648,
+          "domestic_interest": -0.9412320192736671,
+          "foreign_interest": -0.0765236842105263,
+          "building_upkeep": -0.8,
+          "military_upkeep": -1.885,
+          "new_borrowing": 0,
+          "operating_balance": 0.9533254852490132,
+          "closing_currency": 39.66871546769037
+        },
+        "Russia": {
+          "opening_currency": 0.0,
+          "planned_spending": -0.0,
+          "principal_received": 0.0,
+          "aid_received": 0.0,
+          "taxes": 0.5628300595018514,
+          "trade_income": 0.03247096497126066,
+          "tariff_income": 0.03143802730371978,
+          "dominance_income": 0.08442450892527771,
+          "luxury_exports": 0.0,
+          "interest_received": 0.05581286478909136,
+          "domestic_interest": -0.062005547576177364,
+          "foreign_interest": -0.0019705263157894734,
+          "building_upkeep": -0.2,
+          "military_upkeep": -1.315,
+          "new_borrowing": 0.8119996484007659,
+          "operating_balance": -0.8119996484007659,
+          "closing_currency": 0.0
+        }
+      },
+      "phase_ends": {
+        "orders": 11,
+        "economy": 16,
+        "relations": 20,
+        "combat": 27,
+        "society": 31,
+        "objectives": 35
+      },
+      "highlights": {
+        "EU": [
+          23,
+          16,
+          31
+        ],
+        "US": [
+          32,
+          17,
+          13
+        ],
+        "China": [
+          25,
+          18,
+          33
+        ],
+        "Russia": [
+          15,
+          26,
+          34
+        ]
+      }
+    },
+    {
+      "round": 8,
+      "year": 2033,
+      "messages": [
+        "EU completed factory.",
+        "US completed drone facility.",
+        "US completed drone facility.",
+        "US completed drone facility.",
+        "US completed drone facility.",
+        "China completed renewable facility.",
+        "China completed renewable facility.",
+        "EU: Orders used 10.0 productivity and 1.073 T from reserves for construction, outreach, aid and principal repayments. Mutual treaties took effect before construction costs were calculated.",
+        "US: Orders used 42.0 productivity and 0.100 T from reserves for construction, outreach, aid and principal repayments. Mutual treaties took effect before construction costs were calculated.",
+        "China: Orders used 21.6 productivity and 1.449 T from reserves for construction, outreach, aid and principal repayments. Mutual treaties took effect before construction costs were calculated.",
+        "Russia: Orders used 0.0 productivity and 0.000 T from reserves for construction, outreach, aid and principal repayments. Mutual treaties took effect before construction costs were calculated.",
+        "Russia issued 0.929 T in domestic debt to cover its budget shortfall.",
+        "EU: Treasury +6.338 T \u2192 111.602 T. Largest cash flows: taxes +8.519 T, planned spending -1.073 T, domestic interest -0.917 T. New borrowing 0.000 T. Facility operation: energy 100%, compute 100%, fuel 100%.",
+        "US: Treasury +4.984 T \u2192 98.769 T. Largest cash flows: taxes +11.706 T, military upkeep -6.242 T, dominance income +2.927 T. New borrowing 0.000 T. Facility operation: energy 100%, compute 100%, fuel 100%.",
+        "China: Treasury -0.755 T \u2192 38.914 T. Largest cash flows: taxes +4.207 T, military upkeep -2.030 T, planned spending -1.449 T. New borrowing 0.000 T. Facility operation: energy 100%, compute 100%, fuel 100%.",
+        "Russia: Treasury +0.000 T \u2192 0.000 T. Largest cash flows: military upkeep -1.385 T, taxes +0.571 T, building upkeep -0.200 T. New borrowing 0.929 T. Facility operation: energy 100%, compute 100%, fuel 100%.",
+        "EU: Annual relationship changes: US +0.260 \u2192 4.880, China -0.170 \u2192 1.310, Russia +0.000 \u2192 1.000. Active trade, tariffs, outreach and aid offset or add to annual deterioration. Debt renewal changes occurred with orders; conflict penalties follow in combat.",
+        "US: Annual relationship changes: EU +0.260 \u2192 4.880, China +0.125 \u2192 1.125, Russia -0.095 \u2192 1.710. Active trade, tariffs, outreach and aid offset or add to annual deterioration. Debt renewal changes occurred with orders; conflict penalties follow in combat.",
+        "China: Annual relationship changes: EU -0.170 \u2192 1.310, US +0.125 \u2192 1.125, Russia +0.000 \u2192 5.000. Active trade, tariffs, outreach and aid offset or add to annual deterioration. Debt renewal changes occurred with orders; conflict penalties follow in combat.",
+        "Russia: Annual relationship changes: EU +0.000 \u2192 1.000, US -0.095 \u2192 1.710, China +0.000 \u2192 5.000. Active trade, tariffs, outreach and aid offset or add to annual deterioration. Debt renewal changes occurred with orders; conflict penalties follow in combat.",
+        "Eastern Europe: contested; military losses EU \u221212.7.",
+        "Pacific & South China Sea: contested; military losses China \u22125.4.",
+        "Arctic: contested; military losses EU \u221222.0, China \u221241.3, Russia \u221224.3.",
+        "EU: Combat losses 34.73 power. Eastern Europe: lost 12.73 power, influence +0.00 \u2192 35.00/100; Arctic: lost 22.00 power, influence +0.00 \u2192 10.00/100. Losses use opposing coalition strengths; only a sole surviving coalition gains influence. Production and reserve recovery were applied in the economy phase.",
+        "US: Combat losses 0.00 power. Pacific & South China Sea: lost 0.00 power, influence +0.00 \u2192 40.00/100; Arctic: lost 0.00 power, influence +0.00 \u2192 25.00/100. Losses use opposing coalition strengths; only a sole surviving coalition gains influence. Production and reserve recovery were applied in the economy phase.",
+        "China: Combat losses 46.75 power. Pacific & South China Sea: lost 5.44 power, influence +0.00 \u2192 45.00/100; Arctic: lost 41.31 power, influence +0.00 \u2192 15.00/100. Losses use opposing coalition strengths; only a sole surviving coalition gains influence. Production and reserve recovery were applied in the economy phase.",
+        "Russia: Combat losses 24.26 power. Eastern Europe: lost 0.00 power, influence +0.00 \u2192 45.00/100; Arctic: lost 24.26 power, influence +0.00 \u2192 30.00/100. Losses use opposing coalition strengths; only a sole surviving coalition gains influence. Production and reserve recovery were applied in the economy phase.",
+        "EU: Citizen content 79.7 \u2192 80.0; GDP 21.298 \u2192 21.552 T (annual growth +1.19%). Content reflects taxes, deployments, mines, conflict, government, shortages, innovation and public services. Growth uses pre-update content, innovation, taxes, conflict and energy supply.",
+        "US: Citizen content 77.7 \u2192 77.4; GDP 29.266 \u2192 29.626 T (annual growth +1.23%). Content reflects taxes, deployments, mines, conflict, government, shortages, innovation and public services. Growth uses pre-update content, innovation, taxes, conflict and energy supply.",
+        "China: Citizen content 85.9 \u2192 86.5; GDP 19.123 \u2192 19.482 T (annual growth +1.88%). Content reflects taxes, deployments, mines, conflict, government, shortages, innovation and public services. Growth uses pre-update content, innovation, taxes, conflict and energy supply.",
+        "Russia: Citizen content 79.6 \u2192 79.7; GDP 2.195 \u2192 2.227 T (annual growth +1.42%). Content reflects taxes, deployments, mines, conflict, government, shortages, innovation and public services. Growth uses pre-update content, innovation, taxes, conflict and energy supply.",
+        "EU: Objective hold 0 \u2192 0/3 consecutive years. Checked after combat and society: Unmet \u2014 EU security coalition holds \u226560% of Eastern Europe: 15.4%; Unmet \u2014 Russian current influence in Eastern Europe \u226410/100: 45.0/100; Unmet \u2014 No other faction has >40% military share in the Arctic: Largest foreign share: 81.0%. A missing condition resets the hold.",
+        "US: Objective hold 0 \u2192 1/3 consecutive years. Checked after combat and society: Met \u2014 No foreign military presence in South America: 0.0 foreign power; Met \u2014 US military share in the Arctic \u226580%: 81.0%; Met \u2014 Chinese military share in the Pacific \u226450%: 45.9%. All conditions hold this year.",
+        "China: Objective hold 0 \u2192 0/3 consecutive years. Checked after combat and society: Unmet \u2014 Chinese military share in the Pacific >80%: 45.9%; Unmet \u2014 Chinese military share in the Arctic \u226580%: 12.0%. A missing condition resets the hold.",
+        "Russia: Objective hold 0 \u2192 0/3 consecutive years. Checked after combat and society: Unmet \u2014 Russian military share in Eastern Europe \u226599%: 84.6%; Unmet \u2014 Russian military share in the Arctic \u226550%: 7.0%. A missing condition resets the hold."
+      ],
+      "ledgers": {
+        "EU": {
+          "opening_currency": 105.26377537297247,
+          "planned_spending": -1.0727240877871935,
+          "principal_received": 0.0,
+          "aid_received": 0.0,
+          "taxes": 8.519155534017289,
+          "trade_income": 0.3194683325256483,
+          "tariff_income": 0.011242200435335178,
+          "dominance_income": 0.0,
+          "luxury_exports": 0.5058436995378249,
+          "interest_received": 0.15515325602140942,
+          "domestic_interest": -0.9172744480516666,
+          "foreign_interest": -0.15741142857142854,
+          "building_upkeep": -0.7000000000000001,
+          "military_upkeep": -0.325,
+          "new_borrowing": 0,
+          "operating_balance": 7.411177145914412,
+          "closing_currency": 111.60222843109969
+        },
+        "US": {
+          "opening_currency": 93.78503662050409,
+          "planned_spending": -0.09999999999999432,
+          "principal_received": 0.0,
+          "aid_received": 0.0,
+          "taxes": 11.706330762414314,
+          "trade_income": 0.3194683325256483,
+          "tariff_income": 0.0,
+          "dominance_income": 2.9265826906035786,
+          "luxury_exports": 0.0,
+          "interest_received": 0.11211187969924809,
+          "domestic_interest": -2.199183466137077,
+          "foreign_interest": -0.3400677966101694,
+          "building_upkeep": -1.2000000000000002,
+          "military_upkeep": -6.2415958651566585,
+          "new_borrowing": 0,
+          "operating_balance": 5.083646537338884,
+          "closing_currency": 98.76868315784297
+        },
+        "China": {
+          "opening_currency": 39.66871546769037,
+          "planned_spending": -1.449167168161054,
+          "principal_received": 0.0,
+          "aid_received": 0.0,
+          "taxes": 4.207122812488697,
+          "trade_income": 0.03292886304651678,
+          "tariff_income": 0.031808843108661236,
+          "dominance_income": 0.21035614062443486,
+          "luxury_exports": 0.0,
+          "interest_received": 0.2528954351981648,
+          "domestic_interest": -0.934022868384893,
+          "foreign_interest": -0.0765236842105263,
+          "building_upkeep": -1.0,
+          "military_upkeep": -2.0300000000000002,
+          "new_borrowing": 0,
+          "operating_balance": 0.6945655418710549,
+          "closing_currency": 38.91411384140037
+        },
+        "Russia": {
+          "opening_currency": 0.0,
+          "planned_spending": -0.0,
+          "principal_received": 0.0,
+          "aid_received": 0.0,
+          "taxes": 0.5707669594729576,
+          "trade_income": 0.03292886304651678,
+          "tariff_income": 0.031808843108661236,
+          "dominance_income": 0.08561504392094364,
+          "luxury_exports": 0.0,
+          "interest_received": 0.05581286478909136,
+          "domestic_interest": -0.11910826915742272,
+          "foreign_interest": -0.0019705263157894734,
+          "building_upkeep": -0.2,
+          "military_upkeep": -1.385,
+          "new_borrowing": 0.9291462211350415,
+          "operating_balance": -0.9291462211350415,
+          "closing_currency": 0.0
+        }
+      },
+      "phase_ends": {
+        "orders": 11,
+        "economy": 16,
+        "relations": 20,
+        "combat": 27,
+        "society": 31,
+        "objectives": 35
+      },
+      "highlights": {
+        "EU": [
+          23,
+          16,
+          31
+        ],
+        "US": [
+          32,
+          17,
+          13
+        ],
+        "China": [
+          25,
+          18,
+          33
+        ],
+        "Russia": [
+          15,
+          26,
+          34
+        ]
+      }
+    },
+    {
+      "round": 9,
+      "year": 2034,
+      "messages": [
+        "EU completed research lab.",
+        "US completed thermal plant.",
+        "US completed thermal plant.",
+        "US completed thermal plant.",
+        "US completed drone facility.",
+        "China completed infrastructure program.",
+        "EU \u2192 US: debt contract renewed at 4.0% for 3 years.",
+        "EU \u2192 China: debt contract renewed at 6.0% for 3 years.",
+        "EU \u2192 Russia: debt contract renewed at 6.0% for 3 years.",
+        "US \u2192 EU: debt contract renewed at 3.0% for 3 years.",
+        "US \u2192 China: debt contract renewed at 6.0% for 3 years.",
+        "US \u2192 Russia: debt contract renewed at 6.0% for 3 years.",
+        "China \u2192 EU: debt contract renewed at 6.0% for 3 years.",
+        "China \u2192 US: debt contract renewed at 4.0% for 3 years.",
+        "China \u2192 Russia: debt contract renewed at 3.0% for 3 years.",
+        "Russia \u2192 EU: debt contract renewed at 6.0% for 3 years.",
+        "Russia \u2192 US: debt contract renewed at 4.0% for 3 years.",
+        "Russia \u2192 China: debt contract renewed at 3.0% for 3 years.",
+        "EU: Orders used 15.0 productivity and 1.454 T from reserves for construction, outreach, aid and principal repayments. Mutual treaties took effect before construction costs were calculated.",
+        "US: Orders used 42.0 productivity and 2.980 T from reserves for construction, outreach, aid and principal repayments. Mutual treaties took effect before construction costs were calculated.",
+        "China: Orders used 21.6 productivity and 0.960 T from reserves for construction, outreach, aid and principal repayments. Mutual treaties took effect before construction costs were calculated.",
+        "Russia: Orders used 0.0 productivity and 0.000 T from reserves for construction, outreach, aid and principal repayments. Mutual treaties took effect before construction costs were calculated.",
+        "Russia issued 0.955 T in domestic debt to cover its budget shortfall.",
+        "EU: Treasury +5.972 T \u2192 117.574 T. Largest cash flows: taxes +8.621 T, planned spending -1.454 T, domestic interest -0.913 T. New borrowing 0.000 T. Facility operation: energy 100%, compute 100%, fuel 100%.",
+        "US: Treasury +0.653 T \u2192 99.422 T. Largest cash flows: taxes +11.850 T, military upkeep -7.867 T, planned spending -2.980 T. New borrowing 0.000 T. Facility operation: energy 100%, compute 100%, fuel 100%.",
+        "China: Treasury -0.236 T \u2192 38.678 T. Largest cash flows: taxes +4.341 T, military upkeep -2.150 T, building upkeep -1.000 T. New borrowing 0.000 T. Facility operation: energy 100%, compute 100%, fuel 100%.",
+        "Russia: Treasury +0.000 T \u2192 0.000 T. Largest cash flows: military upkeep -1.420 T, taxes +0.635 T, building upkeep -0.200 T. New borrowing 0.955 T. Facility operation: energy 100%, compute 100%, fuel 100%.",
+        "EU: Annual relationship changes: US +0.060 \u2192 4.790, China -0.160 \u2192 1.000, Russia +0.000 \u2192 1.000. Active trade, tariffs, outreach and aid offset or add to annual deterioration. Debt renewal changes occurred with orders; conflict penalties follow in combat.",
+        "US: Annual relationship changes: EU +0.060 \u2192 4.790, China +0.125 \u2192 1.125, Russia -0.095 \u2192 1.465. Active trade, tariffs, outreach and aid offset or add to annual deterioration. Debt renewal changes occurred with orders; conflict penalties follow in combat.",
+        "China: Annual relationship changes: EU -0.160 \u2192 1.000, US +0.125 \u2192 1.125, Russia +0.000 \u2192 5.000. Active trade, tariffs, outreach and aid offset or add to annual deterioration. Debt renewal changes occurred with orders; conflict penalties follow in combat.",
+        "Russia: Annual relationship changes: EU +0.000 \u2192 1.000, US -0.095 \u2192 1.465, China +0.000 \u2192 5.000. Active trade, tariffs, outreach and aid offset or add to annual deterioration. Debt renewal changes occurred with orders; conflict penalties follow in combat.",
+        "Eastern Europe: contested; military losses EU \u221212.4.",
+        "Pacific & South China Sea: contested; military losses China \u221226.3.",
+        "Arctic: contested; military losses EU \u221223.0, China \u221245.5, Russia \u221227.8.",
+        "EU: Combat losses 35.43 power. Eastern Europe: lost 12.43 power, influence +0.00 \u2192 35.00/100; Arctic: lost 23.00 power, influence +0.00 \u2192 10.00/100. Losses use opposing coalition strengths; only a sole surviving coalition gains influence. Production and reserve recovery were applied in the economy phase.",
+        "US: Combat losses 0.00 power. Pacific & South China Sea: lost 0.00 power, influence +0.00 \u2192 40.00/100; Arctic: lost 0.00 power, influence +0.00 \u2192 25.00/100. Losses use opposing coalition strengths; only a sole surviving coalition gains influence. Production and reserve recovery were applied in the economy phase.",
+        "China: Combat losses 71.81 power. Pacific & South China Sea: lost 26.32 power, influence +0.00 \u2192 45.00/100; Arctic: lost 45.49 power, influence +0.00 \u2192 15.00/100. Losses use opposing coalition strengths; only a sole surviving coalition gains influence. Production and reserve recovery were applied in the economy phase.",
+        "Russia: Combat losses 27.80 power. Eastern Europe: lost 0.00 power, influence +0.00 \u2192 45.00/100; Arctic: lost 27.80 power, influence +0.00 \u2192 30.00/100. Losses use opposing coalition strengths; only a sole surviving coalition gains influence. Production and reserve recovery were applied in the economy phase.",
+        "EU: Citizen content 80.0 \u2192 80.4; GDP 21.552 \u2192 21.822 T (annual growth +1.25%). Content reflects taxes, deployments, mines, conflict, government, shortages, innovation and public services. Growth uses pre-update content, innovation, taxes, conflict and energy supply.",
+        "US: Citizen content 77.4 \u2192 76.9; GDP 29.626 \u2192 29.999 T (annual growth +1.26%). Content reflects taxes, deployments, mines, conflict, government, shortages, innovation and public services. Growth uses pre-update content, innovation, taxes, conflict and energy supply.",
+        "China: Citizen content 86.5 \u2192 87.0; GDP 19.482 \u2192 20.117 T (annual growth +1.95%). Content reflects taxes, deployments, mines, conflict, government, shortages, innovation and public services. Growth uses pre-update content, innovation, taxes, conflict and energy supply.",
+        "Russia: Citizen content 79.7 \u2192 78.5; GDP 2.227 \u2192 2.259 T (annual growth +1.44%). Content reflects taxes, deployments, mines, conflict, government, shortages, innovation and public services. Growth uses pre-update content, innovation, taxes, conflict and energy supply.",
+        "EU: Objective hold 0 \u2192 0/3 consecutive years. Checked after combat and society: Unmet \u2014 EU security coalition holds \u226560% of Eastern Europe: 15.8%; Unmet \u2014 Russian current influence in Eastern Europe \u226410/100: 45.0/100; Unmet \u2014 No other faction has >40% military share in the Arctic: Largest foreign share: 81.8%. A missing condition resets the hold.",
+        "US: Objective hold 1 \u2192 2/3 consecutive years. Checked after combat and society: Met \u2014 No foreign military presence in South America: 0.0 foreign power; Met \u2014 US military share in the Arctic \u226580%: 81.8%; Met \u2014 Chinese military share in the Pacific \u226450%: 30.4%. All conditions hold this year.",
+        "China: Objective hold 0 \u2192 0/3 consecutive years. Checked after combat and society: Unmet \u2014 Chinese military share in the Pacific >80%: 30.4%; Unmet \u2014 Chinese military share in the Arctic \u226580%: 11.3%. A missing condition resets the hold.",
+        "Russia: Objective hold 0 \u2192 0/3 consecutive years. Checked after combat and society: Unmet \u2014 Russian military share in Eastern Europe \u226599%: 84.2%; Unmet \u2014 Russian military share in the Arctic \u226550%: 6.9%. A missing condition resets the hold."
+      ],
+      "ledgers": {
+        "EU": {
+          "opening_currency": 111.60222843109969,
+          "planned_spending": -1.4543795873912586,
+          "principal_received": 0.0,
+          "aid_received": 0.0,
+          "taxes": 8.620860800069234,
+          "trade_income": 0.32328228000259623,
+          "tariff_income": 0.0115798002425457,
+          "dominance_income": 0.0,
+          "luxury_exports": 0.5158456572286705,
+          "interest_received": 0.15515325602140942,
+          "domestic_interest": -0.913246684529339,
+          "foreign_interest": -0.15741142857142854,
+          "building_upkeep": -0.8,
+          "military_upkeep": -0.33,
+          "new_borrowing": 0,
+          "operating_balance": 7.426063680463689,
+          "closing_currency": 117.57391252417212
+        },
+        "US": {
+          "opening_currency": 98.76868315784297,
+          "planned_spending": -2.9798881893950835,
+          "principal_received": 0.0,
+          "aid_received": 0.0,
+          "taxes": 11.850333364430675,
+          "trade_income": 0.32328228000259623,
+          "tariff_income": 0.0,
+          "dominance_income": 2.9625833411076687,
+          "luxury_exports": 0.0,
+          "interest_received": 0.11211187969924809,
+          "domestic_interest": -2.2083691536937313,
+          "foreign_interest": -0.3400677966101694,
+          "building_upkeep": -1.2000000000000002,
+          "military_upkeep": -7.866796232472835,
+          "new_borrowing": 0,
+          "operating_balance": 3.6330776824634525,
+          "closing_currency": 99.42187265091134
+        },
+        "China": {
+          "opening_currency": 38.91411384140037,
+          "planned_spending": -0.9601301701463925,
+          "principal_received": 0.0,
+          "aid_received": 0.0,
+          "taxes": 4.341083799197027,
+          "trade_income": 0.033397998367967245,
+          "tariff_income": 0.03219605677350457,
+          "dominance_income": 0.21705418995985137,
+          "luxury_exports": 0.0,
+          "interest_received": 0.2528954351981648,
+          "domestic_interest": -0.9264617945593295,
+          "foreign_interest": -0.0765236842105263,
+          "building_upkeep": -1.0,
+          "military_upkeep": -2.15,
+          "new_borrowing": 0,
+          "operating_balance": 0.7236420007266593,
+          "closing_currency": 38.677625671980636
+        },
+        "Russia": {
+          "opening_currency": 0.0,
+          "planned_spending": -0.0,
+          "principal_received": 0.0,
+          "aid_received": 0.0,
+          "taxes": 0.6345619689913777,
+          "trade_income": 0.033397998367967245,
+          "tariff_income": 0.03219605677350457,
+          "dominance_income": 0.09518429534870666,
+          "luxury_exports": 0.0,
+          "interest_received": 0.05581286478909136,
+          "domestic_interest": -0.18430673253206417,
+          "foreign_interest": -0.0019705263157894734,
+          "building_upkeep": -0.2,
+          "military_upkeep": -1.42,
+          "new_borrowing": 0.955124074577206,
+          "operating_balance": -0.955124074577206,
+          "closing_currency": 0.0
+        }
+      },
+      "phase_ends": {
+        "orders": 22,
+        "economy": 27,
+        "relations": 31,
+        "combat": 38,
+        "society": 42,
+        "objectives": 46
+      },
+      "highlights": {
+        "EU": [
+          34,
+          27,
+          42
+        ],
+        "US": [
+          43,
+          28,
+          19
+        ],
+        "China": [
+          36,
+          29,
+          44
+        ],
+        "Russia": [
+          26,
+          37,
+          45
+        ]
+      }
+    },
+    {
+      "round": 10,
+      "year": 2035,
+      "messages": [
+        "EU completed renewable facility.",
+        "US completed thermal plant.",
+        "US completed thermal plant.",
+        "US completed drone facility.",
+        "US completed drone facility.",
+        "US completed drone facility.",
+        "China completed drone facility.",
+        "China completed drone facility.",
+        "EU: Orders used 15.0 productivity and 1.065 T from reserves for construction, outreach, aid and principal repayments. Mutual treaties took effect before construction costs were calculated.",
+        "US: Orders used 42.0 productivity and 2.012 T from reserves for construction, outreach, aid and principal repayments. Mutual treaties took effect before construction costs were calculated.",
+        "China: Orders used 21.6 productivity and 0.000 T from reserves for construction, outreach, aid and principal repayments. Mutual treaties took effect before construction costs were calculated.",
+        "Russia: Orders used 0.0 productivity and 0.000 T from reserves for construction, outreach, aid and principal repayments. Mutual treaties took effect before construction costs were calculated.",
+        "Russia issued 0.975 T in domestic debt to cover its budget shortfall.",
+        "EU: Treasury +6.377 T \u2192 123.951 T. Largest cash flows: taxes +8.729 T, planned spending -1.065 T, domestic interest -0.907 T. New borrowing 0.000 T. Facility operation: energy 100%, compute 100%, fuel 100%.",
+        "US: Treasury +0.652 T \u2192 100.074 T. Largest cash flows: taxes +12.000 T, military upkeep -9.612 T, dominance income +3.600 T. New borrowing 0.000 T. Facility operation: energy 100%, compute 100%, fuel 100%.",
+        "China: Treasury +0.560 T \u2192 39.238 T. Largest cash flows: taxes +4.426 T, military upkeep -2.190 T, building upkeep -1.000 T. New borrowing 0.000 T. Facility operation: energy 100%, compute 100%, fuel 100%.",
+        "Russia: Treasury +0.000 T \u2192 0.000 T. Largest cash flows: military upkeep -1.445 T, taxes +0.700 T, domestic interest -0.256 T. New borrowing 0.975 T. Facility operation: energy 100%, compute 100%, fuel 100%.",
+        "EU: Annual relationship changes: US +0.260 \u2192 4.900, China +0.000 \u2192 1.000, Russia +0.000 \u2192 1.000. Active trade, tariffs, outreach and aid offset or add to annual deterioration. Debt renewal changes occurred with orders; conflict penalties follow in combat.",
+        "US: Annual relationship changes: EU +0.260 \u2192 4.900, China +0.125 \u2192 1.125, Russia -0.095 \u2192 1.220. Active trade, tariffs, outreach and aid offset or add to annual deterioration. Debt renewal changes occurred with orders; conflict penalties follow in combat.",
+        "China: Annual relationship changes: EU +0.000 \u2192 1.000, US +0.125 \u2192 1.125, Russia +0.000 \u2192 5.000. Active trade, tariffs, outreach and aid offset or add to annual deterioration. Debt renewal changes occurred with orders; conflict penalties follow in combat.",
+        "Russia: Annual relationship changes: EU +0.000 \u2192 1.000, US -0.095 \u2192 1.220, China +0.000 \u2192 5.000. Active trade, tariffs, outreach and aid offset or add to annual deterioration. Debt renewal changes occurred with orders; conflict penalties follow in combat.",
+        "Eastern Europe: contested; military losses EU \u221214.0.",
+        "Pacific & South China Sea: contested; military losses China \u221254.8.",
+        "Arctic: contested; military losses EU \u221225.0, China \u221250.5, Russia \u221228.8.",
+        "EU: Combat losses 39.03 power. Eastern Europe: lost 14.03 power, influence +0.00 \u2192 35.00/100; Arctic: lost 25.00 power, influence +0.00 \u2192 10.00/100. Losses use opposing coalition strengths; only a sole surviving coalition gains influence. Production and reserve recovery were applied in the economy phase.",
+        "US: Combat losses 0.00 power. Pacific & South China Sea: lost 0.00 power, influence +0.00 \u2192 40.00/100; Arctic: lost 0.00 power, influence +0.00 \u2192 25.00/100. Losses use opposing coalition strengths; only a sole surviving coalition gains influence. Production and reserve recovery were applied in the economy phase.",
+        "China: Combat losses 105.34 power. Pacific & South China Sea: lost 54.85 power, influence +0.00 \u2192 45.00/100; Arctic: lost 50.49 power, influence +0.00 \u2192 15.00/100. Losses use opposing coalition strengths; only a sole surviving coalition gains influence. Production and reserve recovery were applied in the economy phase.",
+        "Russia: Combat losses 28.78 power. Eastern Europe: lost 0.00 power, influence +0.00 \u2192 45.00/100; Arctic: lost 28.78 power, influence +0.00 \u2192 30.00/100. Losses use opposing coalition strengths; only a sole surviving coalition gains influence. Production and reserve recovery were applied in the economy phase.",
+        "EU: Citizen content 80.4 \u2192 80.9; GDP 21.822 \u2192 22.108 T (annual growth +1.31%). Content reflects taxes, deployments, mines, conflict, government, shortages, innovation and public services. Growth uses pre-update content, innovation, taxes, conflict and energy supply.",
+        "US: Citizen content 76.9 \u2192 76.3; GDP 29.999 \u2192 30.386 T (annual growth +1.29%). Content reflects taxes, deployments, mines, conflict, government, shortages, innovation and public services. Growth uses pre-update content, innovation, taxes, conflict and energy supply.",
+        "China: Citizen content 87.0 \u2192 87.6; GDP 20.117 \u2192 20.526 T (annual growth +2.03%). Content reflects taxes, deployments, mines, conflict, government, shortages, innovation and public services. Growth uses pre-update content, innovation, taxes, conflict and energy supply.",
+        "Russia: Citizen content 78.5 \u2192 77.4; GDP 2.259 \u2192 2.290 T (annual growth +1.38%). Content reflects taxes, deployments, mines, conflict, government, shortages, innovation and public services. Growth uses pre-update content, innovation, taxes, conflict and energy supply.",
+        "Victory declared: US. You may continue the simulation.",
+        "EU: Objective hold 0 \u2192 0/3 consecutive years. Checked after combat and society: Unmet \u2014 EU security coalition holds \u226560% of Eastern Europe: 13.9%; Unmet \u2014 Russian current influence in Eastern Europe \u226410/100: 45.0/100; Unmet \u2014 No other faction has >40% military share in the Arctic: Largest foreign share: 83.8%. A missing condition resets the hold.",
+        "US: Objective hold 2 \u2192 3/3 consecutive years. Checked after combat and society: Met \u2014 No foreign military presence in South America: 0.0 foreign power; Met \u2014 US military share in the Arctic \u226580%: 83.8%; Met \u2014 Chinese military share in the Pacific \u226450%: 19.8%. All conditions hold this year.",
+        "China: Objective hold 0 \u2192 0/3 consecutive years. Checked after combat and society: Unmet \u2014 Chinese military share in the Pacific >80%: 19.8%; Unmet \u2014 Chinese military share in the Arctic \u226580%: 10.3%. A missing condition resets the hold.",
+        "Russia: Objective hold 0 \u2192 0/3 consecutive years. Checked after combat and society: Unmet \u2014 Russian military share in Eastern Europe \u226599%: 86.1%; Unmet \u2014 Russian military share in the Arctic \u226550%: 5.9%. A missing condition resets the hold."
+      ],
+      "ledgers": {
+        "EU": {
+          "opening_currency": 117.57391252417212,
+          "planned_spending": -1.0648686350487822,
+          "principal_received": 0.0,
+          "aid_received": 0.0,
+          "taxes": 8.728646215822932,
+          "trade_income": 0.3273242330933599,
+          "tariff_income": 0.011799866020898709,
+          "dominance_income": 0.0,
+          "luxury_exports": 0.5237551021501802,
+          "interest_received": 0.15515325602140942,
+          "domestic_interest": -0.907060247158262,
+          "foreign_interest": -0.15741142857142854,
+          "building_upkeep": -0.9,
+          "military_upkeep": -0.34,
+          "new_borrowing": 0,
+          "operating_balance": 7.44220699737909,
+          "closing_currency": 123.95125088650242
+        },
+        "US": {
+          "opening_currency": 99.42187265091134,
+          "planned_spending": -2.0119020140928683,
+          "principal_received": 0.0,
+          "aid_received": 0.0,
+          "taxes": 11.99978719311811,
+          "trade_income": 0.3273242330933599,
+          "tariff_income": 0.0,
+          "dominance_income": 3.5999361579354328,
+          "luxury_exports": 0.0,
+          "interest_received": 0.11211187969924809,
+          "domestic_interest": -2.2227584064487402,
+          "foreign_interest": -0.3400677966101694,
+          "building_upkeep": -1.2000000000000002,
+          "military_upkeep": -9.612280745094054,
+          "new_borrowing": 0,
+          "operating_balance": 2.6640525156931862,
+          "closing_currency": 100.07402315251166
+        },
+        "China": {
+          "opening_currency": 38.677625671980636,
+          "planned_spending": -0.0,
+          "principal_received": 0.0,
+          "aid_received": 0.0,
+          "taxes": 4.42584082287398,
+          "trade_income": 0.03387875919647882,
+          "tariff_income": 0.03260086849509136,
+          "dominance_income": 0.0,
+          "luxury_exports": 0.0,
+          "interest_received": 0.2528954351981648,
+          "domestic_interest": -0.9186473635528741,
+          "foreign_interest": -0.0765236842105263,
+          "building_upkeep": -1.0,
+          "military_upkeep": -2.19,
+          "new_borrowing": 0,
+          "operating_balance": 0.5600448380003142,
+          "closing_currency": 39.23767050998095
+        },
+        "Russia": {
+          "opening_currency": 0.0,
+          "planned_spending": -0.0,
+          "principal_received": 0.0,
+          "aid_received": 0.0,
+          "taxes": 0.7001610233938957,
+          "trade_income": 0.03387875919647882,
+          "tariff_income": 0.03260086849509136,
+          "dominance_income": 0.10502415350908435,
+          "luxury_exports": 0.0,
+          "interest_received": 0.05581286478909136,
+          "domestic_interest": -0.2555710054374876,
+          "foreign_interest": -0.0019705263157894734,
+          "building_upkeep": -0.2,
+          "military_upkeep": -1.445,
+          "new_borrowing": 0.9750638623696355,
+          "operating_balance": -0.9750638623696355,
+          "closing_currency": 0.0
+        }
+      },
+      "phase_ends": {
+        "orders": 12,
+        "economy": 17,
+        "relations": 21,
+        "combat": 28,
+        "society": 32,
+        "objectives": 37
+      },
+      "highlights": {
+        "EU": [
+          24,
+          17,
+          33
+        ],
+        "US": [
+          34,
+          18,
+          9
+        ],
+        "China": [
+          26,
+          35,
+          19
+        ],
+        "Russia": [
+          16,
+          27,
+          36
+        ]
+      }
+    }
+  ],
+  "winners": [
+    "US"
+  ],
+  "objective_streaks": {
+    "EU": 0,
+    "US": 3,
+    "China": 0,
+    "Russia": 0
+  }
+}

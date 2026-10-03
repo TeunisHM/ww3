@@ -1,0 +1,41 @@
+{
+  "synthetic_scenarios": true,
+  "rules_changed": false,
+  "token_garrison": {
+    "setup": "All other forces withdrawn; US deploys 0.01 power on each front.",
+    "total_deployed": 0.04,
+    "additional_dominance_income": 4.08,
+    "deployment_upkeep": 0.0002,
+    "influence_gained": 40.0
+  },
+  "russian_breakthrough": [
+    {
+      "eu_power": 1200,
+      "russian_power": 100,
+      "russian_survivors": 0.09999999999999432,
+      "eu_influence_gain": 0.0,
+      "status": "Contested"
+    },
+    {
+      "eu_power": 1202,
+      "russian_power": 100,
+      "russian_survivors": 0,
+      "eu_influence_gain": 10.0,
+      "status": "EU \u00b7 breakthrough"
+    }
+  ],
+  "recovery_with_fresh_production": [
+    {
+      "military_before_orders": 300,
+      "deployed": 0,
+      "new_military": 49.800000000000004,
+      "reserve_recovery": 4.498
+    },
+    {
+      "military_before_orders": 300,
+      "deployed": 300,
+      "new_military": 49.800000000000004,
+      "reserve_recovery": 4.498
+    }
+  ]
+}

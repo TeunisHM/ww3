@@ -1,0 +1,112 @@
+{
+  "date": "2026-10-02",
+  "build_sha256": "f786c7d4df60bb095e153909db913e61631b94676a5a254cc0848ef7885508d2",
+  "build_hash_scope": [
+    "app.py",
+    "tests/conftest.py",
+    "tests/test_app.py",
+    "tests/test_engine.py",
+    "tests/test_opening.py",
+    "tests/test_strategy_and_forecast.py",
+    "tools/check_opening.py",
+    "ww3/__init__.py",
+    "ww3/ai.py",
+    "ww3/catalog.py",
+    "ww3/command_ui.py",
+    "ww3/components.py",
+    "ww3/engine.py",
+    "ww3/forecast.py",
+    "ww3/map_view.py",
+    "ww3/models.py",
+    "ww3/persistence.py",
+    "ww3/planning.py",
+    "ww3/recovery.py",
+    "ww3/reporting.py",
+    "ww3/rules.py",
+    "ww3/strategy.py"
+  ],
+  "rules_version": "1",
+  "save_schema_version": 3,
+  "environment": {
+    "os": "Linux",
+    "architecture": "x86_64",
+    "python": "3.12.3",
+    "streamlit": "1.64.0",
+    "cpu_model": "AMD Ryzen 7 7735HS with Radeon Graphics",
+    "logical_cpus_visible": 16,
+    "minimum_hardware_qualified": false
+  },
+  "automated_suite": {
+    "command": ".venv/bin/python -m pytest -q",
+    "passed": 98,
+    "failed": 0
+  },
+  "browser_check": {
+    "command": "WW3_CHROME=/usr/bin/google-chrome .venv/bin/python tools/check_opening.py --url http://127.0.0.1:8502",
+    "passed": true,
+    "viewports": [
+      [
+        1280,
+        720
+      ],
+      [
+        1920,
+        1080
+      ],
+      [
+        390,
+        844
+      ]
+    ],
+    "javascript_errors": [],
+    "checks": [
+      "keyboard selection of all four theaters",
+      "pointer selection",
+      "deployment edit and undo",
+      "sticky desktop summary",
+      "invalid orders block resolution",
+      "review skip and replay",
+      "refresh recovery",
+      "manual export/import",
+      "responsive overflow"
+    ],
+    "forecast_currency": 65.74,
+    "resolved_currency": 65.7447236396075
+  },
+  "long_campaign": {
+    "years_resolved": 100,
+    "player": "EU",
+    "mode": "solo",
+    "seed": 17,
+    "player_policy": "unchanged standing orders",
+    "portable_save_bytes": 1280819,
+    "recovery_bytes": 1061490,
+    "roundtrip_equal": true,
+    "is_balance_evidence": false
+  },
+  "timings": {
+    "kind": "development-container backend measurements; not browser end-to-end latency",
+    "samples_per_forecast_state": 20,
+    "forecast_includes": "serialization, validation/loading, deterministic AI and resolution preview",
+    "p95_method": "statistics.quantiles(samples,n=20)[18]",
+    "opening_forecast_p95_ms": 6.67,
+    "round_101_forecast_p95_ms": 55.33,
+    "opening_resolution_with_ai_single_sample_ms": 5.55,
+    "round_101_resolution_with_ai_single_sample_ms": 32.48
+  },
+  "player_cohort": {
+    "observed": 0,
+    "recruiting_source": null,
+    "observation_window": null
+  },
+  "remaining_gates": [
+    "N01 baseline with 10 fresh players",
+    "refine guidance and results from player evidence",
+    "M1 audio and volume controls",
+    "N07 repeat with 30 fresh players",
+    "M2 campaign balance and adaptive opponents",
+    "M3 packaged desktop spike",
+    "M4/M5 demo and release preparation"
+  ],
+  "decision": "Opening implementation ready for observation; M1 is not accepted. No commercial or chart claim."
+}

@@ -1,0 +1,1225 @@
+{
+  "format_version": 1,
+  "policy_fingerprint": "5d0ee816a4c3334365d744ddad84d067fe16ddce7054ca1ee8ec8f0a1ef86c03",
+  "rules_version": "1",
+  "policies": {
+    "current": "Existing computer policy for all four factions",
+    "factory": "Factory expansion with supply repairs; usual front weights",
+    "military": "Drone/modernization investment; concentrate 80% on the primary front",
+    "research": "Research labs/programs with supply repairs; usual front weights",
+    "cooperation": "Offer agreements and shared benefits, zero tariffs, outreach and civic/infrastructure investment"
+  },
+  "observation_limit_is_game_rule": false,
+  "human_player_observations": 0,
+  "replayed_every_case": true,
+  "aggregate": {
+    "campaigns": 8,
+    "unresolved": 5,
+    "winner_counts": {
+      "China": 2,
+      "EU": 1
+    },
+    "tested_player_wins": 0,
+    "by_policy": {
+      "factory": {
+        "campaigns": 4,
+        "tested_player_wins": 0,
+        "unresolved": 2
+      },
+      "military": {
+        "campaigns": 4,
+        "tested_player_wins": 0,
+        "unresolved": 3
+      }
+    }
+  },
+  "campaigns": [
+    {
+      "case": "EU-military-17",
+      "player": "EU",
+      "policy": "military",
+      "seed": 17,
+      "rules_version": "1",
+      "start_round": 1,
+      "observation_limit_years": 45,
+      "years_resolved": 27,
+      "winners": [
+        "China"
+      ],
+      "first_victory_round": 27,
+      "stop_reason": "victory",
+      "final_hash": "dd6b87ae355765c0b6fe5b90c6042e8ab0a41d88612288476b04818b8c0a7f03",
+      "by_faction": {
+        "EU": {
+          "shortage_years": 0,
+          "objective_starts": 0,
+          "objective_resets": 0,
+          "new_borrowing": 0.0,
+          "unused_productivity": 0.0,
+          "minimum_currency": 60.0,
+          "maximum_debt": 16.3,
+          "investment_productivity": {
+            "renewable": 10.0,
+            "drone": 260.0
+          },
+          "first_objective_streak_round": null,
+          "end": {
+            "currency": 118.91491353905941,
+            "gdp": 30.70183726733479,
+            "debt": 16.3,
+            "energy": 10.743292141646535,
+            "minerals": 190.26057469106243,
+            "compute": 25.0,
+            "productivity": 10.0,
+            "military": 6369.371431832581,
+            "innovation": 88.17539311240868,
+            "content": 72.45367972749693,
+            "influence": 110.0,
+            "objective_streak": 0,
+            "objective_conditions_met": 2
+          }
+        },
+        "US": {
+          "shortage_years": 0,
+          "objective_starts": 0,
+          "objective_resets": 0,
+          "new_borrowing": 0.0,
+          "unused_productivity": 0.0,
+          "minimum_currency": 50.0,
+          "maximum_debt": 38.0,
+          "investment_productivity": {
+            "datacenter": 70.80000000000001,
+            "infrastructure": 97.05000000000001,
+            "drone": 97.05000000000001,
+            "mine": 58.2,
+            "civil_investment": 58.800000000000004,
+            "factory": 58.800000000000004,
+            "research": 85.05000000000001,
+            "renewable": 85.05000000000001
+          },
+          "first_objective_streak_round": null,
+          "end": {
+            "currency": 119.78282810890816,
+            "gdp": 50.67155327931301,
+            "debt": 38.0,
+            "energy": 2010.688230853877,
+            "minerals": 601.3211633027298,
+            "compute": 74.0,
+            "productivity": 38.85,
+            "military": 1118.6904646497976,
+            "innovation": 225.0913913396456,
+            "content": 99.7892392188327,
+            "influence": 165.0,
+            "objective_streak": 0,
+            "objective_conditions_met": 1
+          }
+        },
+        "China": {
+          "shortage_years": 0,
+          "objective_starts": 1,
+          "objective_resets": 0,
+          "new_borrowing": 49.80960960467614,
+          "unused_productivity": 208.8,
+          "minimum_currency": 0.0,
+          "maximum_debt": 66.00960960467614,
+          "investment_productivity": {
+            "datacenter": 86.4,
+            "drone": 71.4,
+            "mine": 71.4,
+            "civil_investment": 71.4,
+            "factory": 36.6,
+            "research": 56.4,
+            "renewable": 56.4,
+            "infrastructure": 56.4
+          },
+          "first_objective_streak_round": 25,
+          "end": {
+            "currency": 0.0,
+            "gdp": 34.61180332040981,
+            "debt": 66.00960960467614,
+            "energy": 2266.243500783071,
+            "minerals": 917.8067157845219,
+            "compute": 75.0,
+            "productivity": 34.8,
+            "military": 4821.114552963848,
+            "innovation": 226.00578037599826,
+            "content": 90.19891823861457,
+            "influence": 60.0,
+            "objective_streak": 3,
+            "objective_conditions_met": 2
+          }
+        },
+        "Russia": {
+          "shortage_years": 0,
+          "objective_starts": 0,
+          "objective_resets": 0,
+          "new_borrowing": 14.034974843410332,
+          "unused_productivity": 211.19999999999993,
+          "minimum_currency": 0.0,
+          "maximum_debt": 14.48497484341033,
+          "investment_productivity": {
+            "datacenter": 27.200000000000003,
+            "civil_investment": 9.6,
+            "factory": 9.6
+          },
+          "first_objective_streak_round": null,
+          "end": {
+            "currency": 0.0,
+            "gdp": 2.531185046497795,
+            "debt": 14.48497484341033,
+            "energy": 473.67260136907043,
+            "minerals": 643.9210621065821,
+            "compute": 20.0,
+            "productivity": 9.6,
+            "military": 95.34183731731787,
+            "innovation": 35.64816787577077,
+            "content": 70.3963336891441,
+            "influence": 30.0,
+            "objective_streak": 0,
+            "objective_conditions_met": 0
+          }
+        }
+      }
+    },
+    {
+      "case": "EU-factory-17",
+      "player": "EU",
+      "policy": "factory",
+      "seed": 17,
+      "rules_version": "1",
+      "start_round": 1,
+      "observation_limit_years": 45,
+      "years_resolved": 45,
+      "winners": [],
+      "first_victory_round": null,
+      "stop_reason": "observation_limit",
+      "final_hash": "c069742d0653ddd034678e383d19580ea6eff72a12b12d8780e22f74cb97b7a9",
+      "by_faction": {
+        "EU": {
+          "shortage_years": 0,
+          "objective_starts": 0,
+          "objective_resets": 0,
+          "new_borrowing": 119.40113368758863,
+          "unused_productivity": 18925.0,
+          "minimum_currency": 0.0,
+          "maximum_debt": 135.70113368758862,
+          "investment_productivity": {
+            "renewable": 10.0,
+            "factory": 1105.0,
+            "mine": 10.0
+          },
+          "first_objective_streak_round": null,
+          "end": {
+            "currency": 0.0,
+            "gdp": 43.03667935815283,
+            "debt": 135.70113368758862,
+            "energy": 2286.2320337022784,
+            "minerals": 608.140935095611,
+            "compute": 25.0,
+            "productivity": 560.0,
+            "military": 73.7912349831631,
+            "innovation": 148.292837652055,
+            "content": 85.0825396471927,
+            "influence": 45.0,
+            "objective_streak": 0,
+            "objective_conditions_met": 0
+          }
+        },
+        "US": {
+          "shortage_years": 0,
+          "objective_starts": 0,
+          "objective_resets": 0,
+          "new_borrowing": 45.09629278543953,
+          "unused_productivity": 91.35000000000001,
+          "minimum_currency": 0.0,
+          "maximum_debt": 83.09629278543953,
+          "investment_productivity": {
+            "datacenter": 169.5,
+            "infrastructure": 259.6,
+            "drone": 318.25,
+            "mine": 156.9,
+            "civil_investment": 167.5,
+            "factory": 157.5,
+            "research": 236.25,
+            "renewable": 236.25
+          },
+          "first_objective_streak_round": null,
+          "end": {
+            "currency": 0.0,
+            "gdp": 119.94450762165819,
+            "debt": 83.09629278543953,
+            "energy": 16951.881044432557,
+            "minerals": 1813.7466239628081,
+            "compute": 104.0,
+            "productivity": 91.35000000000001,
+            "military": 16914.247206931013,
+            "innovation": 709.3602680693668,
+            "content": 95.52250000000001,
+            "influence": 165.0,
+            "objective_streak": 0,
+            "objective_conditions_met": 1
+          }
+        },
+        "China": {
+          "shortage_years": 0,
+          "objective_starts": 0,
+          "objective_resets": 0,
+          "new_borrowing": 648.6675904201642,
+          "unused_productivity": 869.9999999999997,
+          "minimum_currency": 0.0,
+          "maximum_debt": 664.8675904201642,
+          "investment_productivity": {
+            "datacenter": 86.4,
+            "drone": 71.4,
+            "mine": 71.4,
+            "civil_investment": 36.6,
+            "factory": 36.6,
+            "research": 56.4,
+            "renewable": 56.4,
+            "infrastructure": 56.4
+          },
+          "first_objective_streak_round": null,
+          "end": {
+            "currency": 0.0,
+            "gdp": 58.941341105297745,
+            "debt": 664.8675904201642,
+            "energy": 6808.760519836916,
+            "minerals": 1898.8067157845219,
+            "compute": 75.0,
+            "productivity": 34.8,
+            "military": 13143.907625957221,
+            "innovation": 375.64645856832686,
+            "content": 49.5231099637605,
+            "influence": 60.0,
+            "objective_streak": 0,
+            "objective_conditions_met": 0
+          }
+        },
+        "Russia": {
+          "shortage_years": 0,
+          "objective_starts": 0,
+          "objective_resets": 0,
+          "new_borrowing": 450.3341696970457,
+          "unused_productivity": 384.0000000000002,
+          "minimum_currency": 0.0,
+          "maximum_debt": 450.7841696970457,
+          "investment_productivity": {
+            "datacenter": 27.200000000000003,
+            "civil_investment": 9.6,
+            "factory": 9.6
+          },
+          "first_objective_streak_round": null,
+          "end": {
+            "currency": 0.0,
+            "gdp": 2.807670411723487,
+            "debt": 450.7841696970457,
+            "energy": 822.743293518967,
+            "minerals": 1070.521062106583,
+            "compute": 20.0,
+            "productivity": 9.6,
+            "military": 1674.627271722784,
+            "innovation": 55.6956566386635,
+            "content": 68.6691068308094,
+            "influence": 75.0,
+            "objective_streak": 0,
+            "objective_conditions_met": 0
+          }
+        }
+      }
+    },
+    {
+      "case": "US-military-17",
+      "player": "US",
+      "policy": "military",
+      "seed": 17,
+      "rules_version": "1",
+      "start_round": 1,
+      "observation_limit_years": 45,
+      "years_resolved": 45,
+      "winners": [],
+      "first_victory_round": null,
+      "stop_reason": "observation_limit",
+      "final_hash": "92c847a95f11b9ddc4f0dc01eb570deae972a6cc61b56a5c89dc7a67f88d9f22",
+      "by_faction": {
+        "EU": {
+          "shortage_years": 0,
+          "objective_starts": 0,
+          "objective_resets": 0,
+          "new_borrowing": 0.0,
+          "unused_productivity": 0.0,
+          "minimum_currency": 60.0,
+          "maximum_debt": 16.3,
+          "investment_productivity": {
+            "renewable": 190.0,
+            "mine": 202.0,
+            "infrastructure": 190.0,
+            "drone": 190.0,
+            "datacenter": 120.0,
+            "civil_investment": 120.0,
+            "factory": 120.0,
+            "research": 180.0
+          },
+          "first_objective_streak_round": null,
+          "end": {
+            "currency": 436.39002199300734,
+            "gdp": 74.16621496134667,
+            "debt": 16.3,
+            "energy": 12548.106529025019,
+            "minerals": 1575.6431929697583,
+            "compute": 95.0,
+            "productivity": 70.0,
+            "military": 4228.1214279420465,
+            "innovation": 631.0548235723022,
+            "content": 93.73400000000001,
+            "influence": 102.72727272727273,
+            "objective_streak": 0,
+            "objective_conditions_met": 2
+          }
+        },
+        "US": {
+          "shortage_years": 0,
+          "objective_starts": 0,
+          "objective_resets": 0,
+          "new_borrowing": 2204.777508565508,
+          "unused_productivity": 276.0,
+          "minimum_currency": 0.0,
+          "maximum_debt": 2242.777508565508,
+          "investment_productivity": {
+            "mine": 10.0,
+            "modernization": 2.0,
+            "drone": 228.0,
+            "renewable": 24.0
+          },
+          "first_objective_streak_round": null,
+          "end": {
+            "currency": 0.0,
+            "gdp": 82.18280824704655,
+            "debt": 2242.777508565508,
+            "energy": 775.8730513338635,
+            "minerals": 802.8081913041209,
+            "compute": 36.0,
+            "productivity": 12.0,
+            "military": 21833.23503994051,
+            "innovation": 185.6065205825125,
+            "content": 48.574801493800706,
+            "influence": 145.0,
+            "objective_streak": 0,
+            "objective_conditions_met": 2
+          }
+        },
+        "China": {
+          "shortage_years": 0,
+          "objective_starts": 0,
+          "objective_resets": 0,
+          "new_borrowing": 112.01986799058083,
+          "unused_productivity": 1411.9999999999998,
+          "minimum_currency": 0.0,
+          "maximum_debt": 128.2198679905808,
+          "investment_productivity": {
+            "datacenter": 147.60000000000002,
+            "drone": 142.60000000000002,
+            "mine": 132.60000000000002,
+            "civil_investment": 132.60000000000002,
+            "factory": 132.60000000000002,
+            "research": 197.6,
+            "renewable": 127.6,
+            "infrastructure": 117.6
+          },
+          "first_objective_streak_round": null,
+          "end": {
+            "currency": 0.0,
+            "gdp": 95.78650576863943,
+            "debt": 128.2198679905808,
+            "energy": 17793.231170508607,
+            "minerals": 2380.104232905458,
+            "compute": 75.0,
+            "productivity": 100.8,
+            "military": 9325.520237538807,
+            "innovation": 870.2878542964372,
+            "content": 94.03099999999999,
+            "influence": 114.0909090909091,
+            "objective_streak": 0,
+            "objective_conditions_met": 1
+          }
+        },
+        "Russia": {
+          "shortage_years": 0,
+          "objective_starts": 0,
+          "objective_resets": 0,
+          "new_borrowing": 41.97440446245193,
+          "unused_productivity": 374.4000000000002,
+          "minimum_currency": 0.0,
+          "maximum_debt": 42.42440446245193,
+          "investment_productivity": {
+            "datacenter": 27.200000000000003,
+            "civil_investment": 9.6,
+            "factory": 9.6,
+            "drone": 9.6
+          },
+          "first_objective_streak_round": null,
+          "end": {
+            "currency": 0.0,
+            "gdp": 2.9052043272602925,
+            "debt": 42.42440446245193,
+            "energy": 824.1290970862389,
+            "minerals": 1067.551025220463,
+            "compute": 20.0,
+            "productivity": 9.6,
+            "military": 94.7223029721961,
+            "innovation": 56.492561248292255,
+            "content": 72.51093720235768,
+            "influence": 18.181818181818183,
+            "objective_streak": 0,
+            "objective_conditions_met": 0
+          }
+        }
+      }
+    },
+    {
+      "case": "US-factory-17",
+      "player": "US",
+      "policy": "factory",
+      "seed": 17,
+      "rules_version": "1",
+      "start_round": 1,
+      "observation_limit_years": 45,
+      "years_resolved": 27,
+      "winners": [
+        "China"
+      ],
+      "first_victory_round": 27,
+      "stop_reason": "victory",
+      "final_hash": "78ba94e12c62bcdb3b42ae6c361b6f7e635ac7a3775cdbeafb9e0a37b271ac70",
+      "by_faction": {
+        "EU": {
+          "shortage_years": 0,
+          "objective_starts": 0,
+          "objective_resets": 0,
+          "new_borrowing": 0.0,
+          "unused_productivity": 0.0,
+          "minimum_currency": 60.0,
+          "maximum_debt": 16.3,
+          "investment_productivity": {
+            "renewable": 75.0,
+            "mine": 57.0,
+            "infrastructure": 75.0,
+            "drone": 45.0,
+            "datacenter": 45.0,
+            "civil_investment": 45.0,
+            "factory": 45.0,
+            "research": 65.0
+          },
+          "first_objective_streak_round": null,
+          "end": {
+            "currency": 242.91078047345488,
+            "gdp": 32.590170314782384,
+            "debt": 16.3,
+            "energy": 1729.6878764285884,
+            "minerals": 566.9873482757314,
+            "compute": 55.0,
+            "productivity": 30.0,
+            "military": 472.70555100343233,
+            "innovation": 183.28187724128526,
+            "content": 92.25731024043405,
+            "influence": 39.285714285714285,
+            "objective_streak": 0,
+            "objective_conditions_met": 0
+          }
+        },
+        "US": {
+          "shortage_years": 0,
+          "objective_starts": 0,
+          "objective_resets": 0,
+          "new_borrowing": 62.354810245912624,
+          "unused_productivity": 6206.0,
+          "minimum_currency": 0.0,
+          "maximum_debt": 100.35481024591263,
+          "investment_productivity": {
+            "mine": 20.0,
+            "factory": 698.0
+          },
+          "first_objective_streak_round": null,
+          "end": {
+            "currency": 0.0,
+            "gdp": 44.328639209218345,
+            "debt": 100.35481024591263,
+            "energy": 986.1539173206069,
+            "minerals": 618.3601323605529,
+            "compute": 36.0,
+            "productivity": 357.0,
+            "military": 220.71037736612584,
+            "innovation": 123.03245871486995,
+            "content": 89.98857662401812,
+            "influence": 110.71428571428572,
+            "objective_streak": 0,
+            "objective_conditions_met": 1
+          }
+        },
+        "China": {
+          "shortage_years": 0,
+          "objective_starts": 1,
+          "objective_resets": 0,
+          "new_borrowing": 51.17762097749181,
+          "unused_productivity": 208.8,
+          "minimum_currency": 0.0,
+          "maximum_debt": 67.37762097749183,
+          "investment_productivity": {
+            "datacenter": 86.4,
+            "drone": 71.4,
+            "mine": 71.4,
+            "civil_investment": 71.4,
+            "factory": 36.6,
+            "research": 56.4,
+            "renewable": 56.4,
+            "infrastructure": 56.4
+          },
+          "first_objective_streak_round": 25,
+          "end": {
+            "currency": 0.0,
+            "gdp": 34.72619933462358,
+            "debt": 67.37762097749183,
+            "energy": 2257.1687388428345,
+            "minerals": 917.939244547045,
+            "compute": 85.0,
+            "productivity": 34.8,
+            "military": 4848.131942576871,
+            "innovation": 227.13971331806573,
+            "content": 90.13987508292655,
+            "influence": 147.68269785867938,
+            "objective_streak": 3,
+            "objective_conditions_met": 2
+          }
+        },
+        "Russia": {
+          "shortage_years": 0,
+          "objective_starts": 0,
+          "objective_resets": 0,
+          "new_borrowing": 75.58327411225163,
+          "unused_productivity": 211.19999999999993,
+          "minimum_currency": 0.0,
+          "maximum_debt": 76.03327411225163,
+          "investment_productivity": {
+            "datacenter": 27.200000000000003,
+            "civil_investment": 9.6,
+            "factory": 9.6
+          },
+          "first_objective_streak_round": null,
+          "end": {
+            "currency": 0.0,
+            "gdp": 2.514860896687873,
+            "debt": 76.03327411225163,
+            "energy": 473.53738140487354,
+            "minerals": 643.9210621065821,
+            "compute": 20.0,
+            "productivity": 9.6,
+            "military": 1031.343453512184,
+            "innovation": 35.44644321013181,
+            "content": 68.2066221658079,
+            "influence": 82.31730214132062,
+            "objective_streak": 0,
+            "objective_conditions_met": 0
+          }
+        }
+      }
+    },
+    {
+      "case": "China-military-17",
+      "player": "China",
+      "policy": "military",
+      "seed": 17,
+      "rules_version": "1",
+      "start_round": 1,
+      "observation_limit_years": 45,
+      "years_resolved": 45,
+      "winners": [],
+      "first_victory_round": null,
+      "stop_reason": "observation_limit",
+      "final_hash": "18e0af0853db8f50a9ce52bbb4f2980071540860c19d82cd3d49f18f4a757ffb",
+      "by_faction": {
+        "EU": {
+          "shortage_years": 0,
+          "objective_starts": 0,
+          "objective_resets": 0,
+          "new_borrowing": 0.0,
+          "unused_productivity": 0.0,
+          "minimum_currency": 60.0,
+          "maximum_debt": 16.3,
+          "investment_productivity": {
+            "renewable": 190.0,
+            "mine": 200.0,
+            "infrastructure": 190.0,
+            "drone": 190.0,
+            "datacenter": 120.0,
+            "civil_investment": 120.0,
+            "factory": 120.0,
+            "research": 180.0
+          },
+          "first_objective_streak_round": null,
+          "end": {
+            "currency": 168.29671437959098,
+            "gdp": 72.15641711291993,
+            "debt": 16.3,
+            "energy": 12282.451592318948,
+            "minerals": 1577.652058833633,
+            "compute": 116.0,
+            "productivity": 70.0,
+            "military": 12749.62384395714,
+            "innovation": 606.8254721922932,
+            "content": 75.287,
+            "influence": 133.10407247016332,
+            "objective_streak": 0,
+            "objective_conditions_met": 2
+          }
+        },
+        "US": {
+          "shortage_years": 0,
+          "objective_starts": 0,
+          "objective_resets": 0,
+          "new_borrowing": 0.0,
+          "unused_productivity": 0.0,
+          "minimum_currency": 50.0,
+          "maximum_debt": 38.0,
+          "investment_productivity": {
+            "datacenter": 260.85,
+            "infrastructure": 248.25,
+            "drone": 248.25,
+            "mine": 248.25,
+            "civil_investment": 157.5,
+            "factory": 157.5,
+            "research": 236.25,
+            "renewable": 236.25
+          },
+          "first_objective_streak_round": null,
+          "end": {
+            "currency": 112.6533184077664,
+            "gdp": 121.52095594556936,
+            "debt": 38.0,
+            "energy": 17138.711706878326,
+            "minerals": 1887.10389136349,
+            "compute": 284.0,
+            "productivity": 91.35000000000001,
+            "military": 10160.872982153263,
+            "innovation": 728.2159482925377,
+            "content": 96.04599999999999,
+            "influence": 166.89592752983668,
+            "objective_streak": 0,
+            "objective_conditions_met": 1
+          }
+        },
+        "China": {
+          "shortage_years": 1,
+          "objective_starts": 0,
+          "objective_resets": 0,
+          "new_borrowing": 2841.5836435476067,
+          "unused_productivity": 420.0,
+          "minimum_currency": 0.0,
+          "maximum_debt": 2857.7836435476065,
+          "investment_productivity": {
+            "drone": 210.0,
+            "renewable": 45.0
+          },
+          "first_objective_streak_round": null,
+          "end": {
+            "currency": 0.0,
+            "gdp": 44.57662960785608,
+            "debt": 2857.7836435476065,
+            "energy": 1336.7555589900662,
+            "minerals": 812.3048175519575,
+            "compute": 20.0,
+            "productivity": 15.0,
+            "military": 17820.79784798446,
+            "innovation": 129.21945159100127,
+            "content": 52.63526164522825,
+            "influence": 100.0,
+            "objective_streak": 0,
+            "objective_conditions_met": 1
+          }
+        },
+        "Russia": {
+          "shortage_years": 0,
+          "objective_starts": 0,
+          "objective_resets": 0,
+          "new_borrowing": 8.251801302947271,
+          "unused_productivity": 168.0,
+          "minimum_currency": 0.0,
+          "maximum_debt": 8.701801302947272,
+          "investment_productivity": {
+            "datacenter": 24.0,
+            "civil_investment": 32.0,
+            "factory": 8.0,
+            "drone": 80.0,
+            "renewable": 16.0,
+            "infrastructure": 16.0,
+            "mine": 16.0
+          },
+          "first_objective_streak_round": null,
+          "end": {
+            "currency": 0.0,
+            "gdp": 3.0273428549881762,
+            "debt": 8.701801302947272,
+            "energy": 685.3707501237493,
+            "minerals": 1103.0509265353942,
+            "compute": 20.0,
+            "productivity": 8.0,
+            "military": 249.81673744708718,
+            "innovation": 57.766917983753174,
+            "content": 80.2939919302516,
+            "influence": 0,
+            "objective_streak": 0,
+            "objective_conditions_met": 0
+          }
+        }
+      }
+    },
+    {
+      "case": "China-factory-17",
+      "player": "China",
+      "policy": "factory",
+      "seed": 17,
+      "rules_version": "1",
+      "start_round": 1,
+      "observation_limit_years": 45,
+      "years_resolved": 45,
+      "winners": [],
+      "first_victory_round": null,
+      "stop_reason": "observation_limit",
+      "final_hash": "e7d191f81df4396b7da6102aed31e31ad073c4f9157ac5f44fb4a7139888ac33",
+      "by_faction": {
+        "EU": {
+          "shortage_years": 0,
+          "objective_starts": 0,
+          "objective_resets": 0,
+          "new_borrowing": 0.0,
+          "unused_productivity": 0.0,
+          "minimum_currency": 60.0,
+          "maximum_debt": 16.3,
+          "investment_productivity": {
+            "renewable": 190.0,
+            "mine": 200.0,
+            "infrastructure": 190.0,
+            "drone": 190.0,
+            "datacenter": 120.0,
+            "civil_investment": 120.0,
+            "factory": 120.0,
+            "research": 180.0
+          },
+          "first_objective_streak_round": null,
+          "end": {
+            "currency": 134.5468500545762,
+            "gdp": 72.15641711291993,
+            "debt": 16.3,
+            "energy": 12282.451592318948,
+            "minerals": 1577.652058833633,
+            "compute": 116.0,
+            "productivity": 70.0,
+            "military": 12749.62384395714,
+            "innovation": 606.8254721922932,
+            "content": 75.287,
+            "influence": 107.61278340716173,
+            "objective_streak": 0,
+            "objective_conditions_met": 2
+          }
+        },
+        "US": {
+          "shortage_years": 0,
+          "objective_starts": 0,
+          "objective_resets": 0,
+          "new_borrowing": 186.43854245975928,
+          "unused_productivity": 718.2000000000002,
+          "minimum_currency": 0.0,
+          "maximum_debt": 224.43854245975925,
+          "investment_productivity": {
+            "datacenter": 109.65,
+            "infrastructure": 97.05000000000001,
+            "drone": 97.05000000000001,
+            "mine": 97.05000000000001,
+            "civil_investment": 97.65,
+            "factory": 97.65,
+            "research": 144.9,
+            "renewable": 144.9
+          },
+          "first_objective_streak_round": null,
+          "end": {
+            "currency": 0.0,
+            "gdp": 115.67296848338754,
+            "debt": 224.43854245975925,
+            "energy": 13732.307380657701,
+            "minerals": 1630.5263644230686,
+            "compute": 120.0,
+            "productivity": 59.85,
+            "military": 17725.80561874772,
+            "innovation": 591.7324383688706,
+            "content": 63.1105,
+            "influence": 292.3872165928383,
+            "objective_streak": 0,
+            "objective_conditions_met": 2
+          }
+        },
+        "China": {
+          "shortage_years": 0,
+          "objective_starts": 0,
+          "objective_resets": 0,
+          "new_borrowing": 263.02905147261754,
+          "unused_productivity": 10614.399999999992,
+          "minimum_currency": 0.0,
+          "maximum_debt": 279.2290514726176,
+          "investment_productivity": {
+            "factory": 399.40000000000003,
+            "mine": 10.0
+          },
+          "first_objective_streak_round": null,
+          "end": {
+            "currency": 0.0,
+            "gdp": 46.86614884890066,
+            "debt": 279.2290514726176,
+            "energy": 2105.9970360204884,
+            "minerals": 1089.5705635985582,
+            "compute": 20.0,
+            "productivity": 272.40000000000003,
+            "military": 181.759999825205,
+            "innovation": 141.99884937891397,
+            "content": 91.17954622321038,
+            "influence": 4.6629367034256575e-15,
+            "objective_streak": 0,
+            "objective_conditions_met": 0
+          }
+        },
+        "Russia": {
+          "shortage_years": 0,
+          "objective_starts": 0,
+          "objective_resets": 0,
+          "new_borrowing": 9.789676041242965,
+          "unused_productivity": 239.0,
+          "minimum_currency": 0.0,
+          "maximum_debt": 10.239676041242964,
+          "investment_productivity": {
+            "datacenter": 27.25,
+            "civil_investment": 47.25,
+            "factory": 19.25,
+            "drone": 95.5,
+            "mine": 18.0,
+            "research": 10.0,
+            "infrastructure": 19.75,
+            "renewable": 10.0
+          },
+          "first_objective_streak_round": null,
+          "end": {
+            "currency": 0.0,
+            "gdp": 3.3085595334921356,
+            "debt": 10.239676041242964,
+            "energy": 549.0731064267796,
+            "minerals": 1148.267282782365,
+            "compute": 15.0,
+            "productivity": 13.25,
+            "military": 330.75823612346187,
+            "innovation": 89.43955791947403,
+            "content": 86.32762864547365,
+            "influence": 9.325873406851315e-15,
+            "objective_streak": 0,
+            "objective_conditions_met": 0
+          }
+        }
+      }
+    },
+    {
+      "case": "Russia-military-17",
+      "player": "Russia",
+      "policy": "military",
+      "seed": 17,
+      "rules_version": "1",
+      "start_round": 1,
+      "observation_limit_years": 45,
+      "years_resolved": 45,
+      "winners": [],
+      "first_victory_round": null,
+      "stop_reason": "observation_limit",
+      "final_hash": "45b525f141fff3c66e97620a9a5c13294389dd8ac000d51a8aa584a0f2b2d3ef",
+      "by_faction": {
+        "EU": {
+          "shortage_years": 0,
+          "objective_starts": 0,
+          "objective_resets": 0,
+          "new_borrowing": 0.0,
+          "unused_productivity": 0.0,
+          "minimum_currency": 60.0,
+          "maximum_debt": 16.3,
+          "investment_productivity": {
+            "renewable": 190.0,
+            "mine": 202.0,
+            "infrastructure": 190.0,
+            "drone": 190.0,
+            "datacenter": 120.0,
+            "civil_investment": 120.0,
+            "factory": 120.0,
+            "research": 180.0
+          },
+          "first_objective_streak_round": null,
+          "end": {
+            "currency": 249.70493241267965,
+            "gdp": 73.61554984749937,
+            "debt": 16.3,
+            "energy": 12470.522848155575,
+            "minerals": 1575.5791988283586,
+            "compute": 116.0,
+            "productivity": 70.0,
+            "military": 10987.527610084797,
+            "innovation": 621.6374797049815,
+            "content": 79.895,
+            "influence": 45.0,
+            "objective_streak": 0,
+            "objective_conditions_met": 1
+          }
+        },
+        "US": {
+          "shortage_years": 0,
+          "objective_starts": 0,
+          "objective_resets": 0,
+          "new_borrowing": 124.63561376268106,
+          "unused_productivity": 548.1,
+          "minimum_currency": 0.0,
+          "maximum_debt": 162.63561376268106,
+          "investment_productivity": {
+            "datacenter": 169.5,
+            "infrastructure": 156.9,
+            "drone": 156.9,
+            "mine": 156.9,
+            "civil_investment": 157.5,
+            "factory": 157.5,
+            "research": 144.9,
+            "renewable": 144.9
+          },
+          "first_objective_streak_round": null,
+          "end": {
+            "currency": 0.0,
+            "gdp": 118.32630025543962,
+            "debt": 162.63561376268106,
+            "energy": 13872.932304943763,
+            "minerals": 1894.9211010694007,
+            "compute": 200.0,
+            "productivity": 91.35000000000001,
+            "military": 15130.46448451621,
+            "innovation": 635.3207319333399,
+            "content": 90.9637,
+            "influence": 165.0,
+            "objective_streak": 0,
+            "objective_conditions_met": 1
+          }
+        },
+        "China": {
+          "shortage_years": 0,
+          "objective_starts": 0,
+          "objective_resets": 0,
+          "new_borrowing": 749.3919207578388,
+          "unused_productivity": 800.3999999999997,
+          "minimum_currency": 0.0,
+          "maximum_debt": 765.5919207578387,
+          "investment_productivity": {
+            "datacenter": 86.4,
+            "drone": 106.2,
+            "mine": 71.4,
+            "civil_investment": 71.4,
+            "factory": 36.6,
+            "research": 56.4,
+            "renewable": 56.4,
+            "infrastructure": 56.4
+          },
+          "first_objective_streak_round": null,
+          "end": {
+            "currency": 0.0,
+            "gdp": 66.06839134259933,
+            "debt": 765.5919207578387,
+            "energy": 6797.049716614605,
+            "minerals": 1891.3852050292448,
+            "compute": 85.0,
+            "productivity": 34.8,
+            "military": 16047.670750360305,
+            "innovation": 396.156896836279,
+            "content": 54.87389730506737,
+            "influence": 60.0,
+            "objective_streak": 0,
+            "objective_conditions_met": 0
+          }
+        },
+        "Russia": {
+          "shortage_years": 0,
+          "objective_starts": 0,
+          "objective_resets": 0,
+          "new_borrowing": 1222.8788513528145,
+          "unused_productivity": 288.0,
+          "minimum_currency": 0.0,
+          "maximum_debt": 1223.3288513528148,
+          "investment_productivity": {
+            "drone": 72.0
+          },
+          "first_objective_streak_round": null,
+          "end": {
+            "currency": 0.0,
+            "gdp": 4.540899783866632,
+            "debt": 1223.3288513528148,
+            "energy": 54.37966863917056,
+            "minerals": 1052.6657644707238,
+            "compute": 0,
+            "productivity": 8.0,
+            "military": 5120.062298725243,
+            "innovation": 56.67997416811724,
+            "content": 74.06683755390691,
+            "influence": 75.0,
+            "objective_streak": 0,
+            "objective_conditions_met": 0
+          }
+        }
+      }
+    },
+    {
+      "case": "Russia-factory-17",
+      "player": "Russia",
+      "policy": "factory",
+      "seed": 17,
+      "rules_version": "1",
+      "start_round": 1,
+      "observation_limit_years": 45,
+      "years_resolved": 45,
+      "winners": [
+        "EU"
+      ],
+      "first_victory_round": 45,
+      "stop_reason": "victory",
+      "final_hash": "67f951ed500e553e9d1ff7d605a51694b952e48e4d9bcad6ad4c378990c20877",
+      "by_faction": {
+        "EU": {
+          "shortage_years": 0,
+          "objective_starts": 1,
+          "objective_resets": 0,
+          "new_borrowing": 0.0,
+          "unused_productivity": 0.0,
+          "minimum_currency": 60.0,
+          "maximum_debt": 16.3,
+          "investment_productivity": {
+            "renewable": 190.0,
+            "mine": 202.0,
+            "infrastructure": 190.0,
+            "drone": 190.0,
+            "datacenter": 120.0,
+            "civil_investment": 120.0,
+            "factory": 120.0,
+            "research": 180.0
+          },
+          "first_objective_streak_round": 43,
+          "end": {
+            "currency": 133.33014460905252,
+            "gdp": 72.1563357513271,
+            "debt": 16.3,
+            "energy": 12282.448476039426,
+            "minerals": 1575.4272551250313,
+            "compute": 116.0,
+            "productivity": 70.0,
+            "military": 12749.621319774427,
+            "innovation": 606.8253944269811,
+            "content": 75.287,
+            "influence": 92.06304217733542,
+            "objective_streak": 3,
+            "objective_conditions_met": 3
+          }
+        },
+        "US": {
+          "shortage_years": 0,
+          "objective_starts": 0,
+          "objective_resets": 0,
+          "new_borrowing": 141.22699394916012,
+          "unused_productivity": 778.0500000000002,
+          "minimum_currency": 0.0,
+          "maximum_debt": 179.22699394916006,
+          "investment_productivity": {
+            "datacenter": 109.65,
+            "infrastructure": 97.05000000000001,
+            "drone": 97.05000000000001,
+            "mine": 97.05000000000001,
+            "civil_investment": 97.65,
+            "factory": 97.65,
+            "research": 144.9,
+            "renewable": 85.05000000000001
+          },
+          "first_objective_streak_round": null,
+          "end": {
+            "currency": 0.0,
+            "gdp": 116.05846738526903,
+            "debt": 179.22699394916006,
+            "energy": 9910.88614154099,
+            "minerals": 1651.5454355699567,
+            "compute": 120.0,
+            "productivity": 59.85,
+            "military": 14883.61448992146,
+            "innovation": 600.1391929795799,
+            "content": 68.96409999999999,
+            "influence": 182.9369578226646,
+            "objective_streak": 0,
+            "objective_conditions_met": 1
+          }
+        },
+        "China": {
+          "shortage_years": 0,
+          "objective_starts": 0,
+          "objective_resets": 0,
+          "new_borrowing": 623.6456887483552,
+          "unused_productivity": 952.1999999999997,
+          "minimum_currency": 0.0,
+          "maximum_debt": 639.8456887483552,
+          "investment_productivity": {
+            "datacenter": 86.4,
+            "drone": 96.2,
+            "mine": 71.4,
+            "civil_investment": 71.4,
+            "factory": 46.6,
+            "research": 56.4,
+            "renewable": 56.4,
+            "infrastructure": 56.4
+          },
+          "first_objective_streak_round": null,
+          "end": {
+            "currency": 0.0,
+            "gdp": 67.22643923266885,
+            "debt": 639.8456887483552,
+            "energy": 6894.132158530791,
+            "minerals": 1893.9087649960827,
+            "compute": 85.0,
+            "productivity": 41.4,
+            "military": 13962.925062969423,
+            "innovation": 399.8725103061873,
+            "content": 59.48313172749997,
+            "influence": 60.0,
+            "objective_streak": 0,
+            "objective_conditions_met": 0
+          }
+        },
+        "Russia": {
+          "shortage_years": 0,
+          "objective_starts": 0,
+          "objective_resets": 0,
+          "new_borrowing": 137.33655802385823,
+          "unused_productivity": 1589.0,
+          "minimum_currency": 0.0,
+          "maximum_debt": 137.78655802385822,
+          "investment_productivity": {
+            "factory": 67.75
+          },
+          "first_objective_streak_round": null,
+          "end": {
+            "currency": 0.0,
+            "gdp": 4.188954198067984,
+            "debt": 137.78655802385822,
+            "energy": 908.133142769894,
+            "minerals": 1076.500000000001,
+            "compute": 0,
+            "productivity": 39.5,
+            "military": 74.77712750092644,
+            "innovation": 58.30688302608548,
+            "content": 84.8591927705864,
+            "influence": 30.0,
+            "objective_streak": 0,
+            "objective_conditions_met": 0
+          }
+        }
+      }
+    }
+  ]
+}

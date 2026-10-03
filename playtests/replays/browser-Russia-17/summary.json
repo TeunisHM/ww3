@@ -1,0 +1,11 @@
+{
+  "kind": "Agent-authored browser playthrough; computer orders reconstructed and verified against all five downloaded result saves",
+  "hash_scope": "Immediately resolved engine state; full game equality checked against UI exports (which can spell integer-valued draft numbers as floats)",
+  "player": "Russia",
+  "seed": 17,
+  "rules_version": "1",
+  "years_resolved": 5,
+  "final_hash": "aa902aab89d1a03f406852a83f60139d3f0600cadedfce77de9b13b05896ec4d",
+  "winners": [],
+  "human_participants": 0
+}

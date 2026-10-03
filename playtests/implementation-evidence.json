@@ -1,0 +1,175 @@
+{
+  "date": "2026-10-03",
+  "build_sha256": "dae8392c49a17c37dc99b9b516c692eba79fd62786185d940edcff896db3c4e0",
+  "build_hash_algorithm": "SHA256 of sorted relative filename + NUL + file bytes + NUL for each scope entry",
+  "build_hash_scope": [
+    ".streamlit/config.toml",
+    "app.py",
+    "requirements-dev.txt",
+    "requirements.txt",
+    "tests/conftest.py",
+    "tests/test_app.py",
+    "tests/test_engine.py",
+    "tests/test_improvements.py",
+    "tests/test_opening.py",
+    "tests/test_strategy_and_forecast.py",
+    "tools/check_opening.py",
+    "tools/play_campaigns.py",
+    "ww3/__init__.py",
+    "ww3/ai.py",
+    "ww3/audio.js",
+    "ww3/catalog.py",
+    "ww3/command_ui.py",
+    "ww3/components.py",
+    "ww3/engine.py",
+    "ww3/evaluation.py",
+    "ww3/forecast.py",
+    "ww3/map_view.py",
+    "ww3/models.py",
+    "ww3/persistence.py",
+    "ww3/planning.py",
+    "ww3/preferences.py",
+    "ww3/presentation.py",
+    "ww3/recovery.py",
+    "ww3/reporting.py",
+    "ww3/rules.py",
+    "ww3/strategy.py"
+  ],
+  "rules_version": "1",
+  "save_schema_version": 3,
+  "environment": {
+    "os": "Linux",
+    "architecture": "x86_64",
+    "python": "3.12.3",
+    "streamlit": "1.64.0",
+    "cpu_model": "AMD Ryzen 7 7735HS with Radeon Graphics",
+    "logical_cpus_visible": 16,
+    "minimum_hardware_qualified": false
+  },
+  "automated_suite": {
+    "command": ".venv/bin/python -m pytest -q",
+    "passed": 136,
+    "failed": 0,
+    "duration_seconds": 13.32
+  },
+  "browser_check": {
+    "command": "WW3_CHROME=/usr/bin/google-chrome .venv/bin/python tools/check_opening.py --url http://127.0.0.1:8502",
+    "passed": true,
+    "viewports": [
+      [
+        1280,
+        720
+      ],
+      [
+        1920,
+        1080
+      ],
+      [
+        390,
+        844
+      ]
+    ],
+    "text_scales_checked": [
+      100,
+      150
+    ],
+    "javascript_errors": [],
+    "checks": [
+      "intro visible at 1280x720",
+      "keyboard selection of four theaters",
+      "deployment edit and undo",
+      "sticky desktop ledger",
+      "invalid orders block resolution",
+      "remember/restore draft comparison",
+      "review skip/replay",
+      "refresh recovery",
+      "audio synthesis frequencies and mute",
+      "no repeated cue on navigation",
+      "text scale and preference recovery",
+      "unclipped Undo label at 150% text",
+      "manual export/import",
+      "responsive overflow"
+    ],
+    "forecast_currency": 65.74,
+    "resolved_currency": 65.7447236396075,
+    "captures_directory": "playtests/captures"
+  },
+  "authored_playthroughs": {
+    "command": "WW3_CHROME=/usr/bin/google-chrome .venv/bin/python tools/play_campaigns.py --url http://127.0.0.1:8502",
+    "kind": "Scripted decisions entered through the actual interface by the coding agent; not fresh-player observations",
+    "campaigns": 3,
+    "factions": [
+      "EU",
+      "China",
+      "Russia"
+    ],
+    "years_each": 5,
+    "resource_forecasts_checked": 75,
+    "forecast_mismatches": 0,
+    "javascript_errors": [],
+    "recovered_after_year": 3,
+    "all_downloaded_result_saves_match_full_engine_replay": true,
+    "report": "playtests/browser-playthroughs-2026-10-03.json",
+    "replays": [
+      {
+        "path": "playtests/replays/browser-EU-17",
+        "verified_years": 5,
+        "final_hash": "c827669dc3a7ec72f6139f274c59a0266d1c8ece6f487abb82d1a79ce0a4373a",
+        "winners": []
+      },
+      {
+        "path": "playtests/replays/browser-China-17",
+        "verified_years": 5,
+        "final_hash": "815dbcc03d5d8b8d2226c1a51903c95eb46c16067299e22a831368631085eb8a",
+        "winners": []
+      },
+      {
+        "path": "playtests/replays/browser-Russia-17",
+        "verified_years": 5,
+        "final_hash": "aa902aab89d1a03f406852a83f60139d3f0600cadedfce77de9b13b05896ec4d",
+        "winners": []
+      }
+    ]
+  },
+  "campaign_diagnostics": {
+    "command": ".venv/bin/python -m ww3.evaluation run --output /tmp/ww3-baseline-20261003 --seeds 17 23 41 --turns 30",
+    "report": "playtests/campaign-baseline-2026-10-03.json",
+    "configurations": 60,
+    "years_resolved": 1779,
+    "replayed_every_case": true,
+    "policy_fingerprint": "089cf495e8de9146cd367fdbf926c413d8fbe1d37c0424a58415ace58c92c9a8",
+    "observation_limit_years": 30,
+    "unresolved": 54,
+    "winner_counts": {
+      "China": 6
+    },
+    "tested_player_wins": 0,
+    "limits": [
+      "Simple diagnostic policies; no human campaign balance conclusion",
+      "Current-policy faction labels repeat the same all-computer world trajectory per seed",
+      "Observation limit is not a game turn cap or a draw"
+    ],
+    "retained_representative_replay": "playtests/replays/EU-military-17"
+  },
+  "bugs_fixed_during_play": [
+    "A rerun immediately after an atomic checkpoint write could prevent its new token reaching session state, causing subsequent saves to conflict; covered by an interruption regression",
+    "Save downloads triggered unnecessary reruns and could be cancelled during active edits",
+    "The Undo label clipped at 150% text; summary actions now use a separate row"
+  ],
+  "player_cohort": {
+    "observed": 0,
+    "recruiting_source": null,
+    "observation_window": null
+  },
+  "historical_performance_and_long_save_evidence": "playtests/implementation-evidence-2026-10-02.json",
+  "remaining_gates": [
+    "N01 baseline with 10 fresh players",
+    "Refine onboarding/results from player observations",
+    "Graphics plan G1\u2013G5",
+    "N07 repeat with 30 fresh players",
+    "M2 objective-aware opponents and demonstrated winning paths for all factions",
+    "M3 packaged desktop spike",
+    "M4/M5 demo and release preparation"
+  ],
+  "decision": "Functional checks pass for this build; campaign balance needs investigation. M1 is not accepted without player evidence. No claim of exhaustive bug absence or commercial readiness."
+}

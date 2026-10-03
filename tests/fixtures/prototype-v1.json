@@ -1,0 +1,734 @@
+{
+  "schema_version": 1,
+  "nations": {
+    "EU": {
+      "id": "EU",
+      "government": "Democratic/pluralistic",
+      "currency": 65.8639836396075,
+      "gdp": 20.245245999999998,
+      "tax_rate": 0.4,
+      "domestic_debt": 13.040000000000001,
+      "military": 137.0,
+      "buildings": {
+        "renewable": 3,
+        "thermal": 2,
+        "datacenter": 4,
+        "drone": 1,
+        "cyber": 1,
+        "mine": 2,
+        "factory": 4,
+        "research": 2
+      },
+      "content": 65.303773,
+      "innovation": 17.623,
+      "energy": 35.0,
+      "minerals": 26.830000000000002,
+      "compute": 25.0,
+      "productivity": 40.0,
+      "relations": {
+        "US": 4.2,
+        "China": 2.98,
+        "Russia": 1.905
+      },
+      "tariffs": {
+        "US": 0.0,
+        "China": 0.0,
+        "Russia": 0.0
+      },
+      "deployments": {
+        "Eastern Europe": 0.0,
+        "Pacific & South China Sea": 0,
+        "Arctic": 0,
+        "South America": 0.0
+      },
+      "progress": {},
+      "share_bonus": [],
+      "transition_target": null,
+      "transition_remaining": 0,
+      "last_ledger": {
+        "opening_currency": 60.0,
+        "planned_spending": -0.990000000000002,
+        "principal_received": 0.0,
+        "aid_received": 0.0,
+        "taxes": 8.0,
+        "trade_income": 0.0,
+        "tariff_income": 0.0,
+        "luxury_exports": 0.0931,
+        "interest_received": 0.18072363960749327,
+        "domestic_interest": -0.46944,
+        "foreign_interest": -0.13039999999999996,
+        "building_upkeep": -0.7000000000000001,
+        "military_upkeep": -0.12,
+        "new_borrowing": 0,
+        "operating_balance": 6.853983639607494,
+        "closing_currency": 65.8639836396075
+      },
+      "last_production": {
+        "energy": 28.0,
+        "energy_used": 13.0,
+        "minerals": 10,
+        "minerals_used": 0.2,
+        "compute": 40,
+        "compute_used": 15.0,
+        "productivity": 40.0,
+        "innovation": 7.623000000000001,
+        "military": 17.0,
+        "energy_supply": 1,
+        "compute_supply": 1,
+        "thermal_supply": 1,
+        "gdp_growth": 0.012262299999999999
+      }
+    },
+    "US": {
+      "id": "US",
+      "government": "Democratic/oligarchic",
+      "currency": 15.473124965636751,
+      "gdp": 27.4853892,
+      "tax_rate": 0.25,
+      "domestic_debt": 30.400000000000002,
+      "military": 425.2,
+      "buildings": {
+        "renewable": 7,
+        "thermal": 4,
+        "datacenter": 6,
+        "drone": 3,
+        "cyber": 3,
+        "mine": 3,
+        "factory": 4,
+        "research": 3
+      },
+      "content": 63.5010475,
+      "innovation": 19.9225,
+      "energy": 60.0,
+      "minerals": 14.8,
+      "compute": 36.0,
+      "productivity": 40.0,
+      "relations": {
+        "EU": 4.2,
+        "China": 1.5300000000000002,
+        "Russia": 2.7600000000000002
+      },
+      "tariffs": {
+        "EU": 0.0,
+        "China": 0.25,
+        "Russia": 0.0
+      },
+      "deployments": {
+        "Eastern Europe": 0.0,
+        "Pacific & South China Sea": 144.4,
+        "Arctic": 37.8,
+        "South America": 88.0
+      },
+      "progress": {},
+      "share_bonus": [
+        "EU",
+        "Russia"
+      ],
+      "transition_target": null,
+      "transition_remaining": 0,
+      "last_ledger": {
+        "opening_currency": 13.6,
+        "planned_spending": -2.0799999999999965,
+        "principal_received": 0.0,
+        "aid_received": 0.0,
+        "taxes": 6.8,
+        "trade_income": 0.03,
+        "tariff_income": 0.0094130859375,
+        "luxury_exports": 0.0,
+        "interest_received": 0.11211187969924809,
+        "domestic_interest": -1.0944,
+        "foreign_interest": -0.30399999999999994,
+        "building_upkeep": -1.2000000000000002,
+        "military_upkeep": -0.4,
+        "new_borrowing": 0,
+        "operating_balance": 3.9531249656367478,
+        "closing_currency": 15.473124965636751
+      },
+      "last_production": {
+        "energy": 62.0,
+        "energy_used": 22.0,
+        "minerals": 15,
+        "minerals_used": 0.4,
+        "compute": 60,
+        "compute_used": 24.0,
+        "productivity": 40.0,
+        "innovation": 9.9225,
+        "military": 51.0,
+        "energy_supply": 1,
+        "compute_supply": 1,
+        "thermal_supply": 1,
+        "gdp_growth": 0.01049225
+      }
+    },
+    "China": {
+      "id": "China",
+      "government": "Authoritarian/one-party",
+      "currency": 9.070488075219831,
+      "gdp": 18.03194505,
+      "tax_rate": 0.22,
+      "domestic_debt": 14.58,
+      "military": 226.09755656108598,
+      "buildings": {
+        "renewable": 3,
+        "thermal": 5,
+        "datacenter": 4,
+        "drone": 3,
+        "cyber": 2,
+        "mine": 4,
+        "factory": 5,
+        "research": 2
+      },
+      "content": 62.90843,
+      "innovation": 16.93,
+      "energy": 43.0,
+      "minerals": 35.540000000000006,
+      "compute": 20.0,
+      "productivity": 66.0,
+      "relations": {
+        "EU": 2.98,
+        "US": 1.5300000000000002,
+        "Russia": 4.26
+      },
+      "tariffs": {
+        "EU": 0.0,
+        "US": 0.25,
+        "Russia": 0.0
+      },
+      "deployments": {
+        "Eastern Europe": 44.0,
+        "Pacific & South China Sea": 63.38461538461539,
+        "Arctic": 21.71294117647059,
+        "South America": 0.0
+      },
+      "progress": {
+        "infrastructure": 0.3
+      },
+      "share_bonus": [
+        "EU",
+        "Russia"
+      ],
+      "transition_target": null,
+      "transition_remaining": 0,
+      "last_ledger": {
+        "opening_currency": 8.55,
+        "planned_spending": -2.08,
+        "principal_received": 0.0,
+        "aid_received": 0.0,
+        "taxes": 3.9270000000000005,
+        "trade_income": 0.03,
+        "tariff_income": 0.014343749999999999,
+        "luxury_exports": 0.0,
+        "interest_received": 0.1688243252198292,
+        "domestic_interest": -0.52488,
+        "foreign_interest": -0.06479999999999998,
+        "building_upkeep": -0.75,
+        "military_upkeep": -0.2,
+        "new_borrowing": 0,
+        "operating_balance": 2.60048807521983,
+        "closing_currency": 9.070488075219831
+      },
+      "last_production": {
+        "energy": 43.0,
+        "energy_used": 20.0,
+        "minerals": 20,
+        "minerals_used": 0.5,
+        "compute": 40,
+        "compute_used": 20.0,
+        "productivity": 66.0,
+        "innovation": 6.930000000000001,
+        "military": 45.0,
+        "energy_supply": 1,
+        "compute_supply": 1,
+        "thermal_supply": 1,
+        "gdp_growth": 0.010192999999999999
+      }
+    },
+    "Russia": {
+      "id": "Russia",
+      "government": "Authoritarian/dictator",
+      "currency": 1.1170226554734293,
+      "gdp": 2.0194085,
+      "tax_rate": 0.26,
+      "domestic_debt": 0.405,
+      "military": 240.82244343891404,
+      "buildings": {
+        "renewable": 1,
+        "thermal": 3,
+        "datacenter": 1,
+        "drone": 4,
+        "cyber": 1,
+        "mine": 4,
+        "factory": 2,
+        "research": 1
+      },
+      "content": 61.679167500000005,
+      "innovation": 12.0425,
+      "energy": 29.200000000000003,
+      "minerals": 34.790000000000006,
+      "compute": 2.0,
+      "productivity": 25.200000000000003,
+      "relations": {
+        "EU": 1.905,
+        "US": 2.7600000000000002,
+        "China": 4.26
+      },
+      "tariffs": {
+        "EU": 0.25,
+        "US": 0.0,
+        "China": 0.0
+      },
+      "deployments": {
+        "Eastern Europe": 80.0,
+        "Pacific & South China Sea": 19.015384615384615,
+        "Arctic": 39.80705882352941,
+        "South America": 0.0
+      },
+      "progress": {
+        "drone": 0.1
+      },
+      "share_bonus": [
+        "US",
+        "China"
+      ],
+      "transition_target": null,
+      "transition_remaining": 0,
+      "last_ledger": {
+        "opening_currency": 1.0,
+        "planned_spending": -0.0,
+        "principal_received": 0.0,
+        "aid_received": 0.0,
+        "taxes": 0.52,
+        "trade_income": 0.06,
+        "tariff_income": 0.014062499999999999,
+        "luxury_exports": 0.0,
+        "interest_received": 0.039340155473429325,
+        "domestic_interest": -0.01458,
+        "foreign_interest": -0.0017999999999999995,
+        "building_upkeep": -0.30000000000000004,
+        "military_upkeep": -0.2,
+        "new_borrowing": 0,
+        "operating_balance": 0.11702265547342929,
+        "closing_currency": 1.1170226554734293
+      },
+      "last_production": {
+        "energy": 25.2,
+        "energy_used": 16.0,
+        "minerals": 24.0,
+        "minerals_used": 0.30000000000000004,
+        "compute": 10,
+        "compute_used": 8.0,
+        "productivity": 25.200000000000003,
+        "innovation": 2.0425,
+        "military": 50.0,
+        "energy_supply": 1,
+        "compute_supply": 1,
+        "thermal_supply": 1,
+        "gdp_growth": 0.00970425
+      }
+    }
+  },
+  "contracts": [
+    {
+      "id": "EU:US",
+      "borrower": "EU",
+      "lender": "US",
+      "principal": 1.909428571428571,
+      "rate": 0.04,
+      "matures_round": 3
+    },
+    {
+      "id": "EU:China",
+      "borrower": "EU",
+      "lender": "China",
+      "principal": 1.1177142857142854,
+      "rate": 0.04,
+      "matures_round": 3
+    },
+    {
+      "id": "EU:Russia",
+      "borrower": "EU",
+      "lender": "Russia",
+      "principal": 0.23285714285714285,
+      "rate": 0.04,
+      "matures_round": 3
+    },
+    {
+      "id": "US:EU",
+      "borrower": "US",
+      "lender": "EU",
+      "principal": 3.864406779661016,
+      "rate": 0.04,
+      "matures_round": 3
+    },
+    {
+      "id": "US:China",
+      "borrower": "US",
+      "lender": "China",
+      "principal": 3.091525423728813,
+      "rate": 0.04,
+      "matures_round": 3
+    },
+    {
+      "id": "US:Russia",
+      "borrower": "US",
+      "lender": "Russia",
+      "principal": 0.6440677966101693,
+      "rate": 0.04,
+      "matures_round": 3
+    },
+    {
+      "id": "China:EU",
+      "borrower": "China",
+      "lender": "EU",
+      "principal": 0.6394736842105262,
+      "rate": 0.04,
+      "matures_round": 3
+    },
+    {
+      "id": "China:US",
+      "borrower": "China",
+      "lender": "US",
+      "principal": 0.8739473684210524,
+      "rate": 0.04,
+      "matures_round": 3
+    },
+    {
+      "id": "China:Russia",
+      "borrower": "China",
+      "lender": "Russia",
+      "principal": 0.10657894736842104,
+      "rate": 0.04,
+      "matures_round": 3
+    },
+    {
+      "id": "Russia:EU",
+      "borrower": "Russia",
+      "lender": "EU",
+      "principal": 0.01421052631578947,
+      "rate": 0.04,
+      "matures_round": 3
+    },
+    {
+      "id": "Russia:US",
+      "borrower": "Russia",
+      "lender": "US",
+      "principal": 0.019421052631578943,
+      "rate": 0.04,
+      "matures_round": 3
+    },
+    {
+      "id": "Russia:China",
+      "borrower": "Russia",
+      "lender": "China",
+      "principal": 0.011368421052631576,
+      "rate": 0.04,
+      "matures_round": 3
+    }
+  ],
+  "fronts": {
+    "Eastern Europe": {
+      "name": "Eastern Europe",
+      "influence": {
+        "EU": 0.0,
+        "US": 0.0,
+        "China": 3.5483870967741935,
+        "Russia": 6.451612903225806
+      },
+      "status": "China + Russia \u00b7 uncontested"
+    },
+    "Pacific & South China Sea": {
+      "name": "Pacific & South China Sea",
+      "influence": {
+        "EU": 0.0,
+        "US": 0.0,
+        "China": 0.0,
+        "Russia": 0.0
+      },
+      "status": "Contested"
+    },
+    "Arctic": {
+      "name": "Arctic",
+      "influence": {
+        "EU": 0.0,
+        "US": 0.0,
+        "China": 0.0,
+        "Russia": 0.0
+      },
+      "status": "Contested"
+    },
+    "South America": {
+      "name": "South America",
+      "influence": {
+        "EU": 0.0,
+        "US": 10.0,
+        "China": 0.0,
+        "Russia": 0.0
+      },
+      "status": "US \u00b7 uncontested"
+    }
+  },
+  "orders": {
+    "EU": {
+      "tax_rate": 0.4,
+      "government": "Democratic/pluralistic",
+      "investments": {},
+      "deployments": {
+        "Eastern Europe": 0.0,
+        "Pacific & South China Sea": 0,
+        "Arctic": 0,
+        "South America": 0.0
+      },
+      "tariffs": {
+        "US": 0.0,
+        "China": 0.0,
+        "Russia": 0.0
+      },
+      "trade_offers": [],
+      "alliance_offers": [],
+      "share_bonus": [],
+      "improve_relations": [],
+      "foreign_aid": [],
+      "contract_rates": {},
+      "foreign_repayments": {},
+      "domestic_repayment": 0.0
+    },
+    "US": {
+      "tax_rate": 0.25,
+      "government": "Democratic/oligarchic",
+      "investments": {},
+      "deployments": {
+        "Eastern Europe": 0.0,
+        "Pacific & South China Sea": 144.4,
+        "Arctic": 37.8,
+        "South America": 88.0
+      },
+      "tariffs": {
+        "EU": 0.0,
+        "China": 0.25,
+        "Russia": 0.0
+      },
+      "trade_offers": [
+        "EU",
+        "Russia"
+      ],
+      "alliance_offers": [
+        "EU"
+      ],
+      "share_bonus": [
+        "EU",
+        "Russia"
+      ],
+      "improve_relations": [],
+      "foreign_aid": [],
+      "contract_rates": {},
+      "foreign_repayments": {},
+      "domestic_repayment": 0.0
+    },
+    "China": {
+      "tax_rate": 0.22,
+      "government": "Authoritarian/one-party",
+      "investments": {},
+      "deployments": {
+        "Eastern Europe": 44.0,
+        "Pacific & South China Sea": 63.38461538461539,
+        "Arctic": 21.71294117647059,
+        "South America": 0.0
+      },
+      "tariffs": {
+        "EU": 0.0,
+        "US": 0.25,
+        "Russia": 0.0
+      },
+      "trade_offers": [
+        "EU",
+        "Russia"
+      ],
+      "alliance_offers": [
+        "Russia"
+      ],
+      "share_bonus": [
+        "EU",
+        "Russia"
+      ],
+      "improve_relations": [],
+      "foreign_aid": [],
+      "contract_rates": {},
+      "foreign_repayments": {},
+      "domestic_repayment": 0.0
+    },
+    "Russia": {
+      "tax_rate": 0.26,
+      "government": "Authoritarian/dictator",
+      "investments": {},
+      "deployments": {
+        "Eastern Europe": 80.0,
+        "Pacific & South China Sea": 19.015384615384615,
+        "Arctic": 39.80705882352941,
+        "South America": 0.0
+      },
+      "tariffs": {
+        "EU": 0.25,
+        "US": 0.0,
+        "China": 0.0
+      },
+      "trade_offers": [
+        "US",
+        "China"
+      ],
+      "alliance_offers": [
+        "China"
+      ],
+      "share_bonus": [
+        "US",
+        "China"
+      ],
+      "improve_relations": [],
+      "foreign_aid": [],
+      "contract_rates": {},
+      "foreign_repayments": {},
+      "domestic_repayment": 0.0
+    }
+  },
+  "rules": {
+    "start_year": 2026,
+    "starting_capital": {
+      "EU": 60.0,
+      "US": 13.6,
+      "China": 8.55,
+      "Russia": 1.0
+    },
+    "starting_buildings": {
+      "EU": {
+        "renewable": 3,
+        "thermal": 2,
+        "datacenter": 4,
+        "drone": 1,
+        "cyber": 1,
+        "mine": 2,
+        "factory": 3,
+        "research": 2
+      },
+      "US": {
+        "renewable": 3,
+        "thermal": 4,
+        "datacenter": 6,
+        "drone": 3,
+        "cyber": 3,
+        "mine": 3,
+        "factory": 4,
+        "research": 3
+      },
+      "China": {
+        "renewable": 3,
+        "thermal": 5,
+        "datacenter": 4,
+        "drone": 3,
+        "cyber": 2,
+        "mine": 4,
+        "factory": 5,
+        "research": 2
+      },
+      "Russia": {
+        "renewable": 1,
+        "thermal": 3,
+        "datacenter": 1,
+        "drone": 2,
+        "cyber": 1,
+        "mine": 4,
+        "factory": 2,
+        "research": 1
+      }
+    },
+    "starting_energy": 20.0,
+    "starting_minerals": 20.0,
+    "starting_content": 65,
+    "starting_innovation": 10.0,
+    "factory_output": 10.0,
+    "combat_attrition": 0.15,
+    "influence_gain": 10,
+    "hostility_drift": 0.02,
+    "government_transition_years": 3,
+    "transition_unrest": 5.0,
+    "contract_years": 3,
+    "foreign_interest": 0.04,
+    "domestic_base_interest": 0.015,
+    "domestic_discontent_interest": 0.06,
+    "military_upkeep": 0.001,
+    "trade_volume": 0.015,
+    "luxury_export_rate": 0.002,
+    "diplomacy_cost": 0.1,
+    "diplomacy_gain": 0.2,
+    "foreign_aid_amount": 1.0,
+    "foreign_aid_relation_gain": 0.25,
+    "trade_relation_gain": 0.08,
+    "tariff_relation_penalty": 0.3,
+    "conflict_relation_penalty": 0.15,
+    "war_discontent": 1.5,
+    "victory_target": 0.0
+  },
+  "round": 2,
+  "mode": "solo",
+  "player": "EU",
+  "trades": [
+    "Russia|US",
+    "China|Russia"
+  ],
+  "alliances": [
+    "China|Russia"
+  ],
+  "submitted": [],
+  "history": [
+    {
+      "year": 2026,
+      "round": 1,
+      "nations": {
+        "EU": {
+          "gdp": 20.0,
+          "currency": 60.0,
+          "debt": 16.3,
+          "content": 65,
+          "innovation": 10.0,
+          "military": 120.0,
+          "influence": 0.0,
+          "energy": 20.0,
+          "minerals": 20.0
+        },
+        "US": {
+          "gdp": 27.2,
+          "currency": 13.6,
+          "debt": 38.0,
+          "content": 65,
+          "innovation": 10.0,
+          "military": 400.0,
+          "influence": 0.0,
+          "energy": 20.0,
+          "minerals": 20.0
+        },
+        "China": {
+          "gdp": 17.1,
+          "currency": 8.55,
+          "debt": 16.2,
+          "content": 65,
+          "innovation": 10.0,
+          "military": 200.0,
+          "influence": 0.0,
+          "energy": 20.0,
+          "minerals": 20.0
+        },
+        "Russia": {
+          "gdp": 2.0,
+          "currency": 1.0,
+          "debt": 0.45,
+          "content": 65,
+          "innovation": 10.0,
+          "military": 200.0,
+          "influence": 0.0,
+          "energy": 20.0,
+          "minerals": 20.0
+        }
+      }
+    }
+  ],
+  "reports": [],
+  "winner": null
+}

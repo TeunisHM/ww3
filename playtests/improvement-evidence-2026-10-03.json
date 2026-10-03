@@ -1,0 +1,110 @@
+{
+  "checked_at_utc": "2026-10-03T07:40:18.320387+00:00",
+  "rules_version": "1",
+  "save_schema_version": 3,
+  "rules_and_standard_ai_changed": false,
+  "source_sha256": {
+    "app.py": "24b84132faae73c97cda53eb41299446d550844136761a60b28f8941fd782339",
+    "ww3/__init__.py": "6769ad7ed95d05870c42b4986eeea28a4387c5c4b4dce36b358ea31d0532f85a",
+    "ww3/ai.py": "2ab27da8fadf18083ec4d96f90d65d2b9ac1e5649469220992ce03dfd4e880db",
+    "ww3/briefing.py": "854e4298bafed84c6022f4ea4dde6d363036d29f5b474fc6911d46c0302a74d8",
+    "ww3/catalog.py": "1ccf51d9bcb01f5b10445cf6b67fb83a07fc3f5fa96dd3cfcb9e283e954e019a",
+    "ww3/command_ui.py": "51761b14adb2ce82a0bd1d829336af3b85a021b693c087a2f2181da135e84468",
+    "ww3/components.py": "bb84ed3959c5dcbd8ab595d849e29c91663a9d893bda65b67fefbcab6058c174",
+    "ww3/engine.py": "f19bf75607edc88e26872761b5424f0d2fe3ba8180b3d3e4f392b6cbf54e026f",
+    "ww3/evaluation.py": "c7af8451a320cf987c0ace84004270f368e42ecd1a2048c1e5bb89e0070a4058",
+    "ww3/forecast.py": "11bef25fb40b2d1c5aa9f5a89a34218a72fa38ae29c1f008ff942c46d85bf2f2",
+    "ww3/map_view.py": "1852e9ae8bc1a789c0208bcd88e72b5101e09487776c0f1605939c4a553877cc",
+    "ww3/models.py": "e57f72428213ccbd0a9b582625864b0bfc973c1fdbece29478a14d7689432e74",
+    "ww3/objective_policy.py": "a356b9a330ae566d39c19d3d452d1b839457c8f0a03a30f68e600673d3313a29",
+    "ww3/persistence.py": "9d700c19b1b9cf010694a684401014457d1c169721aae282de8b00733f598152",
+    "ww3/planning.py": "431387e3738c5b21758524515ae9ecb358c96f65d3a552a68c3adab4ca582f0d",
+    "ww3/preferences.py": "353f67e8bcd5cdde3002aa73a7ff00b84a4888601bb43aaa676af04118f161da",
+    "ww3/presentation.py": "2b56f49cadd571e5dce141aa88f38b543c0ca83d5daeb72638c1190ae0ec5762",
+    "ww3/recovery.py": "0a55eb70f36f3d0941c7bb01ecb3f78c203ad12700bbde382ea67a401a53f715",
+    "ww3/reporting.py": "bf3704c4beb65739c3fd06e8deeadd770074cac781dd897ddc638c62594d837b",
+    "ww3/rules.py": "2055e2992184bf614778401f9d0b947e48982df4f26ce2e854193abe88f2336f",
+    "ww3/strategy.py": "b8b0157f73488445763914230b1e65fe6543f898e29ef8629ec4ed089a0ac595",
+    "ww3/audio.js": "3f2e61003910ad8ae3c18ae16989951a4025f7d6f73e5ad0544c002eb3e6d6dc",
+    "tools/check_opening.py": "c6f136aa7a89f9ef554e472b036f73d2ca6fc68b17494d04353681d931d47d01",
+    "tools/play_campaigns.py": "a6f86ec11e5658369c89cdf773a1e07b600f7ec59db91dfdb38deffd0c1d1294",
+    "tools/probe_balance.py": "b2da5aefa0ca4256d61a00d85a42dd3b6f6b5439a76841f404f3a970ede5fd96",
+    "tests/conftest.py": "df66c61a24023afeb78ce85819c51a7ae6382d4c87b554564b3b5cd533b89a4d",
+    "tests/test_app.py": "9017dd56398ecebe927e58a448e245c7523e8dde9362f8ff950cfab9a9036952",
+    "tests/test_briefing.py": "bd5f34feb84f67de2e2506f76f6a78a81240c8955c75376e23a8238d7fcada2f",
+    "tests/test_engine.py": "d43571f5c5336ba078c5433c2c582e5070f1ce932f5c7c2e90d7415859d20e8a",
+    "tests/test_improvements.py": "fc36fee048cbbd7552d0707bddd831b6e88151a401072d0433c30adaa7e988ed",
+    "tests/test_map_view.py": "ae2f273ea8d89e645a3ee13cf1c669a08524f7f21791256366b41cc557deac3a",
+    "tests/test_objective_policy.py": "926dbc66659ebef48aeefb2d0a3637acb452fc3d1882318b9219ab299d3b9dbe",
+    "tests/test_opening.py": "062002254b2e72a0c8e8b6dc366123120645e07c5c0e5df6947b8aef8398824d",
+    "tests/test_strategy_and_forecast.py": "a3bca3648e4c1a9becf5da7ff1b120936311dcf6f96e2c0d37c3a13044706f55"
+  },
+  "pytest": {
+    "command": ".venv/bin/python -m pytest -q",
+    "passed": 166,
+    "failed": 0,
+    "result": "166 passed in 16.87s"
+  },
+  "browser": {
+    "keyboard_theaters": 4,
+    "sticky_summary": true,
+    "undo": true,
+    "objective_forecast_and_theater_navigation": true,
+    "mobile_map_pan_and_keyboard": true,
+    "selected_map_card_visible_after_resize": true,
+    "invalid_draft_blocked": true,
+    "review_skip_replay": true,
+    "reload": true,
+    "draft_comparison_restore": true,
+    "audio_test_and_mute": true,
+    "text_scale_reload": true,
+    "manual_save_import": true,
+    "forecast_currency": 65.74,
+    "resolved_currency": 65.7447236396075,
+    "browser_errors": [],
+    "screenshots": "playtests/captures/improvements-2026-10-03"
+  },
+  "objective_campaigns": {
+    "results": "playtests/objective-campaigns-2026-10-03/results.json",
+    "campaigns": 16,
+    "years_resolved": 360,
+    "replayed_every_case": true,
+    "aggregate": {
+      "campaigns": 16,
+      "unresolved": 4,
+      "winner_counts": {
+        "EU": 4,
+        "US": 4,
+        "China": 4
+      },
+      "tested_player_wins": 12,
+      "by_policy": {
+        "objective": {
+          "campaigns": 8,
+          "tested_player_wins": 6,
+          "unresolved": 2
+        },
+        "objective-industry": {
+          "campaigns": 8,
+          "tested_player_wins": 6,
+          "unresolved": 2
+        }
+      }
+    },
+    "policy_fingerprint": "f66e8b59b8745235ff49fafa5526a10a5325bc040f1427dd30e99eea176f6317"
+  },
+  "comparison_campaigns": "playtests/comparison-45-years-2026-10-03.json",
+  "synthetic_balance_probes": "playtests/balance-probes-2026-10-03.json",
+  "legacy_replay": {
+    "directory": "playtests/replays/EU-military-17",
+    "verified_years": 27,
+    "final_hash": "dd6b87ae355765c0b6fe5b90c6042e8ab0a41d88612288476b04818b8c0a7f03"
+  },
+  "human_player_observations": 0,
+  "report": "PLAYTEST_REPORT.md",
+  "publication_check": {
+    "checked_at_utc": "2026-10-03T07:55:04.536985+00:00",
+    "pytest_result": "166 passed in 17.03s",
+    "cleanup": "Removed trailing empty lines in requirements-dev.txt and ww3/__init__.py; no gameplay changes."
+  }
+}

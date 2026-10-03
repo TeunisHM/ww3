@@ -1,0 +1,342 @@
+{
+  "player": "US",
+  "policy": "objective",
+  "seed": 17,
+  "rules_version": "1",
+  "start_round": 1,
+  "observation_limit_years": 45,
+  "years_resolved": 10,
+  "winners": [
+    "US"
+  ],
+  "first_victory_round": 10,
+  "stop_reason": "victory",
+  "final_hash": "0604c344fdfb5932202b63d5aca3bec947e94213f36477ca30ad4f287b14dd90",
+  "by_faction": {
+    "EU": {
+      "shortage_years": 0,
+      "objective_starts": 0,
+      "objective_resets": 0,
+      "maximum_objective_conditions_met": 0,
+      "maximum_objective_streak": 0,
+      "new_borrowing": 0.0,
+      "unused_productivity": 0.0,
+      "minimum_currency": 60.0,
+      "maximum_debt": 16.3,
+      "investment_productivity": {
+        "renewable": 25.0,
+        "mine": 22.0,
+        "infrastructure": 10.0,
+        "drone": 10.0,
+        "datacenter": 10.0,
+        "civil_investment": 10.0,
+        "factory": 10.0,
+        "research": 15.0
+      },
+      "first_objective_streak_round": null,
+      "end": {
+        "currency": 123.95125088650242,
+        "gdp": 22.107886414327474,
+        "debt": 16.3,
+        "energy": 277.3324761681694,
+        "minerals": 143.70612097801694,
+        "compute": 30.0,
+        "productivity": 15.0,
+        "military": 86.35708017257083,
+        "innovation": 39.866342944154944,
+        "content": 80.91382113264532,
+        "influence": 45.0,
+        "objective_streak": 0,
+        "objective_conditions_met": 0,
+        "objectives": [
+          {
+            "condition": "EU security coalition holds \u226560% of Eastern Europe",
+            "current": "13.9%",
+            "met": false,
+            "detail": "EU must deploy forces. Connected allies present count; a coalition containing Russia cannot satisfy this condition.",
+            "front": "Eastern Europe",
+            "value": 0.1392989373467327,
+            "target": 0.6,
+            "comparison": ">=",
+            "unit": "share"
+          },
+          {
+            "condition": "Russian current influence in Eastern Europe \u226410/100",
+            "current": "45.0/100",
+            "met": false,
+            "detail": "Territorial influence can be displaced, so early Russian gains do not permanently block victory.",
+            "front": "Eastern Europe",
+            "value": 45.0,
+            "target": 10,
+            "comparison": "<=",
+            "unit": "influence"
+          },
+          {
+            "condition": "No other faction has >40% military share in the Arctic",
+            "current": "Largest foreign share: 83.8%",
+            "met": false,
+            "detail": "This includes allies. An empty Arctic counts as neutral.",
+            "front": "Arctic",
+            "value": 0.8375474086380742,
+            "target": 0.4,
+            "comparison": "<=",
+            "unit": "share"
+          }
+        ],
+        "buildings": {
+          "renewable": 5,
+          "thermal": 2,
+          "datacenter": 5,
+          "drone": 2,
+          "cyber": 1,
+          "mine": 4,
+          "factory": 1,
+          "research": 3
+        },
+        "deployments": {
+          "Eastern Europe": 28.97,
+          "Pacific & South China Sea": 0,
+          "Arctic": 0,
+          "South America": 0.0
+        },
+        "operating_balance": 7.44220699737909
+      }
+    },
+    "US": {
+      "shortage_years": 0,
+      "objective_starts": 1,
+      "objective_resets": 0,
+      "maximum_objective_conditions_met": 3,
+      "maximum_objective_streak": 3,
+      "new_borrowing": 0.0,
+      "unused_productivity": 0.0,
+      "minimum_currency": 50.0,
+      "maximum_debt": 38.0,
+      "investment_productivity": {
+        "factory": 60.0,
+        "drone": 230.0,
+        "thermal": 50.0
+      },
+      "first_objective_streak_round": 8,
+      "end": {
+        "currency": 100.07402315251166,
+        "gdp": 30.3855450777922,
+        "debt": 38.0,
+        "energy": 16.942206299173236,
+        "minerals": 83.28671977292133,
+        "compute": 36.0,
+        "productivity": 42.0,
+        "military": 2325.1982285841386,
+        "innovation": 48.04580578898459,
+        "content": 76.34264362380553,
+        "influence": 125.0,
+        "objective_streak": 3,
+        "objective_conditions_met": 3,
+        "objectives": [
+          {
+            "condition": "No foreign military presence in South America",
+            "current": "0.0 foreign power",
+            "met": true,
+            "detail": "All foreign factions count, including allies. An empty theater satisfies this condition.",
+            "front": "South America",
+            "value": 0.0,
+            "target": 0,
+            "comparison": "<=",
+            "unit": "power"
+          },
+          {
+            "condition": "US military share in the Arctic \u226580%",
+            "current": "83.8%",
+            "met": true,
+            "detail": "Measured using US forces only.",
+            "front": "Arctic",
+            "value": 0.8375474086380742,
+            "target": 0.8,
+            "comparison": ">=",
+            "unit": "share"
+          },
+          {
+            "condition": "Chinese military share in the Pacific \u226450%",
+            "current": "19.8%",
+            "met": true,
+            "detail": "An empty Pacific satisfies this ceiling.",
+            "front": "Pacific & South China Sea",
+            "value": 0.19825354088481748,
+            "target": 0.5,
+            "comparison": "<=",
+            "unit": "share"
+          }
+        ],
+        "buildings": {
+          "renewable": 3,
+          "thermal": 9,
+          "datacenter": 6,
+          "drone": 26,
+          "cyber": 3,
+          "mine": 3,
+          "factory": 6,
+          "research": 3
+        },
+        "deployments": {
+          "Eastern Europe": 0,
+          "Pacific & South China Sea": 768.9824596075243,
+          "Arctic": 1153.4736894112864,
+          "South America": 0.0
+        },
+        "operating_balance": 2.6640525156931862
+      }
+    },
+    "China": {
+      "shortage_years": 0,
+      "objective_starts": 0,
+      "objective_resets": 0,
+      "maximum_objective_conditions_met": 0,
+      "maximum_objective_streak": 0,
+      "new_borrowing": 0.0,
+      "unused_productivity": 0.0,
+      "minimum_currency": 38.677625671980636,
+      "maximum_debt": 16.2,
+      "investment_productivity": {
+        "datacenter": 30.0,
+        "drone": 36.6,
+        "mine": 15.0,
+        "civil_investment": 15.0,
+        "factory": 15.0,
+        "research": 21.6,
+        "renewable": 21.6,
+        "infrastructure": 21.6
+      },
+      "first_objective_streak_round": null,
+      "end": {
+        "currency": 39.23767050998095,
+        "gdp": 20.525600289577397,
+        "debt": 16.2,
+        "energy": 317.96970175168394,
+        "minerals": 209.24971912891905,
+        "compute": 50.0,
+        "productivity": 21.6,
+        "military": 558.2896973385717,
+        "innovation": 51.90159919812488,
+        "content": 87.57903942774459,
+        "influence": 70.0,
+        "objective_streak": 0,
+        "objective_conditions_met": 0,
+        "objectives": [
+          {
+            "condition": "Chinese military share in the Pacific >80%",
+            "current": "19.8%",
+            "met": false,
+            "detail": "Strictly above 80%; Chinese forces only.",
+            "front": "Pacific & South China Sea",
+            "value": 0.19825354088481748,
+            "target": 0.8,
+            "comparison": ">",
+            "unit": "share"
+          },
+          {
+            "condition": "Chinese military share in the Arctic \u226580%",
+            "current": "10.3%",
+            "met": false,
+            "detail": "Chinese forces only.",
+            "front": "Arctic",
+            "value": 0.10347640307871848,
+            "target": 0.8,
+            "comparison": ">=",
+            "unit": "share"
+          }
+        ],
+        "buildings": {
+          "renewable": 5,
+          "thermal": 5,
+          "datacenter": 8,
+          "drone": 6,
+          "cyber": 2,
+          "mine": 5,
+          "factory": 1,
+          "research": 4
+        },
+        "deployments": {
+          "Eastern Europe": 0,
+          "Pacific & South China Sea": 190.15175403924758,
+          "Arctic": 142.5081221614718,
+          "South America": 0.0
+        },
+        "operating_balance": 0.5600448380003142
+      }
+    },
+    "Russia": {
+      "shortage_years": 0,
+      "objective_starts": 0,
+      "objective_resets": 0,
+      "maximum_objective_conditions_met": 0,
+      "maximum_objective_streak": 0,
+      "new_borrowing": 4.146135974494829,
+      "unused_productivity": 38.4,
+      "minimum_currency": 0.0,
+      "maximum_debt": 4.596135974494829,
+      "investment_productivity": {
+        "datacenter": 27.200000000000003,
+        "civil_investment": 9.6,
+        "factory": 9.6,
+        "drone": 9.6
+      },
+      "first_objective_streak_round": null,
+      "end": {
+        "currency": 0.0,
+        "gdp": 2.2896916678643437,
+        "debt": 4.596135974494829,
+        "energy": 183.9154126374986,
+        "minerals": 238.05102462086325,
+        "compute": 20.0,
+        "productivity": 9.6,
+        "military": 366.97452584320166,
+        "innovation": 16.13196597652624,
+        "content": 77.38392768124402,
+        "influence": 85.0,
+        "objective_streak": 0,
+        "objective_conditions_met": 0,
+        "objectives": [
+          {
+            "condition": "Russian military share in Eastern Europe \u226599%",
+            "current": "86.1%",
+            "met": false,
+            "detail": "Russian forces only.",
+            "front": "Eastern Europe",
+            "value": 0.8607010626532673,
+            "target": 0.99,
+            "comparison": ">=",
+            "unit": "share"
+          },
+          {
+            "condition": "Russian military share in the Arctic \u226550%",
+            "current": "5.9%",
+            "met": false,
+            "detail": "Russian forces only.",
+            "front": "Arctic",
+            "value": 0.05897618828320743,
+            "target": 0.5,
+            "comparison": ">=",
+            "unit": "share"
+          }
+        ],
+        "buildings": {
+          "renewable": 1,
+          "thermal": 3,
+          "datacenter": 3,
+          "drone": 2,
+          "cyber": 1,
+          "mine": 4,
+          "factory": 0,
+          "research": 1
+        },
+        "deployments": {
+          "Eastern Europe": 179.0,
+          "Pacific & South China Sea": 0,
+          "Arctic": 81.22224579151242,
+          "South America": 0.0
+        },
+        "operating_balance": -0.9750638623696355
+      }
+    }
+  }
+}
