@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ww3-game"
+version = "0.1.0"
+description = "An offline geopolitical strategy simulation with Godot and Streamlit clients"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.optional-dependencies]
+streamlit = ["streamlit>=1.52,<2", "pandas>=2.2,<4"]
+test = ["pytest>=8,<10"]
+browser = ["playwright>=1.50,<2"]
+
+[project.scripts]
+ww3-worker = "ww3.bridge.worker:main"
+
+[tool.setuptools]
+packages = ["ww3", "ww3.core", "ww3.application", "ww3.persistence", "ww3.bridge", "ww3_streamlit"]
+
+[tool.setuptools.package-dir]
+"" = "src"
+ww3_streamlit = "clients/streamlit"
+
+[tool.setuptools.package-data]
+ww3_streamlit = ["audio.js"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "--import-mode=importlib"

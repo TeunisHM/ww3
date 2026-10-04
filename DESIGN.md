@@ -2,11 +2,13 @@
 
 This is the single source of truth for gameplay. It consolidates the original **Geopolitics: WW3** document, the supplemental **Global Factions / World Order** summary, and the user's decisions. The superseded input files have been deleted after consolidation.
 
-**Status, 3 October 2026:** the rules below are the implemented local prototype baseline. The commercial ambition is a Steam top-10 game. [NEXT_STEPS.md](NEXT_STEPS.md) describes proposed development, player validation, and release milestones; it does not override these rules. [README.md](README.md) records the implementation status and how to play. This design stays independent of implementation technology.
+**Status, 4 October 2026:** the rules below are the implemented local prototype baseline. The Godot desktop client and Streamlit development client use the same simulation; the desktop feature migration did not change these rules. The commercial ambition is a Steam top-10 game. [NEXT_STEPS.md](NEXT_STEPS.md) describes proposed development, player validation, and release milestones; it does not override these rules. [README.md](README.md) records the implementation status and how to play. This design stays independent of implementation technology.
 
 ## 1. Scope and confirmed decisions
 
 A turn-based geopolitical strategy game with four playable factions: **EU, US, China, and Russia**. The focus is economic, diplomatic, and military decisions with a readable strategic world map. Combat is abstract; there is no tactical battlefield or geographical conquest system.
+
+Visuals may explain factions, resources, military presence, and territorial influence, but they do not change their rules or numerical effects. The map represents abstract theaters rather than borders or a geography-based conquest system.
 
 Confirmed decisions:
 

@@ -6,8 +6,8 @@ These isolate incentives; they are not ordinary campaign outcomes.
 
 import json
 
-from ww3.catalog import FACTIONS, FRONTS
-from ww3.engine import new_game, resolve_round
+from ww3.core.catalog import FACTIONS, FRONTS
+from ww3.core.engine import new_game, resolve_round
 
 
 def empty_fronts():

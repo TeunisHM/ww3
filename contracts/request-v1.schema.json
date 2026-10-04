@@ -1,0 +1,534 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "WW3 local worker request, protocol 1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "protocol_version",
+    "id",
+    "command"
+  ],
+  "properties": {
+    "protocol_version": {
+      "const": 1
+    },
+    "id": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 128
+    },
+    "command": {
+      "enum": [
+        "state",
+        "forecast",
+        "export",
+        "quit",
+        "new",
+        "load",
+        "edit",
+        "commit",
+        "reopen",
+        "undo",
+        "reset",
+        "remember",
+        "restore",
+        "compare",
+        "recover",
+        "ui"
+      ]
+    },
+    "expected_revision": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "params": {
+      "type": "object"
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "command": {
+            "enum": [
+              "new",
+              "load",
+              "edit",
+              "commit",
+              "reopen",
+              "undo",
+              "reset",
+              "remember",
+              "restore",
+              "recover",
+              "ui"
+            ]
+          }
+        }
+      },
+      "then": {
+        "required": [
+          "expected_revision"
+        ]
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "command": {
+            "enum": [
+              "state",
+              "forecast",
+              "export",
+              "quit"
+            ]
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "params": {
+            "maxProperties": 0
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "command": {
+            "const": "new"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "params": {
+            "additionalProperties": false,
+            "properties": {
+              "mode": {
+                "enum": [
+                  "solo",
+                  "hotseat",
+                  "sandbox"
+                ]
+              },
+              "player": {
+                "$ref": "#/$defs/faction"
+              },
+              "seed": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 100000
+              },
+              "rules": {
+                "$ref": "#/$defs/scenario"
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "command": {
+            "const": "edit"
+          }
+        }
+      },
+      "then": {
+        "required": [
+          "params"
+        ],
+        "properties": {
+          "params": {
+            "required": [
+              "faction",
+              "changes"
+            ],
+            "additionalProperties": false,
+            "properties": {
+              "faction": {
+                "$ref": "#/$defs/faction"
+              },
+              "changes": {
+                "type": "object",
+                "description": "Top-level Order fields; dictionary fields replace their entire map. Validated against the game's save and order rules."
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "command": {
+            "enum": [
+              "commit",
+              "reopen",
+              "undo",
+              "reset",
+              "remember",
+              "restore",
+              "compare"
+            ]
+          }
+        }
+      },
+      "then": {
+        "required": [
+          "params"
+        ],
+        "properties": {
+          "params": {
+            "required": [
+              "faction"
+            ],
+            "additionalProperties": false,
+            "properties": {
+              "faction": {
+                "$ref": "#/$defs/faction"
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "command": {
+            "const": "load"
+          }
+        }
+      },
+      "then": {
+        "required": [
+          "params"
+        ],
+        "properties": {
+          "params": {
+            "required": [
+              "save"
+            ],
+            "additionalProperties": false,
+            "properties": {
+              "save": {
+                "type": "string",
+                "description": "Opaque portable JSON save. Keep this string intact rather than parsing and reserializing it in the client."
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "command": {
+            "const": "recover"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "params": {
+            "additionalProperties": false,
+            "properties": {
+              "previous": {
+                "type": "boolean"
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "command": {
+            "const": "ui"
+          }
+        }
+      },
+      "then": {
+        "required": [
+          "params"
+        ],
+        "properties": {
+          "params": {
+            "required": [
+              "values"
+            ],
+            "additionalProperties": false,
+            "properties": {
+              "values": {
+                "$ref": "#/$defs/ui"
+              }
+            }
+          }
+        }
+      }
+    }
+  ],
+  "$defs": {
+    "faction": {
+      "enum": [
+        "EU",
+        "US",
+        "China",
+        "Russia"
+      ]
+    },
+    "scenario": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "victory_mode": {
+          "enum": [
+            "objectives",
+            "open",
+            "influence"
+          ]
+        },
+        "combat_attrition": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 0.5
+        },
+        "influence_gain": {
+          "type": "number",
+          "minimum": 1,
+          "maximum": 25
+        },
+        "hostility_drift": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 0.2
+        },
+        "contract_years": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 10
+        },
+        "government_transition_years": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 10
+        },
+        "military_upkeep": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 0.02
+        },
+        "objective_hold_years": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 10
+        },
+        "ai_seed": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 100000
+        },
+        "victory_target": {
+          "type": "number",
+          "minimum": 150,
+          "maximum": 400
+        },
+        "starting_capital": {
+          "type": "object",
+          "required": [
+            "EU",
+            "US",
+            "China",
+            "Russia"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "EU": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1000
+            },
+            "US": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1000
+            },
+            "China": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1000
+            },
+            "Russia": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1000
+            }
+          }
+        },
+        "starting_energy": {
+          "type": "object",
+          "required": [
+            "EU",
+            "US",
+            "China",
+            "Russia"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "EU": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1000
+            },
+            "US": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1000
+            },
+            "China": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1000
+            },
+            "Russia": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1000
+            }
+          }
+        },
+        "starting_minerals": {
+          "type": "object",
+          "required": [
+            "EU",
+            "US",
+            "China",
+            "Russia"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "EU": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1000
+            },
+            "US": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1000
+            },
+            "China": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1000
+            },
+            "Russia": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1000
+            }
+          }
+        },
+        "starting_content": {
+          "type": "object",
+          "required": [
+            "EU",
+            "US",
+            "China",
+            "Russia"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "EU": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 100
+            },
+            "US": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 100
+            },
+            "China": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 100
+            },
+            "Russia": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 100
+            }
+          }
+        }
+      }
+    },
+    "ui": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "sound_enabled": {
+          "type": "boolean"
+        },
+        "sound_volume": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 100
+        },
+        "text_scale": {
+          "enum": [
+            100,
+            115,
+            130,
+            150
+          ]
+        },
+        "reduce_motion": {
+          "type": "boolean"
+        },
+        "guide_enabled": {
+          "type": "boolean"
+        },
+        "handoff": {
+          "type": "boolean"
+        },
+        "review_open": {
+          "type": "boolean"
+        },
+        "review_step": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 5
+        },
+        "commander": {
+          "$ref": "#/$defs/faction"
+        },
+        "page": {
+          "enum": [
+            "Situation room",
+            "Economy & construction",
+            "Diplomacy",
+            "Military fronts",
+            "Government & debt",
+            "Objectives",
+            "Chronicle",
+            "Rules & reference"
+          ]
+        },
+        "selected_front": {
+          "enum": [
+            "Eastern Europe",
+            "Pacific & South China Sea",
+            "Arctic",
+            "South America"
+          ]
+        }
+      }
+    }
+  }
+}

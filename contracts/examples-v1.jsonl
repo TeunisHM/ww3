@@ -1,0 +1,6 @@
+{"protocol_version":1,"id":"inspect-1","command":"state"}
+{"protocol_version":1,"id":"edit-1","command":"edit","expected_revision":0,"params":{"faction":"EU","changes":{"investments":{"factory":5}}}}
+{"protocol_version":1,"id":"forecast-1","command":"forecast"}
+{"protocol_version":1,"id":"end-1","command":"commit","expected_revision":1,"params":{"faction":"EU"}}
+{"protocol_version":1,"id":"export-1","command":"export"}
+{"protocol_version":1,"id":"quit-1","command":"quit"}

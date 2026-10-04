@@ -17,23 +17,56 @@ The superseded design inputs have been removed. Roadmap proposals become gamepla
 
 The local prototype implements the reconciled rules, including simultaneous annual turns, construction and supply chains, diplomacy, debt contracts, persistent forces, coalition combat, recoverable influence, and faction objectives. The opening scenario is contested; the default victory requires three consecutive resolved years. Live forecasts use the actual resolution rules and update as orders change. Portable saves preserve plans and scenario settings.
 
-The implementation passes **178 automated tests**, including exact construction/theater/objective forecasts, partial and paused construction workflows, victory warnings, map data, draft comparison/undo, phase reports, recovery failures, presentation preferences, strategic campaign replay, and hotseat relaunches. These checks establish a functional baseline; broader campaign balance, player retention, accessibility, and commercial demand still need evaluation.
+The implementation passes **227 automated Python tests**, including exact construction/theater/objective forecasts, partial and paused construction workflows, victory warnings, map data, draft comparison/undo, phase reports, recovery failures, presentation preferences, scenario validation, strategic campaign replay, and hotseat relaunches. Two Godot integration suites exercise the actual desktop scene and Python worker. These checks establish a functional baseline; broader campaign balance, player retention, accessibility, and commercial demand still need evaluation.
 
-The browser interface includes a short introduction and EU quick start, an interactive command map for all four fronts, a persistent planning ledger, draft comparison and undo/reset, optional first-three-year guidance, a skippable/replayable turn review, and automatic local recovery. Sound effects, volume, text size and reduced-motion controls are available. The Python simulation remains authoritative. Computer policies are unchanged; desktop packaging, Steam integration, and player-validated onboarding remain future work. Turn review uses instant manual steps without animation. The next graphics work is planned in [NEXT_STEPS.md, section 11](NEXT_STEPS.md#11-graphics-improvement-plan).
+Both clients provide campaign setup, all gameplay orders, forecasts, objectives, history, draft comparison, undo/reset, first-three-year guidance, turn reviews, recovery, and sound/display preferences. The Python simulation remains authoritative. Streamlit stays available as the development/debugging client; Godot now covers its gameplay workflows with native desktop controls. The desktop presentation is functional, and its visual direction and original game graphics are the next work. Production packaging, Steam integration, and player-validated onboarding remain future work. Turn review uses instant manual steps without animation. See the active polish and graphic generation plan in [NEXT_STEPS.md, section 11](NEXT_STEPS.md#11-visual-polish-and-graphic-generation).
 
-The commercial ambition is a Steam top-10 launch. [NEXT_STEPS.md](NEXT_STEPS.md) defines a provisional chart target and the evidence needed to justify further investment. The immediate priority is a polished, testable opening campaign built around the existing mechanics and resource forecasts.
+The commercial ambition is a Steam top-10 launch. [NEXT_STEPS.md](NEXT_STEPS.md) defines a provisional chart target and the evidence needed to justify further investment. The immediate work is to establish an art direction for the Godot client, generate original game graphics, and polish the command screens around the existing mechanics and resource forecasts.
 
 The latest improvement pass adds separate troop-share and influence bars to every map theater, readable horizontal map panning on narrow screens, and an Objectives dashboard with current-versus-post-combat values, precise gaps, coalition blockers, theater shortcuts, and a four-faction victory watch. Commit-area alerts expose shortages, operating deficits, borrowing, hold resets, and expiring productivity. The [playtest report](PLAYTEST_REPORT.md) records 12 objective-driven wins and four unresolved Russian campaigns; the standard opponents and numerical rules remain unchanged.
 
-## Run
+## Godot desktop client
+
+Install the Python simulation and open `clients/godot/project.godot` with **Godot 4.5+ (standard edition)**. Godot 4.5.1 has been used for verification. From this repository:
+
+```bash
+python3 -m venv .venv
+.venv/bin/python -m pip install -e .
+.venv/bin/python tools/run_godot.py --godot /path/to/Godot
+```
+
+If `godot` or `godot4` is on PATH, omit `--godot`. On Windows use `.venv\Scripts\python.exe` for the Python commands. Running from the Godot editor discovers the repository's `.venv`; set `WW3_PYTHON` to an absolute interpreter path for a different environment.
+
+The eight command screens cover the existing game's features:
+
+| Screen | Available controls and information |
+|---|---|
+| Situation | Four selectable fronts, separate troop-share/influence bars, current and forecast coalitions, faction statistics, infrastructure, briefing and opening guidance. |
+| Economy | All eight facilities and four projects, startup costs, productivity allocations, partial/paused work, completions, production and upkeep. |
+| Diplomacy | Tariffs, matching trade/alliance offers, US/China benefit sharing, outreach, foreign aid, relationships and active agreements. |
+| Military | All deployments, reserve, capacity/recovery, dominance bonuses, planned forces, survivors, upkeep, influence and affected objectives. |
+| Government | Taxes, government transitions, domestic repayment, foreign principal repayment and lender renewal rates at maturity. |
+| Objectives | Any faction's current/expected conditions, gaps, blockers, advice, theater shortcuts, hold progress and victory watch. |
+| Chronicle | Nine history metrics with four-faction charts and exact values; every retained annual report. |
+| Rules | Selectable/exportable `DESIGN.md` and the current scenario settings. |
+
+The header keeps resource balances and draft actions visible. **Ledger & alternatives** provides the complete forecast breakdown, cash flows, shortages, changed decisions, and remembered-plan comparisons. **New campaign** exposes solo/hotseat/sandbox, all factions, all three victory modes, balance settings, AI seed and starting resources. Hotseat includes submission locks, reopening and a saved handoff. Results open a skippable six-phase review with links from headlines to their causes. Victories allow continued play.
+
+**Settings** provides opt-in synthesized sound, volume, 100–150% text sizes, reduced motion and optional opening guidance. Preferences, selected page/front, commander and review position are saved with local recovery, separately from portable game data. All turn review steps are instant. Undo and remembered alternatives last for the current year and worker session, matching Streamlit. This is a repository-based development client; a distributable bundled Python runtime, a C# port, and Steam integration are not implemented yet.
+
+The client launches one local Python worker using pipes, with IO on a separate thread. No web server or internet connection is used during play. The client stops its worker when it closes. Godot saves to `user://recovery` under its `ww3-godot` user-data directory; `WW3_GODOT_SAVE_DIR` can select a disposable directory. These saves are separate from Streamlit. Export/import portable JSON to move a campaign between clients, and run only one client instance per recovery directory.
+
+## Streamlit development client
 
 Requires Python 3.10 or newer. From this directory:
 
 ```bash
 python3 -m venv .venv
 .venv/bin/python -m pip install -r requirements.txt
-.venv/bin/python -m streamlit run app.py
+.venv/bin/python -m streamlit run clients/streamlit/app.py
 ```
+
+The original `streamlit run app.py` command remains a compatibility launcher.
 
 Open **http://localhost:8501**. The default server listens only on this computer. No accounts, API keys, external map services, or internet connection are required after installation.
 
@@ -51,7 +84,9 @@ Open **Compare draft alternatives** to remember a plan, edit another, and compar
 
 Opening guidance in the sidebar suggests investments, diplomacy, deployments, forecasts and objective checks for the first three years. It can be skipped, allows alternative choices, and describes actual orders/results. **End year** commits all orders. The result review follows treaties/orders → economy/shortages → relations → combat/influence → society → objectives. Three ranked headlines link to their recorded phase; skip, advance manually or replay without advancing time. There is no scripted victory or changed hold requirement.
 
-Applied edits and resolved turns are automatically saved to **`.saves/current.json`**, with the previous validated checkpoint in **`.saves/previous.json`**. Refreshing, reopening the app, or restarting its server resumes the campaign, drafts (including overallocated drafts), hotseat handoff, and guidance preference. Press Enter or leave a number field to apply its edit before closing. A partial replacement cannot overwrite the last valid checkpoint; damaged current files fall back to the previous copy. **Save / load game** also offers explicit latest/previous recovery and portable downloads/imports. If both checkpoints are damaged, import a manual save or start a new campaign. Disk errors are displayed and manual export remains available.
+Applied edits and resolved turns are automatically saved to **`.saves/streamlit/current.json`**, with the previous validated checkpoint in **`.saves/streamlit/previous.json`**. Refreshing, reopening the app, or restarting its server resumes the campaign, drafts (including overallocated drafts), hotseat handoff, and guidance preference. Press Enter or leave a number field to apply its edit before closing. A partial replacement cannot overwrite the last valid checkpoint; damaged current files fall back to the previous copy. **Save / load game** also offers explicit latest/previous recovery and portable downloads/imports. If both checkpoints are damaged, import a manual save or start a new campaign. Disk errors are displayed and manual export remains available.
+
+On first launch after migration, an existing legacy `.saves/current.json` (or valid previous checkpoint) is copied into the new Streamlit slot, leaving the original files intact. An explicit `WW3_SAVE_DIR` keeps its existing meaning and disables this automatic migration.
 
 Recovery is one local slot per server installation, not a browser account. A stale tab cannot overwrite a newer checkpoint: download its draft or reload the latest checkpoint when warned. Starting a new campaign uses this same slot; download campaigns you want to keep separately. For isolated runs, set `WW3_SAVE_DIR` to another writable directory. Run only one server per recovery directory. Undo history is session-only; the draft itself is durable.
 
@@ -64,7 +99,24 @@ Portable saves use validated JSON, now **schema version 3**, with a separate **g
 .venv/bin/python -m pytest -q
 ```
 
-Tests cover economic accounting, construction, shortages, military coalitions, objective thresholds and consecutive-year progress, deterministic forecasts, JSON persistence, computer campaigns, and Streamlit interface workflows. UI tests use Streamlit AppTest and do not require a browser installation.
+Tests cover economic accounting, construction, shortages, military coalitions, objective thresholds and consecutive-year progress, deterministic forecasts, JSON persistence, computer campaigns, and Streamlit interface workflows. UI tests use Streamlit AppTest and do not require a browser installation. Application tests verify shared session commands and the original-engine fixture in `tests/fixtures/migration-baseline.json`; bridge tests exercise revision conflicts, duplicate commands, malformed requests, persistence failures, and actual subprocess framing.
+
+For simulation-only development, install `.[test]` and run the suites independently of Streamlit:
+
+```bash
+.venv/bin/python -m pip install -e '.[test]'
+.venv/bin/python -m pytest tests/core tests/application tests/persistence tests/bridge -q
+```
+
+Run the real Godot scene and worker through both headless integration suites:
+
+```bash
+.venv/bin/python tools/run_godot.py --godot /path/to/Godot --smoke
+```
+
+The launcher allocates temporary recovery storage. `smoke.gd` checks map selection, full-precision edits, forecast/result equality, partial construction, portable saves, restart recovery, invalid drafts, hotseat locks/reopening and worker shutdown. `features.gd` uses the native controls for all investments, diplomacy, government transitions, debt maturity, scenarios, comparisons, reviews, history, preferences and continued play after a recorded victory. It also verifies that presentation changes never alter portable game saves.
+
+The feature suite can run with a real display by omitting `--headless` and setting disposable `WW3_GODOT_SAVE_DIR` and `WW3_GODOT_CAPTURE_DIR` paths; use `--script res://tests/features.gd` with `--path clients/godot`. It captures all command screens, planning/review dialogs and large-text rendering. The feature suite was also checked with Godot 4.5.1 on a virtual X11 display. This does not replace platform packaging or player accessibility checks.
 
 For an optional real-browser check, install `playwright` in the environment and a Chromium browser (`python -m playwright install chromium`, or set `WW3_CHROME` to an installed Chrome executable). Start an **isolated test server**—the browser check starts a fresh scenario in its recovery slot:
 
@@ -118,29 +170,44 @@ After the first resolution, ask the player to explain one resource change and th
 
 ## Project structure
 
-| File | Purpose |
-|---|---|
-| `app.py` | Command screens, hotseat flow, recovery integration |
-| `ww3/intro.py`, `assets/intro-war-room.png` | Cinematic opening briefing, selectable world narrative, and local background artwork |
-| `ww3/command_ui.py` | Theater panel, persistent ledger, guidance, turn review |
-| `ww3/briefing.py` | Objective gaps/blockers, victory watch, and resource decision alerts |
-| `ww3/components.py` | Offline SVG map interaction and keyboard access |
-| `ww3/catalog.py` | Original faction values and traits |
-| `ww3/rules.py` | Scenario defaults, facility/project costs, government effects |
-| `ww3/models.py` | Serializable state and orders |
-| `ww3/engine.py` | Atomic annual resolution and resource accounting |
-| `ww3/strategy.py` | Coalitions, dominance, objectives, victory |
-| `ww3/ai.py` | Reproducible computer decisions |
-| `ww3/forecast.py` | Non-mutating projections through the same engine |
-| `ww3/persistence.py` | Save validation and prototype-save migration |
-| `ww3/recovery.py` | Atomic local checkpoints, previous-copy recovery, stale-session protection |
-| `ww3/planning.py` | Faction-scoped draft history, alternatives and changed decisions |
-| `ww3/presentation.py`, `ww3/preferences.py`, `ww3/audio.js` | Recoverable display/audio settings and original synthesized cues |
-| `ww3/evaluation.py` | Reproducible policy experiments, transcripts and exact campaign replay |
-| `ww3/objective_policy.py` | Experimental objective-driven players using actual public forecasts |
-| `tools/probe_balance.py` | Reproducible isolated probes of presence rewards, breakthroughs, and recovery |
-| `ww3/reporting.py` | Recorded resolution phases and traceable headlines |
-| `ww3/map_view.py` | Offline schematic world map with selectable theaters |
-| `tests/` | Engine and interface regression checks |
+One repository contains an independently installable Python simulation and two clients:
 
-Scenario settings exposed in the start screen apply to new games. Other defaults are centralized in `ww3/rules.py`. Update `DESIGN.md` whenever gameplay rules change, and update `NEXT_STEPS.md` as work meets its acceptance criteria. Keep development dependencies and run commands in this README; keep the design independent of implementation technology.
+```text
+src/ww3/
+  core/                 Models, rules, AI, forecasts, economic/combat resolution
+  application/          GameSession, draft history, briefings, command read model
+  persistence/          Portable saves, migrations, atomic recovery, preferences
+  bridge/               Local JSON worker and process entry point
+  evaluation.py         Campaign diagnostics and deterministic replay
+  objective_policy.py   Experimental players for balance evaluation
+clients/
+  streamlit/            Complete development client (package: ww3_streamlit)
+  godot/                Native command screens, scenario dialog, charts, client tests
+contracts/              Protocol 1 JSON schemas and example requests
+tests/                 Core, application, persistence, bridge, Streamlit suites
+  fixtures/             Legacy save and frozen pre-migration campaign results
+tools/                  Launchers, browser campaigns, balance probes
+playtests/              Retained experiment evidence
+assets/                 Original Streamlit intro art and provenance
+pyproject.toml          Python package and optional dependency groups
+app.py                  Compatibility launcher for the Streamlit client
+```
+
+`GameSession` owns drafts, undo/alternatives, submission locks, AI preparation, and turn advancement. Clients receive detached snapshots and submit edits explicitly. Forecast and resolution continue to use the same core rules. The core imports neither Streamlit nor pandas; the `streamlit` optional dependency group is only needed for the development client. The Streamlit client uses repository documentation and artwork, so run it from this checkout with the editable install.
+
+```text
+Streamlit ────────────────→ GameSession → simulation core
+Godot → local JSON worker → GameSession → saves/recovery
+```
+
+The worker runs with `python -m ww3.bridge --save-dir <directory>`. Requests and responses are one UTF-8 JSON object per line; stdout is exclusively protocol output. See [request schema](contracts/request-v1.schema.json), [response schema](contracts/response-v1.schema.json), and [example conversation](contracts/examples-v1.jsonl). Protocol version **1**, gameplay rules version **1**, and save schema **3** are independent identifiers.
+
+Each request has a string `id`, `command`, and optional `params`. Mutating commands require `expected_revision`; successful mutations advance the session revision (unchanged edits/empty undo do not). A bounded cache returns the original response for an identical retry; a reused ID with different content is rejected. Revisions and retry IDs are scoped to one worker lifetime. After a restart, read the recovered state and issue fresh commands; clients never automatically replay an uncertain turn.
+
+`edit` patches top-level order fields; a dictionary value replaces that whole map. An oversubscribed draft remains recoverable but has `forecast: null` and a `forecast_error`; invalid structure is rejected. A successful command with failed autosave returns the updated game and `checkpoint_error`, allowing manual export without repeating the command. `export` returns an opaque JSON save string, and `load` accepts that string, preserving numeric types, field ordering, and precision across clients. A request is limited to 4,100,000 bytes, including its newline; an oversized request receives an error and closes the worker. Portable saves retain their 2 MB limit.
+
+State replies also contain `catalog` (facilities, government effects, scenario-control definitions), `desk` (read-only costs, construction, objective briefings, alerts and recorded review phases), and `ui`. The application layer derives these from the same simulation helpers used by Streamlit. `new.params.rules` accepts the scenario fields in the request schema; invalid settings leave the current campaign intact. The optional legacy `seed` parameter remains supported. `ui` requires `expected_revision`, validates presentation/navigation values, and checkpoints them without advancing the gameplay revision or changing portable saves. The Godot client sends UI updates when the worker is idle; it never replays an uncertain game command.
+
+A future C# engine must pass the fixed state/order/forecast/result fixtures and retained campaign replays before replacing Python. Once switched, ongoing developer tools should use the production engine; the old implementation becomes a frozen comparison reference.
+
+Scenario settings exposed in the start screen apply to new games. Other defaults are centralized in `src/ww3/core/rules.py`. Update `DESIGN.md` whenever gameplay rules change, and update `NEXT_STEPS.md` as work meets its acceptance criteria. Keep development dependencies and run commands in this README; keep the design independent of implementation technology.

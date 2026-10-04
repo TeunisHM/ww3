@@ -2,6 +2,8 @@
 
 3 October 2026. Rules version **1**, save schema **3**. These are scripted strategic experiments and browser checks, not human-player research.
 
+**Implementation update, 4 October 2026:** the Godot desktop client now covers the gameplay workflows described here, using the same Python simulation and forecasts as Streamlit. Its functional integration checks passed, including a rendered pass. The graphics and interface are still at prototype quality. Original visual assets and desktop polish are the next work; they have not been evaluated by new human players, and do not change the campaign results below.
+
 ## What improved
 
 - **Objective planning:** every condition now compares the resolved world with the exact post-combat forecast. The screen shows the remaining gap, conditions newly met or at risk, expected hold advancement/reset, and advice specific to the objective. Small nonzero gaps retain enough precision to explain why a condition still fails; strict thresholds explicitly reject equality.

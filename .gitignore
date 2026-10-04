@@ -13,3 +13,9 @@ test-results/
 .codex/
 .agents/
 .streamlit/secrets.toml
+*.egg-info/
+build/
+dist/
+.godot/
+clients/godot/export.cfg
+clients/godot/export_credentials.cfg
