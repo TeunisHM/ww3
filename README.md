@@ -13,11 +13,11 @@ A playable local strategy prototype for the EU, US, China, and Russia. Play one 
 
 The superseded design inputs have been removed. Roadmap proposals become gameplay rules only when incorporated into `DESIGN.md` and implemented with corresponding validation.
 
-## Current status — 3 October 2026
+## Current status — 4 October 2026
 
 The local prototype implements the reconciled rules, including simultaneous annual turns, construction and supply chains, diplomacy, debt contracts, persistent forces, coalition combat, recoverable influence, and faction objectives. The opening scenario is contested; the default victory requires three consecutive resolved years. Live forecasts use the actual resolution rules and update as orders change. Portable saves preserve plans and scenario settings.
 
-The implementation passes **166 automated tests**, including exact theater/objective forecasts, victory warnings, map data, draft comparison/undo, phase reports, recovery failures, presentation preferences, strategic campaign replay, and hotseat relaunches. These checks establish a functional baseline; broader campaign balance, player retention, accessibility, and commercial demand still need evaluation.
+The implementation passes **178 automated tests**, including exact construction/theater/objective forecasts, partial and paused construction workflows, victory warnings, map data, draft comparison/undo, phase reports, recovery failures, presentation preferences, strategic campaign replay, and hotseat relaunches. These checks establish a functional baseline; broader campaign balance, player retention, accessibility, and commercial demand still need evaluation.
 
 The browser interface includes a short introduction and EU quick start, an interactive command map for all four fronts, a persistent planning ledger, draft comparison and undo/reset, optional first-three-year guidance, a skippable/replayable turn review, and automatic local recovery. Sound effects, volume, text size and reduced-motion controls are available. The Python simulation remains authoritative. Computer policies are unchanged; desktop packaging, Steam integration, and player-validated onboarding remain future work. Turn review uses instant manual steps without animation. The next graphics work is planned in [NEXT_STEPS.md, section 11](NEXT_STEPS.md#11-graphics-improvement-plan).
 
@@ -37,9 +37,13 @@ python3 -m venv .venv
 
 Open **http://localhost:8501**. The default server listens only on this computer. No accounts, API keys, external map services, or internet connection are required after installation.
 
-Use **Start EU campaign** on the introduction, or **Choose faction & mode** to configure the scenario and select **Take command**. An existing local checkpoint resumes directly; the introduction also accepts portable saves. In the situation room or military screen, select any theater on the map (click or Tab + Enter/Space) or use **Inspect theater**. Edit deployments to compare planned coalitions, military shares, upkeep, expected survivors, territorial influence, and relevant objectives. The map itself depicts the resolved world. Solo predictions include the same computer response used at resolution; shared-player predictions remain conditional on other drafts.
+The opening screen presents **Power has a price**, a world briefing over original generated military-industrial artwork. Its narrative connects energy, minerals, compute, productivity, treasury/debt, and the four factions' objectives. Text remains selectable and readable at larger sizes; the artwork is bundled locally for offline use. The [generation prompt and provenance](assets/intro-art.json) accompany the [background](assets/intro-war-room.png).
+
+Use **Start EU campaign** on the introduction, or **Choose faction & mode** to configure the scenario and select **Take command**. An existing local checkpoint resumes directly; use **View opening briefing** in the sidebar to revisit the intro, then **Continue campaign** to return to the same page, orders, and game year. The introduction also accepts portable saves. In the situation room or military screen, select any theater on the map (click or Tab + Enter/Space) or use **Inspect theater**. Edit deployments to compare planned coalitions, military shares, upkeep, expected survivors, territorial influence, and relevant objectives. The map itself depicts the resolved world. Solo predictions include the same computer response used at resolution; shared-player predictions remain conditional on other drafts.
 
 The planning ledger stays above every command screen and remains visible while scrolling on desktop. It separates current resources, orders/transfers, annual changes, and expected balances. On narrow screens it scrolls with the page so controls remain reachable. **Undo edit** restores the previous edit for this faction; **Reset draft** restores standing orders and can itself be undone. Up to 50 edits per faction are retained within the current year/session. Committed hotseat drafts stay locked until reopened. Invalid drafts clear projected values instead of showing stale forecasts.
+
+In **Economy & construction**, the **Construction status** table and each investment card separate completed facilities, saved progress, this year's productivity allocation, expected completions, and work left for later. Assigning productivity only drafts an order: construction happens at **End year**. Completed facilities produce and pay upkeep in that same update, with remaining output available for your next orders. Unfinished work produces nothing and needs a new allocation in a later year; allocations do not repeat automatically. For example, put 5 productivity into a factory and end the year to save 50% progress. Assign another 5 next year to finish it, or leave it paused. Full resource costs are charged when each unit starts, including partially built units; continuing that unit does not charge startup costs again. The preview includes trade discounts and clears when any draft is invalid. Last year's completions stay visible above the table.
 
 Open **Compare draft alternatives** to remember a plan, edit another, and compare their expected resources, military shares, influence and objective hold. Both alternatives are recalculated against the current world and rival drafts. **Restore remembered draft** is undoable. One alternative per faction lasts for the current year and open session; exporting or reloading retains the active draft, not the remembered alternative.
 
@@ -117,6 +121,7 @@ After the first resolution, ask the player to explain one resource change and th
 | File | Purpose |
 |---|---|
 | `app.py` | Command screens, hotseat flow, recovery integration |
+| `ww3/intro.py`, `assets/intro-war-room.png` | Cinematic opening briefing, selectable world narrative, and local background artwork |
 | `ww3/command_ui.py` | Theater panel, persistent ledger, guidance, turn review |
 | `ww3/briefing.py` | Objective gaps/blockers, victory watch, and resource decision alerts |
 | `ww3/components.py` | Offline SVG map interaction and keyboard access |

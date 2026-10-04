@@ -24,6 +24,7 @@ def key(game, faction, name):
 
 @st.cache_data(show_spinner=False, max_entries=24)
 def cached_forecast(payload):
+    """Cache exact resource, construction, theater and objective projections."""
     return forecast_round(loads(payload))
 
 

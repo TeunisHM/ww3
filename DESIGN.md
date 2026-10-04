@@ -144,6 +144,8 @@ Government changes last **three years**, with **5 discontent** in each transitio
 
 Players allocate this year's productivity to any combination of facilities and projects. Resource costs are paid when a unit starts; partial work is stored as a completion fraction. A later discount affects work needed for the remaining fraction without charging the resource costs again. Multiple units of the same type can complete in one year. Unfinished units have no production or maintenance and cannot be scrapped or refunded.
 
+Allocations remain drafts until **End year**. Completed facilities participate in production and upkeep during that same resolution; remaining resources and new capacity are available for the next planning turn. Partial work stays paused until the player assigns more productivity in a later year: annual allocations reset, and time alone never advances construction. Projects apply their benefits on completion during resolution.
+
 The following are **base costs and outputs before modifiers**. Facilities are processed in the table's order, followed by the projects in their listed order. Each category uses the costs calculated when processing that category begins.
 
 | Facility | Productivity | Currency, T | Minerals | Annual output | Annual upkeep |
@@ -363,7 +365,7 @@ Other policies are explicit first-iteration defaults:
 - A short introduction explaining annual planning, truthful forecasts and the three-year default objective hold, with a default EU quick start, scenario selection and portable-save import. Existing local campaigns resume directly.
 - Faction/mode selection, visible starting assets and deployments, and adjustable scenario settings.
 - A situation room with the world map, key metrics, world comparison, infrastructure comparison, and recent developments.
-- Construction controls showing resource costs, available productivity, partial completion, and affordability.
+- Construction controls showing startup resource costs, available productivity, completed facilities, saved work, expected completions and partial work after End year, remaining productivity needed in later years, paused work, and last year's completions. Forecasts follow actual construction resolution, including bulk units, projects, and treaty discounts; invalid drafts clear expected values. Distinguish drafts from saved progress and explain that unfinished work needs a fresh annual allocation.
 - Diplomacy controls for tariffs, offers, shared benefits, outreach, and aid.
 - A military view separating deployed power, reserves, military shares, territorial influence, and economic bonuses.
 - Government/finance controls with locked contract terms, maturity dates, principal repayments, and a reconcilable cash ledger.

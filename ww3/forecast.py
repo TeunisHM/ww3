@@ -3,6 +3,7 @@
 from copy import copy
 from .ai import prepare_ai_orders
 from .catalog import FACTIONS, FRONTS
+from .construction import construction_rows
 from .engine import _prepare, resolve_round
 from .models import Game
 from .strategy import objective_progress, theater_snapshot
@@ -19,7 +20,7 @@ def forecast_round(game: Game) -> dict:
     candidate = copy(game)
     candidate.history, candidate.reports = [], []
     candidate = prepare_ai_orders(candidate)
-    committed, _, _ = _prepare(candidate)
+    committed, messages, _ = _prepare(candidate)
     resolved = resolve_round(candidate)
     forecasts = {}
     for f in FACTIONS:
@@ -34,7 +35,8 @@ def forecast_round(game: Game) -> dict:
                 "after_orders": after_orders, "system_change": closing - after_orders,
                 "expected": closing, "change": closing - opening})
         forecasts[f] = {"resources": rows, "ledger": resolved.nations[f].last_ledger,
-            "production": resolved.nations[f].last_production}
+            "production": resolved.nations[f].last_production,
+            "construction": construction_rows(candidate, f, committed, messages)}
     return {"round": game.round, "year": game.year, "mode": game.mode, "factions": forecasts,
         "fronts": {name: {"planned": theater_snapshot(committed, name), "expected": theater_snapshot(resolved, name)} for name in FRONTS},
         "objectives": {f: objective_progress(resolved, f) for f in FACTIONS},

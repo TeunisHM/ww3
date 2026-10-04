@@ -11,7 +11,10 @@ from ww3.ai import prepare_ai_orders
 from ww3.catalog import COLORS, FACTIONS, FRONTS, GOVERNMENTS, SCENARIO, TRAITS
 from ww3.engine import InvalidOrder, domestic_interest, fresh_order, investment_cost, new_game, preview_plan, resolve_round
 from ww3.command_ui import cached_forecast, command_theater, decision_briefing, draft_comparison, guided_opening, key, objective_dashboard, planning_summary, projection, turn_review
+from ww3.construction import construction_rows
+from ww3.construction_ui import construction_card, construction_overview, work_percent
 from ww3.map_view import render_map
+from ww3.intro import render_opening
 from ww3.models import pair
 from ww3.persistence import dumps, loads
 from ww3.planning import DraftHistory
@@ -135,28 +138,28 @@ def restore_remembered(game, faction):
         cue("order")
 
 
-def intro_screen():
-    st.markdown('<div class="eyebrow">Geopolitics / WW3</div>', unsafe_allow_html=True)
-    st.title("Every order changes the balance.")
-    description, illustration = st.columns([1.1, 1])
-    description.write("Lead a superpower through simultaneous annual turns. Build an economy, negotiate agreements and hold your advantage while rivals contest it.")
-    description.info("Your opening as the EU: a strong treasury, fewer troops than Russia in Eastern Europe, and an Arctic balance to protect. Your first choice is where to invest this year's 10 productivity.")
-    illustration.image(render_map(new_game()), width="stretch")
-    for col, title, detail in zip(st.columns(3), ("1 · Plan", "2 · Compare", "3 · Hold"), (
-            "Invest productivity and choose where to deploy your forces.",
-            "See the real resource and military forecast before committing.",
-            "Meet your faction's objectives for three consecutive years.")):
-        col.markdown(f"**{title}**")
-        col.write(detail)
-    quick, customize = st.columns(2)
-    if quick.button("Start EU campaign", type="primary", key="quick_start", width="stretch"):
-        set_game(new_game())
-        checkpoint(st.session_state.game)
-        st.rerun()
-    if customize.button("Choose faction & mode", key="customize_intro", width="stretch"):
-        st.session_state.intro_seen = True
-        st.rerun()
-    st.caption("Solo, local hotseat or sandbox · Offline after installation · Guidance can be skipped · No campaign turn limit")
+def intro_screen(resuming=False):
+    with st.container(key="opening_briefing"):
+        render_opening()
+        with st.container(key="opening_actions"):
+            if resuming:
+                game = st.session_state.game
+                if st.button("Continue campaign", type="primary", key="continue_campaign", width="stretch"):
+                    st.session_state.show_opening_briefing = False
+                    st.rerun()
+                st.caption(f"Return to your {SCENARIO[game.player]['name']} campaign · {game.year} · Round {game.round}")
+            else:
+                quick, customize = st.columns(2)
+                if quick.button("Start EU campaign", type="primary", key="quick_start", width="stretch"):
+                    set_game(new_game())
+                    checkpoint(st.session_state.game)
+                    st.rerun()
+                if customize.button("Choose faction & mode", key="customize_intro", width="stretch"):
+                    st.session_state.intro_seen = True
+                    st.rerun()
+                st.caption("Solo, local hotseat or sandbox · Offline after installation · No campaign turn limit")
+    if resuming:
+        return
     with st.expander("Continue from a portable save"):
         uploaded = st.file_uploader("Saved campaign (.json)", type="json", key="intro_upload")
         if st.button("Load campaign", disabled=uploaded is None, key="intro_load"):
@@ -335,39 +338,53 @@ def situation(game, f):
 def economy(game, f):
     n, o = game.nations[f], game.orders[f]
     st.title("Economy & construction")
-    st.caption("Allocate this year's productivity. Completed facilities operate at the next annual update; partially finished work carries forward.")
+    st.markdown("**Plan now → Build & produce at End year → Spend or deploy next turn.**")
+    st.info("Assigning productivity drafts construction; nothing is built immediately. At End year, completed facilities enter that year's production cycle and pay upkeep; shortages can limit output. Unfinished work carries over, but needs more productivity assigned in a later year to finish.")
     columns = st.columns(5)
     for col, label, value in zip(columns, ["Treasury · T USD", "Energy · PJ", "Minerals · tonnes", "Available compute · units", "Productivity · points"], [n.currency, n.energy, n.minerals, n.compute, n.productivity]):
         col.metric(label, f"{value:,.1f}")
     st.caption("Compute uses abstract FLOP-capacity units: the source gives +10 per data center without defining a physical scale.")
+    construction_slot = st.container(key="construction_status")
     forecast_slot = st.container()
+    card_slots = {}
     for is_project, catalog, label in ((False, BUILDINGS, "Facilities"), (True, PROJECTS, "Projects")):
         st.subheader(label)
         for row in range(0, len(catalog), 2):
             for col, (bid, spec) in zip(st.columns(2), list(catalog.items())[row:row + 2]):
-                with col.container(border=True):
-                    st.markdown(f"**{spec.name}**" + (f" · {n.buildings[bid]} built" if not is_project else " · repeatable"))
+                with col.container(border=True, key=f"investment_card_{bid}"):
+                    st.markdown(f"**{spec.name}**" + (f" · {n.buildings[bid]} completed now" if not is_project else " · repeatable project"))
                     st.caption(spec.description)
                     cost = investment_cost(game, f, bid)
-                    parts = [f"{cost['productivity']:g} productivity", f"{cost['currency']:.3f} T", f"{cost['minerals']:.2f} minerals"]
+                    parts = [f"{cost['currency']:.3f} T", f"{cost['minerals']:.2f} minerals"]
                     if cost["compute"]:
                         parts.append(f"{cost['compute']:g} compute")
                     if cost["energy"]:
                         parts.append(f"{cost['energy']:g} energy")
-                    st.caption("Cost per unit: " + " · ".join(parts))
+                    st.caption(f"Work per unit: {cost['productivity']:g} productivity · Startup resources: " + " · ".join(parts))
                     if bid in n.progress:
-                        st.progress(n.progress[bid], text=f"Work already completed: {n.progress[bid]:.0%}; resource costs already paid")
-                    points = st.number_input(f"Productivity → {spec.name}", min_value=0.0, max_value=max(0.0, float(n.productivity)), value=float(o.investments.get(bid, 0)), step=1.0, key=key(game, f, bid), disabled=f in game.submitted)
+                        st.progress(n.progress[bid], text=f"Saved from previous years: {work_percent(n.progress[bid])}; startup resources already paid")
+                    points = st.number_input(f"Productivity → {spec.name}", min_value=0.0, max_value=max(0.0, float(n.productivity)), value=float(o.investments.get(bid, 0)), step=1.0, key=key(game, f, bid), disabled=f in game.submitted,
+                        help="This is work in productivity points, not a building count. Press Enter or leave the field to update the preview. Orders build at End year. Assign enough work to finish one or more units; any unfinished unit carries over and needs a new allocation next year.")
                     if points > 0:
                         o.investments[bid] = points
                     else:
                         o.investments.pop(bid, None)
+                    card_slots[bid] = (st.container(), cost["productivity"])
     used = sum(o.investments.values())
     st.progress(min(1.0, used / max(n.productivity, .01)), text=f"{used:.1f} / {n.productivity:.1f} productivity allocated")
-    st.caption("Unallocated productivity expires. Resource costs are paid when each unit starts; finished projects can repeat. Investments resolve in the order listed above.")
+    st.caption("Unallocated productivity expires. Each new unit charges its full startup resource costs at End year, even if it only partly completes. Work already paid for is not charged again. Investments resolve in the order listed above.")
     st.caption("Unit prices reflect active trade agreements. The resource forecast also applies projected new agreements and their discounts.")
     # Match the visibly documented order, independently of click sequence.
     o.investments = {bid: o.investments[bid] for bid in INVESTMENTS if bid in o.investments}
+    # Fill previews only after every widget has updated the shared draft.
+    forecast, error = projection(game)
+    rows = forecast["factions"][f]["construction"] if forecast else construction_rows(game, f)
+    with construction_slot:
+        construction_overview(game, f, rows, error)
+    for row in rows:
+        slot, current_work_cost = card_slots[row["key"]]
+        with slot:
+            construction_card(row, game.year, current_work_cost)
     with st.expander("Last production report & operating costs"):
         if n.last_production:
             st.dataframe([{"Metric": k.replace("_", " ").capitalize(), "Value": round(v, 3)} for k, v in n.last_production.items()], hide_index=True, width="stretch")
@@ -580,10 +597,20 @@ def main():
         st.session_state.epoch += 1
     if "draft_history" not in st.session_state or st.session_state.draft_history.round != game.round:
         st.session_state.draft_history = DraftHistory(game)
+    if st.session_state.get("show_opening_briefing"):
+        # Keep the navigation widget's value while its command desk is hidden.
+        if "page" in st.session_state:
+            st.session_state.page = st.session_state.page
+        intro_screen(resuming=True)
+        render_audio(audio_slot)
+        return
     with st.sidebar:
         st.markdown('<div class="eyebrow">Strategic command</div>', unsafe_allow_html=True)
         st.title("WW3")
         st.caption(f"YEAR {game.year} · ROUND {game.round}")
+        if st.button("View opening briefing", key="view_opening_briefing", width="stretch"):
+            st.session_state.show_opening_briefing = True
+            st.rerun()
         if game.mode == "solo":
             f = game.player
             st.markdown(f"**{SCENARIO[f]['name']}**")

@@ -1,0 +1,32 @@
+{
+  "artwork_decoded": [
+    1672,
+    941
+  ],
+  "desktop": true,
+  "mobile_no_horizontal_overflow": true,
+  "mobile_start_controls_reachable": true,
+  "text_scale_150": true,
+  "quick_start": true,
+  "briefing_preserves_draft_page_and_checkpoint": true,
+  "browser_errors": [],
+  "checked_at_utc": "2026-10-03T08:17:44.012144+00:00",
+  "pytest": {
+    "passed": 166,
+    "failed": 0,
+    "elapsed_seconds": 18.58
+  },
+  "campaign_roundtrips": [
+    "solo",
+    "hotseat",
+    "sandbox"
+  ],
+  "screenshots": "playtests/captures/intro-2026-10-03",
+  "artwork": "assets/intro-war-room.png",
+  "generation_prompt": "assets/intro-art.json",
+  "source_sha256": {
+    "app.py": "abaed6c93850623876013e2228e50ce8dc58fcfa381a9781c447fea9cda742e3",
+    "ww3/intro.py": "b50a7e0e6736b4b61816c421b204f7fde7fc9c38e5954dd06d1b2fe2cfd33489",
+    "assets/intro-war-room.png": "14d3a43ae0d1814a20fd7acbd4d7e9e7dafd844cd59a743e03c26a6d0a25fc43"
+  }
+}

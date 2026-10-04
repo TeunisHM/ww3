@@ -61,6 +61,63 @@ def test_ui_blocks_overallocated_productivity():
     assert not app.button(key="end_year").disabled
 
 
+def construction_table(app):
+    return next(frame.value for frame in app.dataframe if "Saved progress" in frame.value.columns)
+
+
+def test_construction_preview_distinguishes_draft_saved_paused_and_completed_work():
+    app = start()
+    app.radio(key="page").set_value("Economy & construction").run()
+    app.number_input(key=widget_key(app, "EU", "factory")).set_value(5).run()
+    table = construction_table(app).set_index("Investment")
+    assert table.loc["Factory", "Saved progress"] == "0%"
+    assert table.loc["Factory", "Work left for later"] == "5"
+    assert "50.0%" in table.loc["Factory", "Expected at End year"]
+    assert app.session_state.game.nations["EU"].progress == {}
+    assert app.session_state.game.nations["EU"].buildings["factory"] == 0
+
+    app.button(key="end_year").click().run()
+    assert not app.exception
+    table = construction_table(app).set_index("Investment")
+    assert table.loc["Factory", "Saved progress"] == "50.0%"
+    assert table.loc["Factory", "Work this year"] == "0"
+    assert table.loc["Factory", "Expected at End year"] == "Paused · no work assigned"
+    assert any("Paused" in message.value for message in app.warning)
+    assert app.session_state.game.nations["EU"].productivity == 10
+
+    # Waiting without another allocation cannot finish a building.
+    app.button(key="end_year").click().run()
+    assert app.session_state.game.nations["EU"].progress["factory"] == .5
+    app.number_input(key=widget_key(app, "EU", "factory")).set_value(5).run()
+    table = construction_table(app).set_index("Investment")
+    assert table.loc["Factory", "Expected at End year"] == "1 complete"
+    assert table.loc["Factory", "Work left for later"] == "0"
+    assert any("no new startup resource costs" in text.value for text in app.caption)
+    app.button(key="end_year").click().run()
+    assert not app.exception
+    assert app.session_state.game.nations["EU"].buildings["factory"] == 1
+    assert "factory" not in app.session_state.game.nations["EU"].progress
+    assert app.session_state.game.nations["EU"].productivity == 15
+    assert any("Completed last year: Factory ×1" in message.value for message in app.success)
+
+
+def test_invalid_construction_draft_clears_completion_preview_and_recovers():
+    app = start()
+    app.radio(key="page").set_value("Economy & construction").run()
+    app.number_input(key=widget_key(app, "EU", "factory")).set_value(10).run()
+    assert construction_table(app).iloc[0]["Expected at End year"] == "1 complete"
+    app.number_input(key=widget_key(app, "EU", "research")).set_value(10).run()
+    assert not app.exception
+    table = construction_table(app)
+    assert set(table["Expected at End year"]) == {"Unavailable"}
+    assert set(table["Work left for later"]) == {"—"}
+    assert not any("At End year:" in text.value for text in app.success)
+    assert app.button(key="end_year").disabled
+    app.number_input(key=widget_key(app, "EU", "research")).set_value(0).run()
+    assert construction_table(app).iloc[0]["Expected at End year"] == "1 complete"
+    assert not app.button(key="end_year").disabled
+
+
 def test_four_hotseat_submissions_resolve_one_shared_round():
     app = start("Local hotseat · four players")
     for turn in range(4):
